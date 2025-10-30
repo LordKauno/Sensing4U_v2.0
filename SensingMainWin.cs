@@ -211,12 +211,14 @@ namespace Sensing4U_v2._0
         /// <param name="e"> The event data associated with the DropDown event.</param>
         private void ComboBoxListOfFile_DropDown(object sender, EventArgs e)
         {
+            // Check if file list is loaded
             if (fileList == null || fileList.Length == 0)
             {
                 MessageBox.Show("No files loaded. Please load a file first.", "No Files",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+            // Populate ComboBox with file names
             comboBoxListOfFile.Items.Clear();
             foreach (var file in fileList)
             {
@@ -230,16 +232,19 @@ namespace Sensing4U_v2._0
         /// <param name="e">The event data associated with the SelectedIndexChanged event.</param>
         private void ComboBoxListOfFile_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Check if file list is loaded
             if (fileList == null || fileList.Length == 0)
             {
                 MessageBox.Show("No files loaded. Please load a file first.", "No Files",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+            // Load selected file
             string selectedFile = comboBoxListOfFile.SelectedItem.ToString();
             int selectedIndex = Array.IndexOf(fileList, Path.Combine(currentDirectory, selectedFile));
             if (selectedIndex != -1)
             {
+                // Update current file index and load file
                 currentFileIndex = selectedIndex;
                 LoadFile(fileList[currentFileIndex]);
                 ClearView();
@@ -252,6 +257,7 @@ namespace Sensing4U_v2._0
         /// <param name="e"> The event data associated with the click event.</param>
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Show About dialog
             MessageBox.Show("Sensing4U Application\nVersion 1.0\nDeveloped by Caio Guilherme Ferreira da Silva", "About Sensing4U",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -263,6 +269,7 @@ namespace Sensing4U_v2._0
         /// <param name="e"> The event data associated with the click event.</param>
         private void tutorialToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Show Tutorial dialog
             MessageBox.Show("Sensing4U Application Tutorial:\n\n" +
                             "1. Use 'Add Data' to input new sensor readings.\n" +
                             "2. Select a row and use 'Remove' to delete it.\n" +
