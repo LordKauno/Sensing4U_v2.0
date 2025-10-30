@@ -51,6 +51,10 @@
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
           "dependencies": {
+            "MSTest": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
             "MSTest.TestFramework": {
               "target": "Package",
               "version": "[4.0.1, )"

@@ -1,36 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\",
+  "WorkspaceRootPath": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|c:\\users\\arceu\\desktop\\projects\\c#\\sensing4u_v2.0\\sensingmainwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|solutionrelative:sensingmainwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBD37EFD-CF3F-48F2-B2E2-02CD7DF1D354}|..\\SensingProjectTest\\SensingProjectTest.csproj|c:\\users\\arceu\\desktop\\sensingprojecttest\\sensingprojecttest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|c:\\users\\arceu\\desktop\\projects\\c#\\sensing4u_v2.0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|c:\\users\\arceu\\desktop\\sensing4u_v2.0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3578E184-C61F-4D3B-A588-636442B61B32}|..\\SensingTest\\SensingTest.csproj|c:\\users\\arceu\\desktop\\projects\\c#\\sensingtest\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|c:\\users\\arceu\\desktop\\projects\\c#\\sensing4u_v2.0\\sensingmainwin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBD37EFD-CF3F-48F2-B2E2-02CD7DF1D354}|..\\SensingProjectTest\\SensingProjectTest.csproj|c:\\users\\arceu\\desktop\\sensingprojecttest\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|c:\\users\\arceu\\desktop\\sensing4u_v2.0\\sensingmainwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|solutionrelative:sensingmainwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|c:\\users\\arceu\\desktop\\sensing4u_v2.0\\sensingmainwin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|solutionrelative:sensingmainwin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|c:\\users\\arceu\\desktop\\projects\\c#\\sensing4u_v2.0\\adddataform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|c:\\users\\arceu\\desktop\\sensing4u_v2.0\\adddataform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|solutionrelative:adddataform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\sensingmainwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\sensingmainwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|solutionrelative:sensingmainwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\adddataform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\adddataform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|solutionrelative:adddataform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|c:\\users\\arceu\\desktop\\projects\\c#\\sensing4u_v2.0\\adddataform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|c:\\users\\arceu\\desktop\\sensing4u_v2.0\\adddataform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}|Sensing4U_v2.0.csproj|solutionrelative:adddataform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -41,17 +47,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 103,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "SensingMainWin.cs",
-              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\SensingMainWin.cs",
+              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\SensingMainWin.cs",
               "RelativeDocumentMoniker": "SensingMainWin.cs",
-              "ToolTip": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\SensingMainWin.cs",
+              "ToolTip": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\SensingMainWin.cs",
               "RelativeToolTip": "SensingMainWin.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAM8BAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T14:16:12.547Z",
               "IsPinned": true,
@@ -59,16 +65,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Test1.cs",
-              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\SensingTest\\Test1.cs",
-              "RelativeDocumentMoniker": "..\\SensingTest\\Test1.cs",
-              "ToolTip": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\SensingTest\\Test1.cs",
-              "RelativeToolTip": "..\\SensingTest\\Test1.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAowEoAAAAwAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\SensingProjectTest\\Test1.cs",
+              "RelativeDocumentMoniker": "..\\SensingProjectTest\\Test1.cs",
+              "ToolTip": "C:\\Users\\arceu\\Desktop\\SensingProjectTest\\Test1.cs",
+              "RelativeToolTip": "..\\SensingProjectTest\\Test1.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAiwKIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:31:39.273Z",
-              "IsPinned": true
+              "WhenOpened": "2025-10-30T04:20:10.255Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SensingProjectTest",
+              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\SensingProjectTest\\SensingProjectTest.csproj",
+              "RelativeDocumentMoniker": "..\\SensingProjectTest\\SensingProjectTest.csproj",
+              "ToolTip": "C:\\Users\\arceu\\Desktop\\SensingProjectTest\\SensingProjectTest.csproj*",
+              "RelativeToolTip": "..\\SensingProjectTest\\SensingProjectTest.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-30T04:30:29.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAE0HAAAAAAAAAAAjwGAHAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-10-30T04:30:24.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -94,33 +131,35 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\Program.cs",
+              "ToolTip": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:14:14.263Z"
+              "WhenOpened": "2025-10-29T14:14:14.263Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SensingMainWin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\SensingMainWin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\SensingMainWin.Designer.cs",
               "RelativeDocumentMoniker": "SensingMainWin.Designer.cs",
-              "ToolTip": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\SensingMainWin.Designer.cs",
+              "ToolTip": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\SensingMainWin.Designer.cs",
               "RelativeToolTip": "SensingMainWin.Designer.cs",
-              "ViewState": "AgIAACoBAAAAAAAAAADwv6kBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAADwv6kBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:13:17.344Z"
+              "WhenOpened": "2025-10-29T14:13:17.344Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "AddDataForm.cs",
-              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\AddDataForm.cs",
+              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\AddDataForm.cs",
               "RelativeDocumentMoniker": "AddDataForm.cs",
-              "ToolTip": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\AddDataForm.cs",
+              "ToolTip": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\AddDataForm.cs",
               "RelativeToolTip": "AddDataForm.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAlwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -129,37 +168,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AddDataForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\AddDataForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\AddDataForm.Designer.cs",
               "RelativeDocumentMoniker": "AddDataForm.Designer.cs",
-              "ToolTip": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\AddDataForm.Designer.cs",
+              "ToolTip": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\AddDataForm.Designer.cs",
               "RelativeToolTip": "AddDataForm.Designer.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAwGMAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:19:04.31Z"
+              "WhenOpened": "2025-10-29T14:19:04.31Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "AddDataForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\AddDataForm.cs",
+              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\AddDataForm.cs",
               "RelativeDocumentMoniker": "AddDataForm.cs",
-              "ToolTip": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\AddDataForm.cs [Design]",
+              "ToolTip": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\AddDataForm.cs [Design]",
               "RelativeToolTip": "AddDataForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:13:09.223Z"
+              "WhenOpened": "2025-10-29T14:13:09.223Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "SensingMainWin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\SensingMainWin.cs",
+              "DocumentMoniker": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\SensingMainWin.cs",
               "RelativeDocumentMoniker": "SensingMainWin.cs",
-              "ToolTip": "C:\\Users\\arceu\\Desktop\\Projects\\C#\\Sensing4U_v2.0\\SensingMainWin.cs [Design]",
+              "ToolTip": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\SensingMainWin.cs [Design]",
               "RelativeToolTip": "SensingMainWin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:12:01.923Z"
+              "WhenOpened": "2025-10-29T14:12:01.923Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },

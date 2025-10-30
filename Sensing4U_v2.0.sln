@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36511.14 d17.14
+VisualStudioVersion = 17.14.36511.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sensing4U_v2.0", "Sensing4U_v2.0.csproj", "{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensingTest", "..\SensingTest\SensingTest.csproj", "{3578E184-C61F-4D3B-A588-636442B61B32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensingProjectTest", "..\SensingProjectTest\SensingProjectTest.csproj", "{CBD37EFD-CF3F-48F2-B2E2-02CD7DF1D354}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52F0B2AC-86A9-4F36-9880-1AB4ADC33741}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3578E184-C61F-4D3B-A588-636442B61B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3578E184-C61F-4D3B-A588-636442B61B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3578E184-C61F-4D3B-A588-636442B61B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3578E184-C61F-4D3B-A588-636442B61B32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBD37EFD-CF3F-48F2-B2E2-02CD7DF1D354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBD37EFD-CF3F-48F2-B2E2-02CD7DF1D354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBD37EFD-CF3F-48F2-B2E2-02CD7DF1D354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBD37EFD-CF3F-48F2-B2E2-02CD7DF1D354}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

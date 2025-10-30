@@ -34,3 +34,13 @@ C:\Users\arceu\Desktop\Projects\C#\Sensing4U_v2.0\obj\Debug\net9.0-windows\refin
 C:\Users\arceu\Desktop\Projects\C#\Sensing4U_v2.0\obj\Debug\net9.0-windows\Sensing4U_v2.0.pdb
 C:\Users\arceu\Desktop\Projects\C#\Sensing4U_v2.0\obj\Debug\net9.0-windows\Sensing4U_v2.0.genruntimeconfig.cache
 C:\Users\arceu\Desktop\Projects\C#\Sensing4U_v2.0\obj\Debug\net9.0-windows\ref\Sensing4U_v2.0.dll
+C:\Users\arceu\Desktop\Sensing4U_v2.0\obj\Debug\net9.0-windows\Sensing4U_v2.0.csproj.AssemblyReference.cache
+C:\Users\arceu\Desktop\Sensing4U_v2.0\obj\Debug\net9.0-windows\Sensing4U_v2._0.AddDataForm.resources
+C:\Users\arceu\Desktop\Sensing4U_v2.0\obj\Debug\net9.0-windows\Sensing4U_v2._0.Sensing4USensorData.resources
+C:\Users\arceu\Desktop\Sensing4U_v2.0\obj\Debug\net9.0-windows\Sensing4U_v2.0.csproj.GenerateResource.cache
+C:\Users\arceu\Desktop\Sensing4U_v2.0\obj\Debug\net9.0-windows\Sensing4U_v2.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arceu\Desktop\Sensing4U_v2.0\obj\Debug\net9.0-windows\Sensing4U_v2.0.gentestingplatformentrypointinputcache.cache
+C:\Users\arceu\Desktop\Sensing4U_v2.0\obj\Debug\net9.0-windows\Sensing4U_v2.0.genautoregisteredextensionsinputcache.cache
+C:\Users\arceu\Desktop\Sensing4U_v2.0\obj\Debug\net9.0-windows\Sensing4U_v2.0.AssemblyInfoInputs.cache
+C:\Users\arceu\Desktop\Sensing4U_v2.0\obj\Debug\net9.0-windows\Sensing4U_v2.0.AssemblyInfo.cs
+C:\Users\arceu\Desktop\Sensing4U_v2.0\obj\Debug\net9.0-windows\Sensing4U_v2.0.csproj.CoreCompileInputs.cache
