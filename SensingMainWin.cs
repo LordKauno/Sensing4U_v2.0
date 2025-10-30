@@ -129,7 +129,6 @@ namespace Sensing4U_v2._0
         /// </summary>
         /// <param name="e"> The event data associated with the click event.</param>
         /// <param name="sender"> The source of the event, typically the "Load" menu item.</param>
-
         private void loadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LoadFileFunction();
