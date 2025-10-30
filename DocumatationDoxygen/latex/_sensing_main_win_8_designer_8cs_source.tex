@@ -1,0 +1,420 @@
+\doxysection{Sensing\+Main\+Win.\+Designer.\+cs}
+\label{_sensing_main_win_8_designer_8cs_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{00002\ \textcolor{keyword}{using\ }System.Windows.Forms;}
+\DoxyCodeLine{00003\ \textcolor{keyword}{using\ }System.Drawing;}
+\DoxyCodeLine{00004\ \textcolor{keyword}{using\ }System.ComponentModel;}
+\DoxyCodeLine{00005\ \textcolor{keyword}{using\ }System.Data;}
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }Sensing4U\_v2.\_0}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{partial\ class\ }Sensing4USensorData}
+\DoxyCodeLine{00009\ \ \ \ \ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ System.ComponentModel.IContainer\ components\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ Dispose(\textcolor{keywordtype}{bool}\ disposing)}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (disposing\ \&\&\ (components\ !=\ \textcolor{keyword}{null}))}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ components.Dispose();}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ base.Dispose(disposing);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Windows\ Form\ Designer\ generated\ code}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ InitializeComponent()}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxUpper\ =\ \textcolor{keyword}{new}\ TextBox();}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxLower\ =\ \textcolor{keyword}{new}\ TextBox();}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxAvg\ =\ \textcolor{keyword}{new}\ TextBox();}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ labelUp\ =\ \textcolor{keyword}{new}\ Label();}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ labelMin\ =\ \textcolor{keyword}{new}\ Label();}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ labelAvg\ =\ \textcolor{keyword}{new}\ Label();}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ labelUpdate\ =\ \textcolor{keyword}{new}\ Label();}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ txtUpdate\ =\ \textcolor{keyword}{new}\ TextBox();}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ btnAvg\ =\ \textcolor{keyword}{new}\ Button();}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ btnUpdate\ =\ \textcolor{keyword}{new}\ Button();}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ btnMaxMin\ =\ \textcolor{keyword}{new}\ Button();}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ btnSort\ =\ \textcolor{keyword}{new}\ Button();}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor\ =\ \textcolor{keyword}{new}\ DataGridView();}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ menuStrip1\ =\ \textcolor{keyword}{new}\ MenuStrip();}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ fileToolStripMenuItem\ =\ \textcolor{keyword}{new}\ ToolStripMenuItem();}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ newToolStripMenuItem\ =\ \textcolor{keyword}{new}\ ToolStripMenuItem();}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ loadToolStripMenuItem\ =\ \textcolor{keyword}{new}\ ToolStripMenuItem();}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ saveToolStripMenuItem\ =\ \textcolor{keyword}{new}\ ToolStripMenuItem();}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ helpToolStripMenuItem\ =\ \textcolor{keyword}{new}\ ToolStripMenuItem();}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ aboutToolStripMenuItem\ =\ \textcolor{keyword}{new}\ ToolStripMenuItem();}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ tutorialToolStripMenuItem\ =\ \textcolor{keyword}{new}\ ToolStripMenuItem();}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ lblTitle\ =\ \textcolor{keyword}{new}\ Label();}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ btnRemove\ =\ \textcolor{keyword}{new}\ Button();}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ btnAdd\ =\ \textcolor{keyword}{new}\ Button();}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ btnPreviousFile\ =\ \textcolor{keyword}{new}\ Button();}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ btnNextFile\ =\ \textcolor{keyword}{new}\ Button();}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ lblSearch\ =\ \textcolor{keyword}{new}\ Label();}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxSearch\ =\ \textcolor{keyword}{new}\ TextBox();}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ btnSearch\ =\ \textcolor{keyword}{new}\ Button();}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ comboBoxListOfFile\ =\ \textcolor{keyword}{new}\ ComboBox();}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ ((System.ComponentModel.ISupportInitialize)dataGridViewSensor).BeginInit();}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ menuStrip1.SuspendLayout();}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ SuspendLayout();}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ txtBoxUpper}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxUpper.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxUpper.Location\ =\ \textcolor{keyword}{new}\ Point(1143,\ 180);}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxUpper.Name\ =\ \textcolor{stringliteral}{"{}txtBoxUpper"{}};}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxUpper.Size\ =\ \textcolor{keyword}{new}\ Size(179,\ 31);}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxUpper.TabIndex\ =\ 1;}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ txtBoxLower}}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxLower.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxLower.Location\ =\ \textcolor{keyword}{new}\ Point(926,\ 180);}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxLower.Name\ =\ \textcolor{stringliteral}{"{}txtBoxLower"{}};}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxLower.Size\ =\ \textcolor{keyword}{new}\ Size(179,\ 31);}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxLower.TabIndex\ =\ 2;}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ txtBoxAvg}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxAvg.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxAvg.Location\ =\ \textcolor{keyword}{new}\ Point(926,\ 287);}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxAvg.Name\ =\ \textcolor{stringliteral}{"{}txtBoxAvg"{}};}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxAvg.Size\ =\ \textcolor{keyword}{new}\ Size(179,\ 31);}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxAvg.TabIndex\ =\ 3;}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ labelUp}}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ labelUp.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ labelUp.AutoSize\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ labelUp.Location\ =\ \textcolor{keyword}{new}\ Point(1143,\ 138);}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ labelUp.Name\ =\ \textcolor{stringliteral}{"{}labelUp"{}};}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ labelUp.Size\ =\ \textcolor{keyword}{new}\ Size(92,\ 25);}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ labelUp.TabIndex\ =\ 4;}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ labelUp.Text\ =\ \textcolor{stringliteral}{"{}Limit\ max."{}};}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ labelMin}}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ labelMin.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ labelMin.AutoSize\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ labelMin.Location\ =\ \textcolor{keyword}{new}\ Point(929,\ 138);}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ labelMin.Name\ =\ \textcolor{stringliteral}{"{}labelMin"{}};}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ labelMin.Size\ =\ \textcolor{keyword}{new}\ Size(89,\ 25);}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ labelMin.TabIndex\ =\ 5;}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ labelMin.Text\ =\ \textcolor{stringliteral}{"{}Limit\ min."{}};}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ labelAvg}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ labelAvg.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ labelAvg.AutoSize\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ labelAvg.Location\ =\ \textcolor{keyword}{new}\ Point(929,\ 245);}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ labelAvg.Name\ =\ \textcolor{stringliteral}{"{}labelAvg"{}};}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ labelAvg.Size\ =\ \textcolor{keyword}{new}\ Size(179,\ 25);}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ labelAvg.TabIndex\ =\ 6;}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ labelAvg.Text\ =\ \textcolor{stringliteral}{"{}Calculate\ the\ average"{}};}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ labelUpdate}}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ labelUpdate.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ labelUpdate.AutoSize\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ labelUpdate.Location\ =\ \textcolor{keyword}{new}\ Point(929,\ 348);}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ labelUpdate.Name\ =\ \textcolor{stringliteral}{"{}labelUpdate"{}};}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ labelUpdate.Size\ =\ \textcolor{keyword}{new}\ Size(144,\ 25);}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ labelUpdate.TabIndex\ =\ 7;}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ labelUpdate.Text\ =\ \textcolor{stringliteral}{"{}Update\ the\ data:"{}};}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ txtUpdate}}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ txtUpdate.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ txtUpdate.Location\ =\ \textcolor{keyword}{new}\ Point(926,\ 390);}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ txtUpdate.Name\ =\ \textcolor{stringliteral}{"{}txtUpdate"{}};}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ txtUpdate.Size\ =\ \textcolor{keyword}{new}\ Size(179,\ 31);}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ txtUpdate.TabIndex\ =\ 8;}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ btnAvg}}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ btnAvg.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ btnAvg.Location\ =\ \textcolor{keyword}{new}\ Point(1143,\ 285);}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ btnAvg.Name\ =\ \textcolor{stringliteral}{"{}btnAvg"{}};}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ btnAvg.Size\ =\ \textcolor{keyword}{new}\ Size(112,\ 34);}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ btnAvg.TabIndex\ =\ 9;}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ btnAvg.Text\ =\ \textcolor{stringliteral}{"{}Calculate"{}};}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ btnAvg.UseVisualStyleBackColor\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ btnAvg.Click\ +=\ btnAvg\_Click;}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ btnUpdate}}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ btnUpdate.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ btnUpdate.Location\ =\ \textcolor{keyword}{new}\ Point(1143,\ 388);}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ btnUpdate.Name\ =\ \textcolor{stringliteral}{"{}btnUpdate"{}};}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ btnUpdate.Size\ =\ \textcolor{keyword}{new}\ Size(112,\ 34);}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ btnUpdate.TabIndex\ =\ 10;}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ btnUpdate.Text\ =\ \textcolor{stringliteral}{"{}Update"{}};}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ btnUpdate.UseVisualStyleBackColor\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ btnUpdate.Click\ +=\ btnUpdate\_Click;}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ btnMaxMin}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ btnMaxMin.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ btnMaxMin.BackColor\ =\ SystemColors.ControlLight;}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ btnMaxMin.Location\ =\ \textcolor{keyword}{new}\ Point(1143,\ 217);}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ btnMaxMin.Name\ =\ \textcolor{stringliteral}{"{}btnMaxMin"{}};}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ btnMaxMin.Size\ =\ \textcolor{keyword}{new}\ Size(112,\ 34);}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ btnMaxMin.TabIndex\ =\ 11;}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ btnMaxMin.Text\ =\ \textcolor{stringliteral}{"{}Filter\ Data"{}};}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ btnMaxMin.UseVisualStyleBackColor\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ btnMaxMin.Click\ +=\ btnMaxMin\_Click;}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ btnSort}}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ btnSort.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ btnSort.Location\ =\ \textcolor{keyword}{new}\ Point(929,\ 638);}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ btnSort.Name\ =\ \textcolor{stringliteral}{"{}btnSort"{}};}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ btnSort.Size\ =\ \textcolor{keyword}{new}\ Size(112,\ 34);}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ btnSort.TabIndex\ =\ 12;}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ btnSort.Text\ =\ \textcolor{stringliteral}{"{}Sort\ Data"{}};}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ btnSort.UseVisualStyleBackColor\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ btnSort.Click\ +=\ btnSort\_Click;}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ dataGridViewSensor}}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.AllowUserToOrderColumns\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.ColumnHeadersHeightSizeMode\ =\ DataGridViewColumnHeadersHeightSizeMode.AutoSize;}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.Location\ =\ \textcolor{keyword}{new}\ Point(184,\ 138);}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.Name\ =\ \textcolor{stringliteral}{"{}dataGridViewSensor"{}};}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.RowHeadersWidth\ =\ 62;}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.Size\ =\ \textcolor{keyword}{new}\ Size(736,\ 567);}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.TabIndex\ =\ 13;}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ menuStrip1}}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ menuStrip1.ImageScalingSize\ =\ \textcolor{keyword}{new}\ Size(24,\ 24);}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \ \ \ menuStrip1.Items.AddRange(\textcolor{keyword}{new}\ ToolStripItem[]\ \{\ fileToolStripMenuItem,\ helpToolStripMenuItem\ \});}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ menuStrip1.Location\ =\ \textcolor{keyword}{new}\ Point(0,\ 0);}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ menuStrip1.Name\ =\ \textcolor{stringliteral}{"{}menuStrip1"{}};}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ menuStrip1.Size\ =\ \textcolor{keyword}{new}\ Size(1454,\ 33);}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ menuStrip1.TabIndex\ =\ 14;}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ menuStrip1.Text\ =\ \textcolor{stringliteral}{"{}menuStrip1"{}};}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ fileToolStripMenuItem}}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ fileToolStripMenuItem.DropDownItems.AddRange(\textcolor{keyword}{new}\ ToolStripItem[]\ \{\ newToolStripMenuItem,\ loadToolStripMenuItem,\ saveToolStripMenuItem\ \});}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ fileToolStripMenuItem.Name\ =\ \textcolor{stringliteral}{"{}fileToolStripMenuItem"{}};}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \ \ \ \ fileToolStripMenuItem.Size\ =\ \textcolor{keyword}{new}\ Size(54,\ 29);}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ fileToolStripMenuItem.Text\ =\ \textcolor{stringliteral}{"{}File"{}};}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ newToolStripMenuItem}}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ newToolStripMenuItem.Name\ =\ \textcolor{stringliteral}{"{}newToolStripMenuItem"{}};}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ newToolStripMenuItem.Size\ =\ \textcolor{keyword}{new}\ Size(153,\ 34);}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ newToolStripMenuItem.Text\ =\ \textcolor{stringliteral}{"{}New"{}};}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ newToolStripMenuItem.Click\ +=\ newToolStripMenuItem\_Click;}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ loadToolStripMenuItem}}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ loadToolStripMenuItem.Name\ =\ \textcolor{stringliteral}{"{}loadToolStripMenuItem"{}};}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \ \ \ \ loadToolStripMenuItem.Size\ =\ \textcolor{keyword}{new}\ Size(153,\ 34);}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \ \ \ \ loadToolStripMenuItem.Text\ =\ \textcolor{stringliteral}{"{}Load"{}};}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ loadToolStripMenuItem.Click\ +=\ loadToolStripMenuItem\_Click;}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ saveToolStripMenuItem}}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ saveToolStripMenuItem.Name\ =\ \textcolor{stringliteral}{"{}saveToolStripMenuItem"{}};}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \ \ \ \ saveToolStripMenuItem.Size\ =\ \textcolor{keyword}{new}\ Size(153,\ 34);}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ saveToolStripMenuItem.Text\ =\ \textcolor{stringliteral}{"{}Save"{}};}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ saveToolStripMenuItem.Click\ +=\ saveToolStripMenuItem\_Click;}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ helpToolStripMenuItem}}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \ \ \ \ helpToolStripMenuItem.DropDownItems.AddRange(\textcolor{keyword}{new}\ ToolStripItem[]\ \{\ aboutToolStripMenuItem,\ tutorialToolStripMenuItem\ \});}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ helpToolStripMenuItem.Name\ =\ \textcolor{stringliteral}{"{}helpToolStripMenuItem"{}};}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \ \ \ \ helpToolStripMenuItem.Size\ =\ \textcolor{keyword}{new}\ Size(65,\ 29);}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ helpToolStripMenuItem.Text\ =\ \textcolor{stringliteral}{"{}Help"{}};}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ aboutToolStripMenuItem}}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ aboutToolStripMenuItem.Name\ =\ \textcolor{stringliteral}{"{}aboutToolStripMenuItem"{}};}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ aboutToolStripMenuItem.Size\ =\ \textcolor{keyword}{new}\ Size(270,\ 34);}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \ \ \ \ aboutToolStripMenuItem.Text\ =\ \textcolor{stringliteral}{"{}About"{}};}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ aboutToolStripMenuItem.Click\ +=\ aboutToolStripMenuItem\_Click;}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ tutorialToolStripMenuItem}}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ tutorialToolStripMenuItem.Name\ =\ \textcolor{stringliteral}{"{}tutorialToolStripMenuItem"{}};}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ tutorialToolStripMenuItem.Size\ =\ \textcolor{keyword}{new}\ Size(270,\ 34);}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ tutorialToolStripMenuItem.Text\ =\ \textcolor{stringliteral}{"{}Tutorial"{}};}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \ \ \ \ tutorialToolStripMenuItem.Click\ +=\ tutorialToolStripMenuItem\_Click;}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ lblTitle}}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ lblTitle.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ lblTitle.AutoSize\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ lblTitle.Font\ =\ \textcolor{keyword}{new}\ Font(\textcolor{stringliteral}{"{}Segoe\ UI"{}},\ 24F,\ FontStyle.Regular,\ GraphicsUnit.Point,\ 0);}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \ \ \ \ lblTitle.Location\ =\ \textcolor{keyword}{new}\ Point(12,\ 33);}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \ \ \ \ lblTitle.Name\ =\ \textcolor{stringliteral}{"{}lblTitle"{}};}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \ \ \ \ lblTitle.RightToLeft\ =\ RightToLeft.Yes;}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \ \ \ \ lblTitle.Size\ =\ \textcolor{keyword}{new}\ Size(252,\ 65);}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \ \ \ \ lblTitle.TabIndex\ =\ 15;}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \ \ \ \ lblTitle.Text\ =\ \textcolor{stringliteral}{"{}Sensing4U"{}};}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ btnRemove}}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \ \ \ \ btnRemove.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \ \ \ \ btnRemove.Location\ =\ \textcolor{keyword}{new}\ Point(1047,\ 598);}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \ \ \ \ btnRemove.Name\ =\ \textcolor{stringliteral}{"{}btnRemove"{}};}
+\DoxyCodeLine{00274\ \ \ \ \ \ \ \ \ \ \ \ \ btnRemove.Size\ =\ \textcolor{keyword}{new}\ Size(112,\ 34);}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \ \ \ \ btnRemove.TabIndex\ =\ 16;}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \ \ \ \ btnRemove.Text\ =\ \textcolor{stringliteral}{"{}Remove"{}};}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ \ \ \ \ btnRemove.UseVisualStyleBackColor\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \ \ \ \ btnRemove.Click\ +=\ btnRemove\_Click;}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ btnAdd}}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ \ \ \ \ btnAdd.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \ \ \ \ btnAdd.Location\ =\ \textcolor{keyword}{new}\ Point(929,\ 598);}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \ \ \ \ btnAdd.Name\ =\ \textcolor{stringliteral}{"{}btnAdd"{}};}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ \ \ \ \ btnAdd.Size\ =\ \textcolor{keyword}{new}\ Size(112,\ 34);}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \ \ \ \ btnAdd.TabIndex\ =\ 17;}
+\DoxyCodeLine{00287\ \ \ \ \ \ \ \ \ \ \ \ \ btnAdd.Text\ =\ \textcolor{stringliteral}{"{}Add\ Data"{}};}
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ \ \ \ \ btnAdd.UseVisualStyleBackColor\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00289\ \ \ \ \ \ \ \ \ \ \ \ \ btnAdd.Click\ +=\ btnAdd\_Click;}
+\DoxyCodeLine{00290\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00291\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ btnPreviousFile}}
+\DoxyCodeLine{00292\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00293\ \ \ \ \ \ \ \ \ \ \ \ \ btnPreviousFile.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00294\ \ \ \ \ \ \ \ \ \ \ \ \ btnPreviousFile.Location\ =\ \textcolor{keyword}{new}\ Point(187,\ 711);}
+\DoxyCodeLine{00295\ \ \ \ \ \ \ \ \ \ \ \ \ btnPreviousFile.Name\ =\ \textcolor{stringliteral}{"{}btnPreviousFile"{}};}
+\DoxyCodeLine{00296\ \ \ \ \ \ \ \ \ \ \ \ \ btnPreviousFile.Size\ =\ \textcolor{keyword}{new}\ Size(112,\ 34);}
+\DoxyCodeLine{00297\ \ \ \ \ \ \ \ \ \ \ \ \ btnPreviousFile.TabIndex\ =\ 18;}
+\DoxyCodeLine{00298\ \ \ \ \ \ \ \ \ \ \ \ \ btnPreviousFile.Text\ =\ \textcolor{stringliteral}{"{}Previous"{}};}
+\DoxyCodeLine{00299\ \ \ \ \ \ \ \ \ \ \ \ \ btnPreviousFile.UseVisualStyleBackColor\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00300\ \ \ \ \ \ \ \ \ \ \ \ \ btnPreviousFile.Click\ +=\ btnPreviousFile\_Click;}
+\DoxyCodeLine{00301\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00302\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ btnNextFile}}
+\DoxyCodeLine{00303\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00304\ \ \ \ \ \ \ \ \ \ \ \ \ btnNextFile.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00305\ \ \ \ \ \ \ \ \ \ \ \ \ btnNextFile.Location\ =\ \textcolor{keyword}{new}\ Point(811,\ 711);}
+\DoxyCodeLine{00306\ \ \ \ \ \ \ \ \ \ \ \ \ btnNextFile.Name\ =\ \textcolor{stringliteral}{"{}btnNextFile"{}};}
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ \ \ \ \ btnNextFile.Size\ =\ \textcolor{keyword}{new}\ Size(112,\ 34);}
+\DoxyCodeLine{00308\ \ \ \ \ \ \ \ \ \ \ \ \ btnNextFile.TabIndex\ =\ 19;}
+\DoxyCodeLine{00309\ \ \ \ \ \ \ \ \ \ \ \ \ btnNextFile.Text\ =\ \textcolor{stringliteral}{"{}Next\ File"{}};}
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ \ \ \ \ btnNextFile.UseVisualStyleBackColor\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00311\ \ \ \ \ \ \ \ \ \ \ \ \ btnNextFile.Click\ +=\ btnNextFile\_Click;}
+\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00313\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ lblSearch}}
+\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00315\ \ \ \ \ \ \ \ \ \ \ \ \ lblSearch.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00316\ \ \ \ \ \ \ \ \ \ \ \ \ lblSearch.AutoSize\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00317\ \ \ \ \ \ \ \ \ \ \ \ \ lblSearch.Location\ =\ \textcolor{keyword}{new}\ Point(929,\ 443);}
+\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ \ \ \ \ lblSearch.Name\ =\ \textcolor{stringliteral}{"{}lblSearch"{}};}
+\DoxyCodeLine{00319\ \ \ \ \ \ \ \ \ \ \ \ \ lblSearch.Size\ =\ \textcolor{keyword}{new}\ Size(104,\ 25);}
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ \ \ \ \ lblSearch.TabIndex\ =\ 20;}
+\DoxyCodeLine{00321\ \ \ \ \ \ \ \ \ \ \ \ \ lblSearch.Text\ =\ \textcolor{stringliteral}{"{}Search\ data"{}};}
+\DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00323\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ txtBoxSearch}}
+\DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00325\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxSearch.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00326\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxSearch.Location\ =\ \textcolor{keyword}{new}\ Point(926,\ 484);}
+\DoxyCodeLine{00327\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxSearch.Name\ =\ \textcolor{stringliteral}{"{}txtBoxSearch"{}};}
+\DoxyCodeLine{00328\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxSearch.Size\ =\ \textcolor{keyword}{new}\ Size(179,\ 31);}
+\DoxyCodeLine{00329\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxSearch.TabIndex\ =\ 21;}
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00331\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ btnSearch}}
+\DoxyCodeLine{00332\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00333\ \ \ \ \ \ \ \ \ \ \ \ \ btnSearch.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00334\ \ \ \ \ \ \ \ \ \ \ \ \ btnSearch.Location\ =\ \textcolor{keyword}{new}\ Point(1143,\ 481);}
+\DoxyCodeLine{00335\ \ \ \ \ \ \ \ \ \ \ \ \ btnSearch.Name\ =\ \textcolor{stringliteral}{"{}btnSearch"{}};}
+\DoxyCodeLine{00336\ \ \ \ \ \ \ \ \ \ \ \ \ btnSearch.Size\ =\ \textcolor{keyword}{new}\ Size(112,\ 34);}
+\DoxyCodeLine{00337\ \ \ \ \ \ \ \ \ \ \ \ \ btnSearch.TabIndex\ =\ 22;}
+\DoxyCodeLine{00338\ \ \ \ \ \ \ \ \ \ \ \ \ btnSearch.Text\ =\ \textcolor{stringliteral}{"{}Search"{}};}
+\DoxyCodeLine{00339\ \ \ \ \ \ \ \ \ \ \ \ \ btnSearch.UseVisualStyleBackColor\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ \ \ \ \ btnSearch.Click\ +=\ btnSearch\_Click;}
+\DoxyCodeLine{00341\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00342\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ comboBoxListOfFile}}
+\DoxyCodeLine{00343\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00344\ \ \ \ \ \ \ \ \ \ \ \ \ comboBoxListOfFile.Anchor\ =\ AnchorStyles.None;}
+\DoxyCodeLine{00345\ \ \ \ \ \ \ \ \ \ \ \ \ comboBoxListOfFile.FormattingEnabled\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00346\ \ \ \ \ \ \ \ \ \ \ \ \ comboBoxListOfFile.Location\ =\ \textcolor{keyword}{new}\ Point(184,\ 99);}
+\DoxyCodeLine{00347\ \ \ \ \ \ \ \ \ \ \ \ \ comboBoxListOfFile.Name\ =\ \textcolor{stringliteral}{"{}comboBoxListOfFile"{}};}
+\DoxyCodeLine{00348\ \ \ \ \ \ \ \ \ \ \ \ \ comboBoxListOfFile.Size\ =\ \textcolor{keyword}{new}\ Size(201,\ 33);}
+\DoxyCodeLine{00349\ \ \ \ \ \ \ \ \ \ \ \ \ comboBoxListOfFile.TabIndex\ =\ 23;}
+\DoxyCodeLine{00350\ \ \ \ \ \ \ \ \ \ \ \ \ comboBoxListOfFile.DropDown\ +=\ ComboBoxListOfFile\_DropDown;}
+\DoxyCodeLine{00351\ \ \ \ \ \ \ \ \ \ \ \ \ comboBoxListOfFile.SelectedIndexChanged\ +=\ ComboBoxListOfFile\_SelectedIndexChanged;}
+\DoxyCodeLine{00352\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00353\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Sensing4USensorData}}
+\DoxyCodeLine{00354\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00355\ \ \ \ \ \ \ \ \ \ \ \ \ AutoScaleDimensions\ =\ \textcolor{keyword}{new}\ SizeF(10F,\ 25F);}
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ \ \ \ \ AutoScaleMode\ =\ AutoScaleMode.Font;}
+\DoxyCodeLine{00357\ \ \ \ \ \ \ \ \ \ \ \ \ AutoSize\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00358\ \ \ \ \ \ \ \ \ \ \ \ \ BackColor\ =\ SystemColors.ControlLight;}
+\DoxyCodeLine{00359\ \ \ \ \ \ \ \ \ \ \ \ \ ClientSize\ =\ \textcolor{keyword}{new}\ Size(1454,\ 862);}
+\DoxyCodeLine{00360\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(comboBoxListOfFile);}
+\DoxyCodeLine{00361\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(btnSearch);}
+\DoxyCodeLine{00362\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(txtBoxSearch);}
+\DoxyCodeLine{00363\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(lblSearch);}
+\DoxyCodeLine{00364\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(btnNextFile);}
+\DoxyCodeLine{00365\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(btnPreviousFile);}
+\DoxyCodeLine{00366\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(btnAdd);}
+\DoxyCodeLine{00367\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(btnRemove);}
+\DoxyCodeLine{00368\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(lblTitle);}
+\DoxyCodeLine{00369\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(dataGridViewSensor);}
+\DoxyCodeLine{00370\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(btnSort);}
+\DoxyCodeLine{00371\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(btnMaxMin);}
+\DoxyCodeLine{00372\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(btnUpdate);}
+\DoxyCodeLine{00373\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(btnAvg);}
+\DoxyCodeLine{00374\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(txtUpdate);}
+\DoxyCodeLine{00375\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(labelUpdate);}
+\DoxyCodeLine{00376\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(labelAvg);}
+\DoxyCodeLine{00377\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(labelMin);}
+\DoxyCodeLine{00378\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(labelUp);}
+\DoxyCodeLine{00379\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(txtBoxAvg);}
+\DoxyCodeLine{00380\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(txtBoxLower);}
+\DoxyCodeLine{00381\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(txtBoxUpper);}
+\DoxyCodeLine{00382\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(menuStrip1);}
+\DoxyCodeLine{00383\ \ \ \ \ \ \ \ \ \ \ \ \ MainMenuStrip\ =\ menuStrip1;}
+\DoxyCodeLine{00384\ \ \ \ \ \ \ \ \ \ \ \ \ MinimizeBox\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00385\ \ \ \ \ \ \ \ \ \ \ \ \ Name\ =\ \textcolor{stringliteral}{"{}Sensing4USensorData"{}};}
+\DoxyCodeLine{00386\ \ \ \ \ \ \ \ \ \ \ \ \ Text\ =\ \textcolor{stringliteral}{"{}Sensing4U\ Sensor\ Manager"{}};}
+\DoxyCodeLine{00387\ \ \ \ \ \ \ \ \ \ \ \ \ ((System.ComponentModel.ISupportInitialize)dataGridViewSensor).EndInit();}
+\DoxyCodeLine{00388\ \ \ \ \ \ \ \ \ \ \ \ \ menuStrip1.ResumeLayout(\textcolor{keyword}{false});}
+\DoxyCodeLine{00389\ \ \ \ \ \ \ \ \ \ \ \ \ menuStrip1.PerformLayout();}
+\DoxyCodeLine{00390\ \ \ \ \ \ \ \ \ \ \ \ \ ResumeLayout(\textcolor{keyword}{false});}
+\DoxyCodeLine{00391\ \ \ \ \ \ \ \ \ \ \ \ \ PerformLayout();}
+\DoxyCodeLine{00392\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00393\ }
+\DoxyCodeLine{00394\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00395\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ TextBox\ txtBoxUpper;}
+\DoxyCodeLine{00396\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ TextBox\ txtBoxLower;}
+\DoxyCodeLine{00397\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ TextBox\ txtBoxAvg;}
+\DoxyCodeLine{00398\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Label\ labelUp;}
+\DoxyCodeLine{00399\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Label\ labelMin;}
+\DoxyCodeLine{00400\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Label\ labelAvg;}
+\DoxyCodeLine{00401\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Label\ labelUpdate;}
+\DoxyCodeLine{00402\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ TextBox\ txtUpdate;}
+\DoxyCodeLine{00403\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Button\ btnAvg;}
+\DoxyCodeLine{00404\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Button\ btnUpdate;}
+\DoxyCodeLine{00405\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Button\ btnMaxMin;}
+\DoxyCodeLine{00406\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Button\ btnSort;}
+\DoxyCodeLine{00407\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ DataGridView\ dataGridViewSensor;}
+\DoxyCodeLine{00408\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ MenuStrip\ menuStrip1;}
+\DoxyCodeLine{00409\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ ToolStripMenuItem\ fileToolStripMenuItem;}
+\DoxyCodeLine{00410\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ ToolStripMenuItem\ newToolStripMenuItem;}
+\DoxyCodeLine{00411\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ ToolStripMenuItem\ helpToolStripMenuItem;}
+\DoxyCodeLine{00412\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ ToolStripMenuItem\ loadToolStripMenuItem;}
+\DoxyCodeLine{00413\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ ToolStripMenuItem\ saveToolStripMenuItem;}
+\DoxyCodeLine{00414\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Label\ lblTitle;}
+\DoxyCodeLine{00415\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Button\ btnRemove;}
+\DoxyCodeLine{00416\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Button\ btnAdd;}
+\DoxyCodeLine{00417\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ ToolStripMenuItem\ aboutToolStripMenuItem;}
+\DoxyCodeLine{00418\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ ToolStripMenuItem\ tutorialToolStripMenuItem;}
+\DoxyCodeLine{00419\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Button\ btnPreviousFile;}
+\DoxyCodeLine{00420\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Button\ btnNextFile;}
+\DoxyCodeLine{00421\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Label\ lblSearch;}
+\DoxyCodeLine{00422\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ TextBox\ txtBoxSearch;}
+\DoxyCodeLine{00423\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Button\ btnSearch;}
+\DoxyCodeLine{00424\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ ComboBox\ comboBoxListOfFile;}
+\DoxyCodeLine{00425\ \ \ \ \ \}}
+\DoxyCodeLine{00426\ \}}
+
+\end{DoxyCode}

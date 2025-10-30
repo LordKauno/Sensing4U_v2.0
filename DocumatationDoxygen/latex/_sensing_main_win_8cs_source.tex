@@ -1,0 +1,528 @@
+\doxysection{Sensing\+Main\+Win.\+cs}
+\label{_sensing_main_win_8cs_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{using\ }Sensing4U\_v2.\_0;}
+\DoxyCodeLine{00002\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{00003\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{00004\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{00005\ \textcolor{keyword}{using\ }System.Diagnostics.Eventing.Reader;}
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ }System.Drawing;}
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ }System.Globalization;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ }System.IO;}
+\DoxyCodeLine{00009\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ }System.Windows.Forms;}
+\DoxyCodeLine{00011\ \textcolor{comment}{/*\ }}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ Author:\ Caio\ Guilherme\ Ferreira\ da\ Silva}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ Date:\ October\ 22,\ 2025}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ Description:\ This\ code\ defines\ a\ Windows\ Forms\ application\ for\ managing\ sensor\ data.}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ Version:\ 2.0}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }Sensing4U\_v2.\_0}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{partial\ class\ }Sensing4USensorData\ :\ Form}
+\DoxyCodeLine{00020\ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{string}[]\ fileList;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ currentFileIndex\ =\ -\/1;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{string}\ currentDirectory\ =\ \textcolor{stringliteral}{"{}C:\(\backslash\)\(\backslash\)Sensing4U\(\backslash\)\(\backslash\)DataStorage\(\backslash\)\(\backslash\)"{}};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{bool}\ sorted\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Sensing4USensorData()}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ InitializeComponent();}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ InitializeGridView();}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ InitializeShortcuts();}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ InitializeGridView()}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.SelectionMode\ =\ DataGridViewSelectionMode.FullRowSelect;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.MultiSelect\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.AllowUserToAddRows\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.ReadOnly\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.Columns.Add(\textcolor{stringliteral}{"{}SensorLabel"{}},\ \textcolor{stringliteral}{"{}Sensor\ Label"{}});}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.Columns.Add(\textcolor{stringliteral}{"{}SensorValue"{}},\ \textcolor{stringliteral}{"{}Sensor\ Value"{}});}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ InitializeShortcuts()}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ newToolStripMenuItem.ShortcutKeys\ =\ Keys.Control\ |\ Keys.N;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ loadToolStripMenuItem.ShortcutKeys\ =\ Keys.Control\ |\ Keys.O;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ saveToolStripMenuItem.ShortcutKeys\ =\ Keys.Control\ |\ Keys.S;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ btnAdd\_Click(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ AddSensor();}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ sorted\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ ClearView();}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ btnRemove\_Click(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ RemoveSensor();}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ sorted\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ ClearView();}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ btnSort\_Click(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ hasDataOnGrid();}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ SortSensor();}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ ClearView();}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ btnUpdate\_Click(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ UpdateSensor();}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ sorted\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ ClearView();}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ btnAvg\_Click(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ hasDataOnGrid();}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ average\ =\ 0;}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ AvgSensor();}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ ClearView();}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxAvg.Text\ =\ \$\textcolor{stringliteral}{"{}\{average:F2\}"{}};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ btnMaxMin\_Click(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ hasDataOnGrid();}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ FilterData();}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ ClearView();}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}Data\ filtered\ successfully."{}});}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ newToolStripMenuItem\_Click(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.Rows.Clear();}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ ClearView();}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ loadToolStripMenuItem\_Click(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ LoadFileFunction();}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ ClearView();}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ saveToolStripMenuItem\_Click(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ fileName;}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (currentFileIndex\ !=\ -\/1\ \&\&\ fileList\ !=\ \textcolor{keyword}{null}\ \&\&\ currentFileIndex\ <\ fileList.Length)}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fileName\ =\ fileList[currentFileIndex];}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fileName\ =\ \textcolor{keywordtype}{string}.Empty;}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ SaveFileFunction(fileName);}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ ClearView();}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ btnNextFile\_Click(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ NxtFileFunction();}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ ClearView();}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ btnPreviousFile\_Click(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ PreviousFileFunction();}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ ClearView();}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ ClearView()}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxAvg.Clear();}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxLower.Clear();}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxUpper.Clear();}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ txtUpdate.Clear();}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxSearch.Clear();}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxAvg.Clear();}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ btnSearch\_Click(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \ \ \ hasDataOnGrid();}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ var\ searchData\ =\ txtBoxSearch.Text;}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ BinarySearch(Convert.ToDouble(searchData));}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ ClearView();}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ ComboBoxListOfFile\_DropDown(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (fileList\ ==\ \textcolor{keyword}{null}\ ||\ fileList.Length\ ==\ 0)}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}No\ files\ loaded.\ Please\ load\ a\ file\ first."{}},\ \textcolor{stringliteral}{"{}No\ Files"{}},}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Information);}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ comboBoxListOfFile.Items.Clear();}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (var\ file\ \textcolor{keywordflow}{in}\ fileList)}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ comboBoxListOfFile.Items.Add(Path.GetFileName(file));}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ ComboBoxListOfFile\_SelectedIndexChanged(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (fileList\ ==\ \textcolor{keyword}{null}\ ||\ fileList.Length\ ==\ 0)}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}No\ files\ loaded.\ Please\ load\ a\ file\ first."{}},\ \textcolor{stringliteral}{"{}No\ Files"{}},}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Information);}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ selectedFile\ =\ comboBoxListOfFile.SelectedItem.ToString();}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ selectedIndex\ =\ Array.IndexOf(fileList,\ Path.Combine(currentDirectory,\ selectedFile));}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (selectedIndex\ !=\ -\/1)}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ currentFileIndex\ =\ selectedIndex;}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LoadFile(fileList[currentFileIndex]);}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ClearView();}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ aboutToolStripMenuItem\_Click(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}Sensing4U\ Application\(\backslash\)nVersion\ 1.0\(\backslash\)nDeveloped\ by\ Caio\ Guilherme\ Ferreira\ da\ Silva"{}},\ \textcolor{stringliteral}{"{}About\ Sensing4U"{}},}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Information);}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ tutorialToolStripMenuItem\_Click(\textcolor{keywordtype}{object}\ sender,\ EventArgs\ e)}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}Sensing4U\ Application\ Tutorial:\(\backslash\)n\(\backslash\)n"{}}\ +}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}1.\ Use\ 'Add\ Data'\ to\ input\ new\ sensor\ readings.\(\backslash\)n"{}}\ +}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}2.\ Select\ a\ row\ and\ use\ 'Remove'\ to\ delete\ it.\(\backslash\)n"{}}\ +}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}3.\ Use\ 'Sort\ Data'\ to\ sort\ readings\ by\ value.\(\backslash\)n"{}}\ +}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}4.\ Select\ a\ row\ and\ enter\ a\ new\ value\ to\ update\ it.\(\backslash\)n"{}}\ +}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}5.\ Calculate\ average\ using\ 'Average'.\(\backslash\)n"{}}\ +}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}6.\ Set\ upper\ and\ lower\ limits\ for\ color\ coding.\ Red\ means\ the\ value\ is\ above\ and\ blue\ means\ value\ is\ below\ of\ paramenters\(\backslash\)n"{}}\ +}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}7.\ Load\ and\ save\ data\ using\ the\ File\ menu.\(\backslash\)n"{}}\ +}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}8.\ Navigate\ files\ with\ 'Next'\ and\ 'Previous'\ buttons.\(\backslash\)n"{}}\ +}
+\DoxyCodeLine{00274\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}9.\ Search\ for\ specific\ values\ using\ the\ search\ feature."{}},\ \textcolor{stringliteral}{"{}Sensing4U\ Tutorial"{}},}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Information);}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ AddSensor()}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using}\ (var\ addForm\ =\ \textcolor{keyword}{new}\ AddDataForm())}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (addForm.ShowDialog()\ ==\ DialogResult.OK)}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ label\ =\ addForm.SensorLabel;}
+\DoxyCodeLine{00287\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ addForm.SensorValue;}
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.Rows.Add(label,\ value);}
+\DoxyCodeLine{00289\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00290\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00291\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00295\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ RemoveSensor()}
+\DoxyCodeLine{00296\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00297\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (dataGridViewSensor.SelectedRows.Count\ >\ 0)}
+\DoxyCodeLine{00298\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00299\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.Rows.RemoveAt(dataGridViewSensor.SelectedRows[0].Index);}
+\DoxyCodeLine{00300\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}Selected\ row\ removed\ successfully."{}},\ \textcolor{stringliteral}{"{}Remove\ Data"{}});}
+\DoxyCodeLine{00301\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00302\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00303\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00304\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}Please\ select\ a\ row\ to\ remove."{}},\ \textcolor{stringliteral}{"{}No\ Selection"{}},}
+\DoxyCodeLine{00305\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Warning);}
+\DoxyCodeLine{00306\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00311\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ SortSensor()}
+\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00313\ \ \ \ \ \ \ \ \ \ \ \ \ var\ sensorData\ =\ \textcolor{keyword}{new}\ List<(string\ Label,\ double\ Value)>();}
+\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (DataGridViewRow\ row\ \textcolor{keywordflow}{in}\ dataGridViewSensor.Rows)}
+\DoxyCodeLine{00315\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00316\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (row.Cells[\textcolor{stringliteral}{"{}SensorValue"{}}].Value\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00317\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sensorData.Add((row.Cells[\textcolor{stringliteral}{"{}SensorLabel"{}}].Value.ToString(),\ Convert.ToDouble(row.Cells[\textcolor{stringliteral}{"{}SensorValue"{}}].Value)));}
+\DoxyCodeLine{00319\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00321\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ sensorData.Count\ -\/\ 1;\ i++)}
+\DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00323\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ j\ =\ 0;\ j\ <\ sensorData.Count\ -\/\ i\ -\/\ 1;\ j++)}
+\DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00325\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (sensorData[j].Value\ >\ sensorData[j\ +\ 1].Value)}
+\DoxyCodeLine{00326\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00327\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ var\ temp\ =\ sensorData[j];}
+\DoxyCodeLine{00328\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sensorData[j]\ =\ sensorData[j\ +\ 1];}
+\DoxyCodeLine{00329\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sensorData[j\ +\ 1]\ =\ temp;}
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00331\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00332\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00333\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.Rows.Clear();}
+\DoxyCodeLine{00334\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (var\ data\ \textcolor{keywordflow}{in}\ sensorData)}
+\DoxyCodeLine{00335\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00336\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.Rows.Add(data.Label,\ data.Value);}
+\DoxyCodeLine{00337\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00338\ \ \ \ \ \ \ \ \ \ \ \ \ sorted\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00339\ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}Data\ sorted\ in\ ascending\ order."{}},\ \textcolor{stringliteral}{"{}Sort\ Data"{}});}
+\DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00344\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ UpdateSensor()}
+\DoxyCodeLine{00345\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00346\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (dataGridViewSensor.SelectedRows.Count\ >\ 0)}
+\DoxyCodeLine{00347\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00348\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ var\ selectedRow\ =\ dataGridViewSensor.SelectedRows[0];}
+\DoxyCodeLine{00349\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ var\ rowUpdate\ =\ txtUpdate.Text.ToString();}
+\DoxyCodeLine{00350\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keywordtype}{string}.IsNullOrWhiteSpace(rowUpdate)\ ||\ !\textcolor{keywordtype}{double}.TryParse(rowUpdate,\ out\ \_))}
+\DoxyCodeLine{00351\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00352\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}Please\ enter\ a\ value\ to\ update."{}},\ \textcolor{stringliteral}{"{}No\ Input"{}},}
+\DoxyCodeLine{00353\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Warning);}
+\DoxyCodeLine{00354\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00355\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00357\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ selectedRow.Cells[\textcolor{stringliteral}{"{}SensorValue"{}}].Value\ =\ txtUpdate.Text;}
+\DoxyCodeLine{00358\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}Data\ has\ updated"{}},\ \textcolor{stringliteral}{"{}Update\ data"{}});}
+\DoxyCodeLine{00359\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00360\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00361\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00362\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00363\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}Please\ select\ a\ row\ to\ update."{}},\ \textcolor{stringliteral}{"{}No\ Selection"{}},}
+\DoxyCodeLine{00364\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Warning);}
+\DoxyCodeLine{00365\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00366\ }
+\DoxyCodeLine{00367\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00372\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{double}\ AvgSensor()}
+\DoxyCodeLine{00373\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00374\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ sum\ =\ 0;}
+\DoxyCodeLine{00375\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ count\ =\ dataGridViewSensor.Rows.Count;}
+\DoxyCodeLine{00376\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (DataGridViewRow\ row\ \textcolor{keywordflow}{in}\ dataGridViewSensor.Rows)}
+\DoxyCodeLine{00377\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00378\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sum\ +=\ Convert.ToDouble(row.Cells[\textcolor{stringliteral}{"{}SensorValue"{}}].Value);}
+\DoxyCodeLine{00379\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00380\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ average\ =\ sum\ /\ count;}
+\DoxyCodeLine{00381\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ average;}
+\DoxyCodeLine{00382\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00386\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ FilterData()}
+\DoxyCodeLine{00387\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00388\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ max,\ min;}
+\DoxyCodeLine{00389\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\textcolor{keywordtype}{double}.TryParse(txtBoxUpper.Text,\ out\ max)\ ||}
+\DoxyCodeLine{00390\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ !\textcolor{keywordtype}{double}.TryParse(txtBoxLower.Text,\ out\ min))}
+\DoxyCodeLine{00391\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00392\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}Please\ enter\ valid\ numeric\ values\ for\ max\ and\ min."{}},\ \textcolor{stringliteral}{"{}Input\ Error"{}},}
+\DoxyCodeLine{00393\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Warning);}
+\DoxyCodeLine{00394\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00395\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00396\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (min\ >=\ max)}
+\DoxyCodeLine{00397\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00398\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}Minimum\ value\ must\ be\ less\ than\ maximum\ value."{}},\ \textcolor{stringliteral}{"{}Input\ Error"{}},}
+\DoxyCodeLine{00399\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Warning);}
+\DoxyCodeLine{00400\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00401\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00402\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (min\ <\ 0\ ||\ max\ <\ 0)}
+\DoxyCodeLine{00403\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00404\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}Values\ must\ be\ non-\/negative."{}},\ \textcolor{stringliteral}{"{}Input\ Error"{}},}
+\DoxyCodeLine{00405\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Warning);}
+\DoxyCodeLine{00406\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00407\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00408\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (DataGridViewRow\ row\ \textcolor{keywordflow}{in}\ dataGridViewSensor.Rows)}
+\DoxyCodeLine{00409\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00410\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ Convert.ToDouble(row.Cells[\textcolor{stringliteral}{"{}SensorValue"{}}].Value);}
+\DoxyCodeLine{00411\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value\ >=\ max)}
+\DoxyCodeLine{00412\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00413\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ row.DefaultCellStyle.BackColor\ =\ Color.Red;}
+\DoxyCodeLine{00414\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00415\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (value\ <=\ min)}
+\DoxyCodeLine{00416\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00417\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ row.DefaultCellStyle.BackColor\ =\ Color.LightBlue;}
+\DoxyCodeLine{00418\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00419\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00420\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00421\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ row.DefaultCellStyle.BackColor\ =\ Color.Green;}
+\DoxyCodeLine{00422\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00423\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00424\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxUpper.Text\ =\ max.ToString();}
+\DoxyCodeLine{00425\ \ \ \ \ \ \ \ \ \ \ \ \ txtBoxLower.Text\ =\ min.ToString();}
+\DoxyCodeLine{00426\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00431\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ LoadFile(\textcolor{keywordtype}{string}\ filePath)}
+\DoxyCodeLine{00432\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00433\ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.Rows.Clear();}
+\DoxyCodeLine{00434\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ extension\ =\ Path.GetExtension(filePath).ToLower();}
+\DoxyCodeLine{00435\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (extension\ ==\ \textcolor{stringliteral}{"{}.bin"{}})}
+\DoxyCodeLine{00436\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00437\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using}\ (var\ reader\ =\ \textcolor{keyword}{new}\ BinaryReader(File.Open(filePath,\ FileMode.Open)))}
+\DoxyCodeLine{00438\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00439\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (reader.BaseStream.Position\ !=\ reader.BaseStream.Length)}
+\DoxyCodeLine{00440\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00441\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ label\ =\ reader.ReadString();}
+\DoxyCodeLine{00442\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ reader.ReadDouble();}
+\DoxyCodeLine{00443\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.Rows.Add(label,\ value);}
+\DoxyCodeLine{00444\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00445\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00446\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00447\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (extension\ ==\ \textcolor{stringliteral}{"{}.csv"{}})}
+\DoxyCodeLine{00448\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00449\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ var\ lines\ =\ File.ReadAllLines(filePath);}
+\DoxyCodeLine{00450\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (var\ line\ \textcolor{keywordflow}{in}\ lines)}
+\DoxyCodeLine{00451\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00452\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ var\ parts\ =\ line.Split(\textcolor{charliteral}{','});}
+\DoxyCodeLine{00453\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (parts.Length\ ==\ 2\ \&\&\ \textcolor{keywordtype}{double}.TryParse(parts[1],\ out\ \textcolor{keywordtype}{double}\ value))}
+\DoxyCodeLine{00454\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dataGridViewSensor.Rows.Add(parts[0],\ value);}
+\DoxyCodeLine{00455\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00456\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00457\ \ \ \ \ \ \ \ \ \ \ \ \ comboBoxListOfFile.Text\ =\ Path.GetFileName(filePath);}
+\DoxyCodeLine{00458\ \ \ \ \ \ \ \ \ \ \ \ \ sorted\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00459\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00463\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ LoadFileFunction()}
+\DoxyCodeLine{00464\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00465\ \ \ \ \ \ \ \ \ \ \ \ \ OpenFileDialog\ openFileDialog\ =\ \textcolor{keyword}{new}\ OpenFileDialog}
+\DoxyCodeLine{00466\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00467\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ InitialDirectory\ =\ currentDirectory,}
+\DoxyCodeLine{00468\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Filter\ =\ \textcolor{stringliteral}{"{}Binary\ files\ (*.bin)|*.bin|CSV\ files\ (*.csv)|*.csv|All\ files\ (*.*)|*.*"{}},}
+\DoxyCodeLine{00469\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Title\ =\ \textcolor{stringliteral}{"{}Select\ a\ sensor\ data\ file"{}}}
+\DoxyCodeLine{00470\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00471\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (openFileDialog.ShowDialog()\ ==\ DialogResult.OK)}
+\DoxyCodeLine{00472\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00473\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00474\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00475\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ currentDirectory\ =\ Path.GetDirectoryName(openFileDialog.FileName);}
+\DoxyCodeLine{00476\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fileList\ =\ Directory.GetFiles(currentDirectory,\ \textcolor{stringliteral}{"{}*.*"{}})}
+\DoxyCodeLine{00477\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .Where(f\ =>\ f.EndsWith(\textcolor{stringliteral}{"{}.csv"{}})\ ||\ f.EndsWith(\textcolor{stringliteral}{"{}.bin"{}}))}
+\DoxyCodeLine{00478\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ToArray();}
+\DoxyCodeLine{00479\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ currentFileIndex\ =\ Array.IndexOf(fileList,\ openFileDialog.FileName);}
+\DoxyCodeLine{00480\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LoadFile(openFileDialog.FileName);}
+\DoxyCodeLine{00481\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\$\textcolor{stringliteral}{"{}\{openFileDialog.FileName\}\ loaded\ successfully."{}});}
+\DoxyCodeLine{00482\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00483\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00484\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00485\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\$\textcolor{stringliteral}{"{}Error\ loading\ file:\ \{ex.Message\}"{}},\ \textcolor{stringliteral}{"{}Load\ Error"{}},}
+\DoxyCodeLine{00486\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Error);}
+\DoxyCodeLine{00487\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00488\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00489\ }
+\DoxyCodeLine{00490\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00494\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ SaveFileFunction(\textcolor{keywordtype}{string}\ fileName)}
+\DoxyCodeLine{00495\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00496\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isEmpty\ =\ dataGridViewSensor.Rows.Count\ ==\ 0;}
+\DoxyCodeLine{00497\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (isEmpty)}
+\DoxyCodeLine{00498\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00499\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}No\ data\ available\ to\ save."{}},\ \textcolor{stringliteral}{"{}No\ Data"{}},}
+\DoxyCodeLine{00500\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Information);}
+\DoxyCodeLine{00501\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00502\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00503\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using}\ (SaveFileDialog\ saveFileDialog\ =\ \textcolor{keyword}{new}\ SaveFileDialog())}
+\DoxyCodeLine{00504\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00505\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ saveFileDialog.Filter\ =\ \textcolor{stringliteral}{"{}Binary\ files\ (*.bin)|*.bin|CSV\ files\ (*.csv)|*.csv|All\ files\ (*.*)|*.*"{}};}
+\DoxyCodeLine{00506\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keywordtype}{string}.IsNullOrEmpty(currentDirectory)\ ||\ !Directory.Exists(currentDirectory))}
+\DoxyCodeLine{00507\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00508\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ currentDirectory\ =\ \textcolor{stringliteral}{"{}C:\(\backslash\)\(\backslash\)Sensing4U\(\backslash\)\(\backslash\)DataStorage\(\backslash\)\(\backslash\)"{}};}
+\DoxyCodeLine{00509\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00510\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ saveFileDialog.InitialDirectory\ =\ currentDirectory;}
+\DoxyCodeLine{00511\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\textcolor{keywordtype}{string}.IsNullOrEmpty(fileName))}
+\DoxyCodeLine{00512\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00513\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ saveFileDialog.FileName\ =\ Path.GetFileName(fileName);}
+\DoxyCodeLine{00514\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00515\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (saveFileDialog.ShowDialog()\ ==\ DialogResult.OK)}
+\DoxyCodeLine{00516\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00517\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00518\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00519\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ extension\ =\ Path.GetExtension(saveFileDialog.FileName).ToLower();}
+\DoxyCodeLine{00520\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (extension\ ==\ \textcolor{stringliteral}{"{}.bin"{}})}
+\DoxyCodeLine{00521\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00522\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using}\ (var\ writer\ =\ \textcolor{keyword}{new}\ BinaryWriter(File.Open(saveFileDialog.FileName,\ FileMode.Create)))}
+\DoxyCodeLine{00523\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00524\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (DataGridViewRow\ row\ \textcolor{keywordflow}{in}\ dataGridViewSensor.Rows)}
+\DoxyCodeLine{00525\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00526\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ writer.Write(row.Cells[\textcolor{stringliteral}{"{}SensorLabel"{}}].Value.ToString());}
+\DoxyCodeLine{00527\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ writer.Write(Convert.ToDouble(row.Cells[\textcolor{stringliteral}{"{}SensorValue"{}}].Value));}
+\DoxyCodeLine{00528\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00529\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00530\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00531\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (extension\ ==\ \textcolor{stringliteral}{"{}.csv"{}})}
+\DoxyCodeLine{00532\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00533\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using}\ (var\ writer\ =\ \textcolor{keyword}{new}\ StreamWriter(saveFileDialog.FileName))}
+\DoxyCodeLine{00534\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00535\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (DataGridViewRow\ row\ \textcolor{keywordflow}{in}\ dataGridViewSensor.Rows)}
+\DoxyCodeLine{00536\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00537\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ writer.WriteLine(\$\textcolor{stringliteral}{"{}\{row.Cells["{}}SensorLabel\textcolor{stringliteral}{"{}].Value\},\{row.Cells["{}}SensorValue\textcolor{stringliteral}{"{}].Value\}"{}});}
+\DoxyCodeLine{00538\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00539\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00540\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00541\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}File\ saved\ successfully."{}},\ \textcolor{stringliteral}{"{}Save\ File"{}});}
+\DoxyCodeLine{00542\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00543\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00544\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00545\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\$\textcolor{stringliteral}{"{}Error\ saving\ file:\ \{ex.Message\}"{}},\ \textcolor{stringliteral}{"{}Save\ Error"{}},}
+\DoxyCodeLine{00546\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Error);}
+\DoxyCodeLine{00547\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00548\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00549\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00550\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00554\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ NxtFileFunction()}
+\DoxyCodeLine{00555\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00556\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (fileList\ ==\ \textcolor{keyword}{null}\ ||\ fileList.Length\ ==\ 0)}
+\DoxyCodeLine{00557\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00558\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}No\ files\ loaded.\ Please\ load\ a\ file\ first."{}},\ \textcolor{stringliteral}{"{}No\ Files"{}},}
+\DoxyCodeLine{00559\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Information);}
+\DoxyCodeLine{00560\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00561\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00562\ \ \ \ \ \ \ \ \ \ \ \ \ currentFileIndex\ =\ (currentFileIndex\ +\ 1)\ \%\ fileList.Length;}
+\DoxyCodeLine{00563\ \ \ \ \ \ \ \ \ \ \ \ \ LoadFile(fileList[currentFileIndex]);}
+\DoxyCodeLine{00564\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00568\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ PreviousFileFunction()}
+\DoxyCodeLine{00569\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00570\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (fileList\ ==\ \textcolor{keyword}{null}\ ||\ fileList.Length\ ==\ 0)}
+\DoxyCodeLine{00571\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00572\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}No\ files\ loaded.\ Please\ load\ a\ file\ first."{}},\ \textcolor{stringliteral}{"{}No\ Files"{}},}
+\DoxyCodeLine{00573\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Information);}
+\DoxyCodeLine{00574\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00575\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00576\ \ \ \ \ \ \ \ \ \ \ \ \ currentFileIndex\ =\ (currentFileIndex\ -\/\ 1\ +\ fileList.Length)\ \%\ fileList.Length;}
+\DoxyCodeLine{00577\ \ \ \ \ \ \ \ \ \ \ \ \ LoadFile(fileList[currentFileIndex]);}
+\DoxyCodeLine{00578\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00584\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ BinarySearch(\textcolor{keywordtype}{double}\ targetValue)}
+\DoxyCodeLine{00585\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00586\ \ \ \ \ \ \ \ \ \ \ \ \ var\ sensorData\ =\ \textcolor{keyword}{new}\ List<(string\ Label,\ double\ Value)>();}
+\DoxyCodeLine{00587\ }
+\DoxyCodeLine{00588\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Sort\ data\ if\ not\ sorted}}
+\DoxyCodeLine{00589\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!sorted)}
+\DoxyCodeLine{00590\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SortSensor();}
+\DoxyCodeLine{00591\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ searchValue\ =\ targetValue;}
+\DoxyCodeLine{00592\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Extract\ grid\ data}}
+\DoxyCodeLine{00593\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (DataGridViewRow\ row\ \textcolor{keywordflow}{in}\ dataGridViewSensor.Rows)}
+\DoxyCodeLine{00594\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00595\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (row.Cells[\textcolor{stringliteral}{"{}SensorValue"{}}].Value\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00596\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00597\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sensorData.Add((row.Cells[\textcolor{stringliteral}{"{}SensorLabel"{}}].Value.ToString(),}
+\DoxyCodeLine{00598\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Convert.ToDouble(row.Cells[\textcolor{stringliteral}{"{}SensorValue"{}}].Value)));}
+\DoxyCodeLine{00599\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00600\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00601\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ left\ =\ 0;}
+\DoxyCodeLine{00602\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ right\ =\ sensorData.Count\ -\/\ 1;}
+\DoxyCodeLine{00603\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ foundIndex\ =\ -\/1;}
+\DoxyCodeLine{00604\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Binary\ Search}}
+\DoxyCodeLine{00605\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (left\ <=\ right)}
+\DoxyCodeLine{00606\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00607\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mid\ =\ left\ +\ (right\ -\/\ left)\ /\ 2;}
+\DoxyCodeLine{00608\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (sensorData[mid].Value\ ==\ searchValue)}
+\DoxyCodeLine{00609\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00610\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ foundIndex\ =\ mid;}
+\DoxyCodeLine{00611\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00612\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00613\ }
+\DoxyCodeLine{00614\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (sensorData[mid].Value\ <\ searchValue)}
+\DoxyCodeLine{00615\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ left\ =\ mid\ +\ 1;}
+\DoxyCodeLine{00616\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00617\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ right\ =\ mid\ -\/\ 1;}
+\DoxyCodeLine{00618\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00619\ }
+\DoxyCodeLine{00620\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ No\ match\ found}}
+\DoxyCodeLine{00621\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (foundIndex\ ==\ -\/1)}
+\DoxyCodeLine{00622\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00623\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}Value\ not\ found\ in\ the\ data."{}},\ \textcolor{stringliteral}{"{}Search\ Result"{}});}
+\DoxyCodeLine{00624\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00625\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00626\ }
+\DoxyCodeLine{00627\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Highlight\ ALL\ rows\ with\ this\ value}}
+\DoxyCodeLine{00628\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (DataGridViewRow\ row\ \textcolor{keywordflow}{in}\ dataGridViewSensor.Rows)}
+\DoxyCodeLine{00629\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00630\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ Convert.ToDouble(row.Cells[\textcolor{stringliteral}{"{}SensorValue"{}}].Value);}
+\DoxyCodeLine{00631\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value\ ==\ searchValue)}
+\DoxyCodeLine{00632\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ row.Cells[\textcolor{stringliteral}{"{}SensorValue"{}}].Style.BackColor\ =\ Color.Yellow;}
+\DoxyCodeLine{00633\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00634\ }
+\DoxyCodeLine{00635\ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\$\textcolor{stringliteral}{"{}Value\ \{searchValue\}\ found\ (highlighted\ in\ yellow)."{}},\ \textcolor{stringliteral}{"{}Search\ Result"{}});}
+\DoxyCodeLine{00636\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ foundIndex;}
+\DoxyCodeLine{00637\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00641\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ hasDataOnGrid()}
+\DoxyCodeLine{00642\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00643\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (dataGridViewSensor.Rows.Count\ ==\ 0)}
+\DoxyCodeLine{00644\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00645\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Show(\textcolor{stringliteral}{"{}No\ data\ available\ to\ operate\ this\ fuction."{}},\ \textcolor{stringliteral}{"{}No\ Data"{}},}
+\DoxyCodeLine{00646\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBoxButtons.OK,\ MessageBoxIcon.Information);}
+\DoxyCodeLine{00647\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00648\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00649\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00650\ \ \ \ \ \}}
+\DoxyCodeLine{00651\ \}}
+
+\end{DoxyCode}

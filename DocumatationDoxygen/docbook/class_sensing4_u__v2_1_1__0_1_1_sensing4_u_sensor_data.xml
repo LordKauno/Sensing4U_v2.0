@@ -1,0 +1,577 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data" xml:lang="en-US">
+<title>Sensing4U_v2._0.Sensing4USensorData Class Reference</title>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary></indexterm>
+<para>Inheritance diagram for Sensing4U_v2._0.Sensing4USensorData:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a0fba0adb595642d29a5e1d0e827dfb01">Sensing4USensorData</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a26c4ab3ad6914e4c6607302ddef0f0ed">InitializeGridView</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06e29daca75e143857c584702b2c4812">AddSensor</link> ()</para>
+
+<para>Function to add a new sensor data entry to the DataGridView by opening an input dialog. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a030dc020cbf7916a3b99f9a3f7d78f46">RemoveSensor</link> ()</para>
+
+<para>Function to remove the selected sensor data entry from the DataGridView. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba9c1e6e6fa4a579938174f5e0f8a7e2">SortSensor</link> ()</para>
+
+<para>Function to sort the sensor data in the DataGridView in ascending order based on their values. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1c4e2a057d0503a3ad25c0972081dd9b">UpdateSensor</link> ()</para>
+
+<para>Function to update the selected sensor data entry in the DataGridView with a new value. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ada85248270c5ec68c7a185595de365ad">AvgSensor</link> ()</para>
+
+<para>Function to calculate and return the average of all sensor values in the DataGridView. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70b2bdd1ad976305069903d09da4f66c">FilterData</link> ()</para>
+
+<para>Function to filter sensor data based on user-defined upper and lower limits,. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae88069407687d8ac374d667fb14afd41">LoadFile</link> (string filePath)</para>
+
+<para>Function to load sensor data from a specified file into the DataGridView. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad6b413c159852cf9425ba06fd7979494">LoadFileFunction</link> ()</para>
+
+<para>Function to open a file dialog for loading sensor data files and load the selected file into the DataGridView. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aa185bc2e65617f32cbc3b2c1c00e34cc">SaveFileFunction</link> (string fileName)</para>
+
+<para>Function to open a save file dialog and save the current sensor data from the DataGridView to a specified file. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5cf1f875e8e5430b97c85d8e0de1fb93">NxtFileFunction</link> ()</para>
+
+<para>Function to navigate to the next file in the loaded file list and load it into the DataGridView. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70e57eb31c0f0299d06545484ca1fe4b">PreviousFileFunction</link> ()</para>
+
+<para>Function to navigate to the previous file in the loaded file list and load it into the DataGridView. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a6acceb4981241b571d18f6bcc5059e90">BinarySearch</link> (double targetValue)</para>
+
+<para>Function to perform a binary search for a specified value in the DataGridView. </para>
+</listitem>
+            <listitem><para><link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a0fba0adb595642d29a5e1d0e827dfb01">Sensing4USensorData</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a26c4ab3ad6914e4c6607302ddef0f0ed">InitializeGridView</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06e29daca75e143857c584702b2c4812">AddSensor</link> ()</para>
+
+<para>Function to add a new sensor data entry to the DataGridView by opening an input dialog. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a030dc020cbf7916a3b99f9a3f7d78f46">RemoveSensor</link> ()</para>
+
+<para>Function to remove the selected sensor data entry from the DataGridView. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba9c1e6e6fa4a579938174f5e0f8a7e2">SortSensor</link> ()</para>
+
+<para>Function to sort the sensor data in the DataGridView in ascending order based on their values. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1c4e2a057d0503a3ad25c0972081dd9b">UpdateSensor</link> ()</para>
+
+<para>Function to update the selected sensor data entry in the DataGridView with a new value. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ada85248270c5ec68c7a185595de365ad">AvgSensor</link> ()</para>
+
+<para>Function to calculate and return the average of all sensor values in the DataGridView. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70b2bdd1ad976305069903d09da4f66c">FilterData</link> ()</para>
+
+<para>Function to filter sensor data based on user-defined upper and lower limits,. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae88069407687d8ac374d667fb14afd41">LoadFile</link> (string filePath)</para>
+
+<para>Function to load sensor data from a specified file into the DataGridView. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad6b413c159852cf9425ba06fd7979494">LoadFileFunction</link> ()</para>
+
+<para>Function to open a file dialog for loading sensor data files and load the selected file into the DataGridView. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aa185bc2e65617f32cbc3b2c1c00e34cc">SaveFileFunction</link> (string fileName)</para>
+
+<para>Function to open a save file dialog and save the current sensor data from the DataGridView to a specified file. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5cf1f875e8e5430b97c85d8e0de1fb93">NxtFileFunction</link> ()</para>
+
+<para>Function to navigate to the next file in the loaded file list and load it into the DataGridView. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70e57eb31c0f0299d06545484ca1fe4b">PreviousFileFunction</link> ()</para>
+
+<para>Function to navigate to the previous file in the loaded file list and load it into the DataGridView. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a6acceb4981241b571d18f6bcc5059e90">BinarySearch</link> (double targetValue)</para>
+
+<para>Function to perform a binary search for a specified value in the DataGridView. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ace0aeb1526be96f1a0000918330ac8cb">Dispose</link> (bool disposing)</para>
+
+<para>Clean up any resources being used. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00019">19</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a0fba0adb595642d29a5e1d0e827dfb01"/><section>
+    <title>Sensing4USensorData()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Sensing4USensorData</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>Sensing4USensorData</secondary></indexterm>
+<para><computeroutput>Sensing4U_v2._0.Sensing4USensorData.Sensing4USensorData ( )</computeroutput></para><para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00026">26</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a0fba0adb595642d29a5e1d0e827dfb01"/><section>
+    <title>Sensing4USensorData()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Sensing4USensorData</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>Sensing4USensorData</secondary></indexterm>
+<para><computeroutput>Sensing4U_v2._0.Sensing4USensorData.Sensing4USensorData ( )</computeroutput></para><para>
+Definition at line <link linkend="__sensing_main_win_8cs_source_1l00026">26</link> of file <link linkend="__sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06e29daca75e143857c584702b2c4812"/><section>
+    <title>AddSensor()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>AddSensor</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>AddSensor</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.AddSensor ( )</computeroutput></para><para>
+
+<para>Function to add a new sensor data entry to the DataGridView by opening an input dialog. </para>
+</para>
+<para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00280">280</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06e29daca75e143857c584702b2c4812"/><section>
+    <title>AddSensor()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>AddSensor</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>AddSensor</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.AddSensor ( )</computeroutput></para><para>
+
+<para>Function to add a new sensor data entry to the DataGridView by opening an input dialog. </para>
+</para>
+<para>
+Definition at line <link linkend="__sensing_main_win_8cs_source_1l00280">280</link> of file <link linkend="__sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ada85248270c5ec68c7a185595de365ad"/><section>
+    <title>AvgSensor()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>AvgSensor</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>AvgSensor</secondary></indexterm>
+<para><computeroutput>double Sensing4U_v2._0.Sensing4USensorData.AvgSensor ( )</computeroutput></para><para>
+
+<para>Function to calculate and return the average of all sensor values in the DataGridView. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Average</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00372">372</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ada85248270c5ec68c7a185595de365ad"/><section>
+    <title>AvgSensor()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>AvgSensor</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>AvgSensor</secondary></indexterm>
+<para><computeroutput>double Sensing4U_v2._0.Sensing4USensorData.AvgSensor ( )</computeroutput></para><para>
+
+<para>Function to calculate and return the average of all sensor values in the DataGridView. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Average</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__sensing_main_win_8cs_source_1l00372">372</link> of file <link linkend="__sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a6acceb4981241b571d18f6bcc5059e90"/><section>
+    <title>BinarySearch()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>BinarySearch</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>BinarySearch</secondary></indexterm>
+<para><computeroutput>int Sensing4U_v2._0.Sensing4USensorData.BinarySearch (double targetValue)</computeroutput></para><para>
+
+<para>Function to perform a binary search for a specified value in the DataGridView. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>targetValue</entry><entry>
+<para>The value to search for.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Index of found value or -1 if not found</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00584">584</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a6acceb4981241b571d18f6bcc5059e90"/><section>
+    <title>BinarySearch()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>BinarySearch</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>BinarySearch</secondary></indexterm>
+<para><computeroutput>int Sensing4U_v2._0.Sensing4USensorData.BinarySearch (double targetValue)</computeroutput></para><para>
+
+<para>Function to perform a binary search for a specified value in the DataGridView. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>targetValue</entry><entry>
+<para>The value to search for.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Index of found value or -1 if not found</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__sensing_main_win_8cs_source_1l00584">584</link> of file <link linkend="__sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ace0aeb1526be96f1a0000918330ac8cb"/><section>
+    <title>Dispose()</title>
+<indexterm><primary>Dispose</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>Dispose</secondary></indexterm>
+<para><computeroutput>override void Sensing4U_v2._0.Sensing4USensorData.Dispose (bool disposing)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+
+<para>Clean up any resources being used. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>disposing</entry><entry>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__sensing_main_win_8_designer_8cs_source_1l00019">19</link> of file <link linkend="__sensing_main_win_8_designer_8cs_source">SensingMainWin.Designer.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70b2bdd1ad976305069903d09da4f66c"/><section>
+    <title>FilterData()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>FilterData</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>FilterData</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.FilterData ( )</computeroutput></para><para>
+
+<para>Function to filter sensor data based on user-defined upper and lower limits,. </para>
+</para>
+<para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00386">386</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70b2bdd1ad976305069903d09da4f66c"/><section>
+    <title>FilterData()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>FilterData</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>FilterData</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.FilterData ( )</computeroutput></para><para>
+
+<para>Function to filter sensor data based on user-defined upper and lower limits,. </para>
+</para>
+<para>
+Definition at line <link linkend="__sensing_main_win_8cs_source_1l00386">386</link> of file <link linkend="__sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a26c4ab3ad6914e4c6607302ddef0f0ed"/><section>
+    <title>InitializeGridView()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>InitializeGridView</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>InitializeGridView</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.InitializeGridView ( )</computeroutput></para><para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00033">33</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a26c4ab3ad6914e4c6607302ddef0f0ed"/><section>
+    <title>InitializeGridView()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>InitializeGridView</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>InitializeGridView</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.InitializeGridView ( )</computeroutput></para><para>
+Definition at line <link linkend="__sensing_main_win_8cs_source_1l00033">33</link> of file <link linkend="__sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae88069407687d8ac374d667fb14afd41"/><section>
+    <title>LoadFile()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>LoadFile</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>LoadFile</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.LoadFile (string filePath)</computeroutput></para><para>
+
+<para>Function to load sensor data from a specified file into the DataGridView. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>filePath</entry><entry>
+<para>The path of the file to load data from.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00431">431</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae88069407687d8ac374d667fb14afd41"/><section>
+    <title>LoadFile()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>LoadFile</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>LoadFile</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.LoadFile (string filePath)</computeroutput></para><para>
+
+<para>Function to load sensor data from a specified file into the DataGridView. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>filePath</entry><entry>
+<para>The path of the file to load data from.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__sensing_main_win_8cs_source_1l00431">431</link> of file <link linkend="__sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad6b413c159852cf9425ba06fd7979494"/><section>
+    <title>LoadFileFunction()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>LoadFileFunction</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>LoadFileFunction</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.LoadFileFunction ( )</computeroutput></para><para>
+
+<para>Function to open a file dialog for loading sensor data files and load the selected file into the DataGridView. </para>
+</para>
+<para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00463">463</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad6b413c159852cf9425ba06fd7979494"/><section>
+    <title>LoadFileFunction()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>LoadFileFunction</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>LoadFileFunction</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.LoadFileFunction ( )</computeroutput></para><para>
+
+<para>Function to open a file dialog for loading sensor data files and load the selected file into the DataGridView. </para>
+</para>
+<para>
+Definition at line <link linkend="__sensing_main_win_8cs_source_1l00463">463</link> of file <link linkend="__sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5cf1f875e8e5430b97c85d8e0de1fb93"/><section>
+    <title>NxtFileFunction()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>NxtFileFunction</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>NxtFileFunction</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.NxtFileFunction ( )</computeroutput></para><para>
+
+<para>Function to navigate to the next file in the loaded file list and load it into the DataGridView. </para>
+</para>
+<para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00554">554</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5cf1f875e8e5430b97c85d8e0de1fb93"/><section>
+    <title>NxtFileFunction()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>NxtFileFunction</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>NxtFileFunction</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.NxtFileFunction ( )</computeroutput></para><para>
+
+<para>Function to navigate to the next file in the loaded file list and load it into the DataGridView. </para>
+</para>
+<para>
+Definition at line <link linkend="__sensing_main_win_8cs_source_1l00554">554</link> of file <link linkend="__sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70e57eb31c0f0299d06545484ca1fe4b"/><section>
+    <title>PreviousFileFunction()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>PreviousFileFunction</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>PreviousFileFunction</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.PreviousFileFunction ( )</computeroutput></para><para>
+
+<para>Function to navigate to the previous file in the loaded file list and load it into the DataGridView. </para>
+</para>
+<para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00568">568</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70e57eb31c0f0299d06545484ca1fe4b"/><section>
+    <title>PreviousFileFunction()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>PreviousFileFunction</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>PreviousFileFunction</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.PreviousFileFunction ( )</computeroutput></para><para>
+
+<para>Function to navigate to the previous file in the loaded file list and load it into the DataGridView. </para>
+</para>
+<para>
+Definition at line <link linkend="__sensing_main_win_8cs_source_1l00568">568</link> of file <link linkend="__sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a030dc020cbf7916a3b99f9a3f7d78f46"/><section>
+    <title>RemoveSensor()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>RemoveSensor</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>RemoveSensor</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.RemoveSensor ( )</computeroutput></para><para>
+
+<para>Function to remove the selected sensor data entry from the DataGridView. </para>
+</para>
+<para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00295">295</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a030dc020cbf7916a3b99f9a3f7d78f46"/><section>
+    <title>RemoveSensor()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>RemoveSensor</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>RemoveSensor</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.RemoveSensor ( )</computeroutput></para><para>
+
+<para>Function to remove the selected sensor data entry from the DataGridView. </para>
+</para>
+<para>
+Definition at line <link linkend="__sensing_main_win_8cs_source_1l00295">295</link> of file <link linkend="__sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aa185bc2e65617f32cbc3b2c1c00e34cc"/><section>
+    <title>SaveFileFunction()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>SaveFileFunction</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>SaveFileFunction</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.SaveFileFunction (string fileName)</computeroutput></para><para>
+
+<para>Function to open a save file dialog and save the current sensor data from the DataGridView to a specified file. </para>
+</para>
+<para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00494">494</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aa185bc2e65617f32cbc3b2c1c00e34cc"/><section>
+    <title>SaveFileFunction()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>SaveFileFunction</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>SaveFileFunction</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.SaveFileFunction (string fileName)</computeroutput></para><para>
+
+<para>Function to open a save file dialog and save the current sensor data from the DataGridView to a specified file. </para>
+</para>
+<para>
+Definition at line <link linkend="__sensing_main_win_8cs_source_1l00494">494</link> of file <link linkend="__sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba9c1e6e6fa4a579938174f5e0f8a7e2"/><section>
+    <title>SortSensor()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>SortSensor</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>SortSensor</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.SortSensor ( )</computeroutput></para><para>
+
+<para>Function to sort the sensor data in the DataGridView in ascending order based on their values. </para>
+</para>
+<para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00311">311</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba9c1e6e6fa4a579938174f5e0f8a7e2"/><section>
+    <title>SortSensor()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>SortSensor</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>SortSensor</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.SortSensor ( )</computeroutput></para><para>
+
+<para>Function to sort the sensor data in the DataGridView in ascending order based on their values. </para>
+</para>
+<para>
+Definition at line <link linkend="__sensing_main_win_8cs_source_1l00311">311</link> of file <link linkend="__sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1c4e2a057d0503a3ad25c0972081dd9b"/><section>
+    <title>UpdateSensor()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>UpdateSensor</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>UpdateSensor</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.UpdateSensor ( )</computeroutput></para><para>
+
+<para>Function to update the selected sensor data entry in the DataGridView with a new value. </para>
+</para>
+<para>
+Definition at line <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source_1l00344">344</link> of file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1c4e2a057d0503a3ad25c0972081dd9b"/><section>
+    <title>UpdateSensor()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>UpdateSensor</primary><secondary>Sensing4U_v2._0.Sensing4USensorData</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.Sensing4USensorData</primary><secondary>UpdateSensor</secondary></indexterm>
+<para><computeroutput>void Sensing4U_v2._0.Sensing4USensorData.UpdateSensor ( )</computeroutput></para><para>
+
+<para>Function to update the selected sensor data entry in the DataGridView with a new value. </para>
+</para>
+<para>
+Definition at line <link linkend="__sensing_main_win_8cs_source_1l00344">344</link> of file <link linkend="__sensing_main_win_8cs_source">SensingMainWin.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+bin/Debug/net9.0-windows/<link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs">SensingMainWin.cs</link><link linkend="__sensing_main_win_8cs">SensingMainWin.cs</link><link linkend="__sensing_main_win_8_designer_8cs">SensingMainWin.Designer.cs</link></section>
+</section>

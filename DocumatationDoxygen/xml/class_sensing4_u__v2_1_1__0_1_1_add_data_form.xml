@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_sensing4_u__v2_1_1__0_1_1_add_data_form" kind="class" language="C#" prot="public">
+    <compoundname>Sensing4U_v2::_0::AddDataForm</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a0416351194cbd1a5fb1c40c79e561479" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string Sensing4U_v2._0.AddDataForm.SensorLabel</definition>
+        <argsstring></argsstring>
+        <name>SensorLabel</name>
+        <qualifiedname>Sensing4U_v2._0.AddDataForm.SensorLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddDataForm.cs" line="8" column="23" bodyfile="AddDataForm.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1aad850021ccfd09370cbd66d9b606fb8d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>double</type>
+        <definition>double Sensing4U_v2._0.AddDataForm.SensorValue</definition>
+        <argsstring></argsstring>
+        <name>SensorValue</name>
+        <qualifiedname>Sensing4U_v2._0.AddDataForm.SensorValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddDataForm.cs" line="9" column="23" bodyfile="AddDataForm.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1abff7dec786a1dd5108cce04278b6ae69" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer Sensing4U_v2._0.AddDataForm.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>Sensing4U_v2._0.AddDataForm.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddDataForm.Designer.cs" line="8" column="48" bodyfile="AddDataForm.Designer.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a1acda83f7995f0d9a0a08b0514099a4a" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label Sensing4U_v2._0.AddDataForm.lblSensor</definition>
+        <argsstring></argsstring>
+        <name>lblSensor</name>
+        <qualifiedname>Sensing4U_v2._0.AddDataForm.lblSensor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddDataForm.Designer.cs" line="112" column="23" bodyfile="AddDataForm.Designer.cs" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a71599dff5f48bc362c4684b8f3b12b88" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label Sensing4U_v2._0.AddDataForm.lblValue</definition>
+        <argsstring></argsstring>
+        <name>lblValue</name>
+        <qualifiedname>Sensing4U_v2._0.AddDataForm.lblValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddDataForm.Designer.cs" line="113" column="23" bodyfile="AddDataForm.Designer.cs" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1af3a5a7a98ef22d6148c766bb44d7bb57" prot="private" static="no" mutable="no">
+        <type>TextBox</type>
+        <definition>TextBox Sensing4U_v2._0.AddDataForm.txtLabel</definition>
+        <argsstring></argsstring>
+        <name>txtLabel</name>
+        <qualifiedname>Sensing4U_v2._0.AddDataForm.txtLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddDataForm.Designer.cs" line="114" column="25" bodyfile="AddDataForm.Designer.cs" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1aeaa059a0c350b5a92d40d05955b94a96" prot="private" static="no" mutable="no">
+        <type>TextBox</type>
+        <definition>TextBox Sensing4U_v2._0.AddDataForm.txtValue</definition>
+        <argsstring></argsstring>
+        <name>txtValue</name>
+        <qualifiedname>Sensing4U_v2._0.AddDataForm.txtValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddDataForm.Designer.cs" line="115" column="25" bodyfile="AddDataForm.Designer.cs" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1afcb880f5f258a8293bce9328cf3b1fbb" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button Sensing4U_v2._0.AddDataForm.btnOK</definition>
+        <argsstring></argsstring>
+        <name>btnOK</name>
+        <qualifiedname>Sensing4U_v2._0.AddDataForm.btnOK</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddDataForm.Designer.cs" line="116" column="24" bodyfile="AddDataForm.Designer.cs" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a7b46eb4b7be8bb76718bf86b9eab8545" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button Sensing4U_v2._0.AddDataForm.btnCancel</definition>
+        <argsstring></argsstring>
+        <name>btnCancel</name>
+        <qualifiedname>Sensing4U_v2._0.AddDataForm.btnCancel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddDataForm.Designer.cs" line="117" column="24" bodyfile="AddDataForm.Designer.cs" bodystart="117" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a8c255c104f6f716c8b7e7aa5f3c1fb04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Sensing4U_v2._0.AddDataForm.AddDataForm</definition>
+        <argsstring>()</argsstring>
+        <name>AddDataForm</name>
+        <qualifiedname>Sensing4U_v2._0.AddDataForm.AddDataForm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddDataForm.cs" line="11" column="16" bodyfile="AddDataForm.cs" bodystart="11" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a27c1d9160a2413ee34677e7d766c3063" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.AddDataForm.btnOK_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnOK_Click</name>
+        <qualifiedname>Sensing4U_v2._0.AddDataForm.btnOK_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddDataForm.cs" line="16" column="22" bodyfile="AddDataForm.cs" bodystart="16" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1aa51a3d74d0ddd5e47fdcd6826f55e5e9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.AddDataForm.btnCancel_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnCancel_Click</name>
+        <qualifiedname>Sensing4U_v2._0.AddDataForm.btnCancel_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddDataForm.cs" line="31" column="22" bodyfile="AddDataForm.cs" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a31d58e0f59223d1fa1a82d0dd365b888" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.AddDataForm.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Sensing4U_v2._0.AddDataForm.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddDataForm.Designer.cs" line="29" column="22" bodyfile="AddDataForm.Designer.cs" bodystart="29" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1ad545753af6b4634de759a6bc49778b9d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Sensing4U_v2._0.AddDataForm.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>Sensing4U_v2._0.AddDataForm.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddDataForm.Designer.cs" line="14" column="33" bodyfile="AddDataForm.Designer.cs" bodystart="14" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>Sensing4U_v2._0.AddDataForm</label>
+        <link refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>Sensing4U_v2._0.AddDataForm</label>
+        <link refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="AddDataForm.cs" line="6" column="19" bodyfile="AddDataForm.cs" bodystart="7" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a8c255c104f6f716c8b7e7aa5f3c1fb04" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::AddDataForm</scope><name>AddDataForm</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a7b46eb4b7be8bb76718bf86b9eab8545" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::AddDataForm</scope><name>btnCancel</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1aa51a3d74d0ddd5e47fdcd6826f55e5e9" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::AddDataForm</scope><name>btnCancel_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1afcb880f5f258a8293bce9328cf3b1fbb" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::AddDataForm</scope><name>btnOK</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a27c1d9160a2413ee34677e7d766c3063" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::AddDataForm</scope><name>btnOK_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1abff7dec786a1dd5108cce04278b6ae69" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::AddDataForm</scope><name>components</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1ad545753af6b4634de759a6bc49778b9d" prot="protected" virt="non-virtual"><scope>Sensing4U_v2::_0::AddDataForm</scope><name>Dispose</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a31d58e0f59223d1fa1a82d0dd365b888" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::AddDataForm</scope><name>InitializeComponent</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a1acda83f7995f0d9a0a08b0514099a4a" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::AddDataForm</scope><name>lblSensor</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a71599dff5f48bc362c4684b8f3b12b88" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::AddDataForm</scope><name>lblValue</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a0416351194cbd1a5fb1c40c79e561479" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::AddDataForm</scope><name>SensorLabel</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1aad850021ccfd09370cbd66d9b606fb8d" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::AddDataForm</scope><name>SensorValue</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1af3a5a7a98ef22d6148c766bb44d7bb57" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::AddDataForm</scope><name>txtLabel</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1aeaa059a0c350b5a92d40d05955b94a96" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::AddDataForm</scope><name>txtValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

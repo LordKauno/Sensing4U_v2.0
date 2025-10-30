@@ -1,0 +1,2563 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data" kind="class" language="C#" prot="public">
+    <compoundname>Sensing4U_v2::_0::Sensing4USensorData</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a65a383965861550975455f51d6dc5c1c" prot="private" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] Sensing4U_v2._0.Sensing4USensorData.fileList</definition>
+        <argsstring></argsstring>
+        <name>fileList</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.fileList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="21" column="24" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a2a9f73ff0270c382e2734f3a5df0f5d1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Sensing4U_v2._0.Sensing4USensorData::currentFileIndex</definition>
+        <argsstring></argsstring>
+        <name>currentFileIndex</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.currentFileIndex</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="22" column="21" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4b3fe701972689b28fa6ea47eacb2b32" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Sensing4U_v2._0.Sensing4USensorData::currentDirectory</definition>
+        <argsstring></argsstring>
+        <name>currentDirectory</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.currentDirectory</qualifiedname>
+        <initializer>= &quot;C:\\Sensing4U\\DataStorage\\&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="23" column="24" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a971f0cc16f1714a597d7e6ee497121f8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Sensing4U_v2._0.Sensing4USensorData::sorted</definition>
+        <argsstring></argsstring>
+        <name>sorted</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.sorted</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="24" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a830669543527d0b709af664a456ddaac" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer Sensing4U_v2._0.Sensing4USensorData.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="13" column="48" bodyfile="SensingMainWin.Designer.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4e358b118ab0ae3749d08c249315b395" prot="private" static="no" mutable="no">
+        <type>TextBox</type>
+        <definition>TextBox Sensing4U_v2._0.Sensing4USensorData.txtBoxUpper</definition>
+        <argsstring></argsstring>
+        <name>txtBoxUpper</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.txtBoxUpper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="395" column="25" bodyfile="SensingMainWin.Designer.cs" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a8787c36bfe95397f674860351f9d4fc8" prot="private" static="no" mutable="no">
+        <type>TextBox</type>
+        <definition>TextBox Sensing4U_v2._0.Sensing4USensorData.txtBoxLower</definition>
+        <argsstring></argsstring>
+        <name>txtBoxLower</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.txtBoxLower</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="396" column="25" bodyfile="SensingMainWin.Designer.cs" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5aab0c4caea98d87e5c0ec3caef6b464" prot="private" static="no" mutable="no">
+        <type>TextBox</type>
+        <definition>TextBox Sensing4U_v2._0.Sensing4USensorData.txtBoxAvg</definition>
+        <argsstring></argsstring>
+        <name>txtBoxAvg</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.txtBoxAvg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="397" column="25" bodyfile="SensingMainWin.Designer.cs" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5f05be930b1ccf0c84b6ebf699387346" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label Sensing4U_v2._0.Sensing4USensorData.labelUp</definition>
+        <argsstring></argsstring>
+        <name>labelUp</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.labelUp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="398" column="23" bodyfile="SensingMainWin.Designer.cs" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aa9be024d540f937d7135e263619d3fa9" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label Sensing4U_v2._0.Sensing4USensorData.labelMin</definition>
+        <argsstring></argsstring>
+        <name>labelMin</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.labelMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="399" column="23" bodyfile="SensingMainWin.Designer.cs" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4f2dde74e4894dd957a02b866e915cdc" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label Sensing4U_v2._0.Sensing4USensorData.labelAvg</definition>
+        <argsstring></argsstring>
+        <name>labelAvg</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.labelAvg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="400" column="23" bodyfile="SensingMainWin.Designer.cs" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5139dbeda68be70d5e49914c2dded75e" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label Sensing4U_v2._0.Sensing4USensorData.labelUpdate</definition>
+        <argsstring></argsstring>
+        <name>labelUpdate</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.labelUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="401" column="23" bodyfile="SensingMainWin.Designer.cs" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a8e3d65f53868ae889aca9297dbfaf701" prot="private" static="no" mutable="no">
+        <type>TextBox</type>
+        <definition>TextBox Sensing4U_v2._0.Sensing4USensorData.txtUpdate</definition>
+        <argsstring></argsstring>
+        <name>txtUpdate</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.txtUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="402" column="25" bodyfile="SensingMainWin.Designer.cs" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad0fc3893a43b70225b02802ddbd8846d" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button Sensing4U_v2._0.Sensing4USensorData.btnAvg</definition>
+        <argsstring></argsstring>
+        <name>btnAvg</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnAvg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="403" column="24" bodyfile="SensingMainWin.Designer.cs" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad1332effb98ae81ebec3926cb2ca7c17" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button Sensing4U_v2._0.Sensing4USensorData.btnUpdate</definition>
+        <argsstring></argsstring>
+        <name>btnUpdate</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="404" column="24" bodyfile="SensingMainWin.Designer.cs" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a02c2d38eb01a345f7fc0f0cf488e4b6a" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button Sensing4U_v2._0.Sensing4USensorData.btnMaxMin</definition>
+        <argsstring></argsstring>
+        <name>btnMaxMin</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnMaxMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="405" column="24" bodyfile="SensingMainWin.Designer.cs" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a20e89d5d80d1322f2854b8572bd26fbd" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button Sensing4U_v2._0.Sensing4USensorData.btnSort</definition>
+        <argsstring></argsstring>
+        <name>btnSort</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnSort</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="406" column="24" bodyfile="SensingMainWin.Designer.cs" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a840372ee03e1f2905c205cbcee620145" prot="private" static="no" mutable="no">
+        <type>DataGridView</type>
+        <definition>DataGridView Sensing4U_v2._0.Sensing4USensorData.dataGridViewSensor</definition>
+        <argsstring></argsstring>
+        <name>dataGridViewSensor</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.dataGridViewSensor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="407" column="30" bodyfile="SensingMainWin.Designer.cs" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a41dc3972360462bfb0c25827fd09e4c2" prot="private" static="no" mutable="no">
+        <type>MenuStrip</type>
+        <definition>MenuStrip Sensing4U_v2._0.Sensing4USensorData.menuStrip1</definition>
+        <argsstring></argsstring>
+        <name>menuStrip1</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.menuStrip1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="408" column="27" bodyfile="SensingMainWin.Designer.cs" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a988a81a2ce59e32763b0eb69834dc375" prot="private" static="no" mutable="no">
+        <type>ToolStripMenuItem</type>
+        <definition>ToolStripMenuItem Sensing4U_v2._0.Sensing4USensorData.fileToolStripMenuItem</definition>
+        <argsstring></argsstring>
+        <name>fileToolStripMenuItem</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.fileToolStripMenuItem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="409" column="35" bodyfile="SensingMainWin.Designer.cs" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae814463f9ddf5175d5fac0e709a6432f" prot="private" static="no" mutable="no">
+        <type>ToolStripMenuItem</type>
+        <definition>ToolStripMenuItem Sensing4U_v2._0.Sensing4USensorData.newToolStripMenuItem</definition>
+        <argsstring></argsstring>
+        <name>newToolStripMenuItem</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.newToolStripMenuItem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="410" column="35" bodyfile="SensingMainWin.Designer.cs" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ab23c53ee22d86d7b1438ce448193f6db" prot="private" static="no" mutable="no">
+        <type>ToolStripMenuItem</type>
+        <definition>ToolStripMenuItem Sensing4U_v2._0.Sensing4USensorData.helpToolStripMenuItem</definition>
+        <argsstring></argsstring>
+        <name>helpToolStripMenuItem</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.helpToolStripMenuItem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="411" column="35" bodyfile="SensingMainWin.Designer.cs" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a502d72367c586a3853d0699155fe9a03" prot="private" static="no" mutable="no">
+        <type>ToolStripMenuItem</type>
+        <definition>ToolStripMenuItem Sensing4U_v2._0.Sensing4USensorData.loadToolStripMenuItem</definition>
+        <argsstring></argsstring>
+        <name>loadToolStripMenuItem</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.loadToolStripMenuItem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="412" column="35" bodyfile="SensingMainWin.Designer.cs" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a18568de1df87ab5f0538be392caa69fd" prot="private" static="no" mutable="no">
+        <type>ToolStripMenuItem</type>
+        <definition>ToolStripMenuItem Sensing4U_v2._0.Sensing4USensorData.saveToolStripMenuItem</definition>
+        <argsstring></argsstring>
+        <name>saveToolStripMenuItem</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.saveToolStripMenuItem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="413" column="35" bodyfile="SensingMainWin.Designer.cs" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1abdcfe8956c03c751014109526e19bd26" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label Sensing4U_v2._0.Sensing4USensorData.lblTitle</definition>
+        <argsstring></argsstring>
+        <name>lblTitle</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.lblTitle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="414" column="23" bodyfile="SensingMainWin.Designer.cs" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af12f41d7ff9b3730e65c9a53cc3296fd" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button Sensing4U_v2._0.Sensing4USensorData.btnRemove</definition>
+        <argsstring></argsstring>
+        <name>btnRemove</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnRemove</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="415" column="24" bodyfile="SensingMainWin.Designer.cs" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ab925daddd59b2087c3c18e06cfa69be9" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button Sensing4U_v2._0.Sensing4USensorData.btnAdd</definition>
+        <argsstring></argsstring>
+        <name>btnAdd</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnAdd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="416" column="24" bodyfile="SensingMainWin.Designer.cs" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a725d988d99f0e744278ef0d8ea852742" prot="private" static="no" mutable="no">
+        <type>ToolStripMenuItem</type>
+        <definition>ToolStripMenuItem Sensing4U_v2._0.Sensing4USensorData.aboutToolStripMenuItem</definition>
+        <argsstring></argsstring>
+        <name>aboutToolStripMenuItem</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.aboutToolStripMenuItem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="417" column="35" bodyfile="SensingMainWin.Designer.cs" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a0aaa601055c9dcb5be285ab6b5d84d1b" prot="private" static="no" mutable="no">
+        <type>ToolStripMenuItem</type>
+        <definition>ToolStripMenuItem Sensing4U_v2._0.Sensing4USensorData.tutorialToolStripMenuItem</definition>
+        <argsstring></argsstring>
+        <name>tutorialToolStripMenuItem</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.tutorialToolStripMenuItem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="418" column="35" bodyfile="SensingMainWin.Designer.cs" bodystart="418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a2ebb31463e97d865c41ff79ed13d61fa" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button Sensing4U_v2._0.Sensing4USensorData.btnPreviousFile</definition>
+        <argsstring></argsstring>
+        <name>btnPreviousFile</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnPreviousFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="419" column="24" bodyfile="SensingMainWin.Designer.cs" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a78650acbf86405276952caec43902841" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button Sensing4U_v2._0.Sensing4USensorData.btnNextFile</definition>
+        <argsstring></argsstring>
+        <name>btnNextFile</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnNextFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="420" column="24" bodyfile="SensingMainWin.Designer.cs" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a12f0fe45e4b21ef4a36f2304c017333f" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label Sensing4U_v2._0.Sensing4USensorData.lblSearch</definition>
+        <argsstring></argsstring>
+        <name>lblSearch</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.lblSearch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="421" column="23" bodyfile="SensingMainWin.Designer.cs" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1ffe1fd53872fb8691e89daef3c5633b" prot="private" static="no" mutable="no">
+        <type>TextBox</type>
+        <definition>TextBox Sensing4U_v2._0.Sensing4USensorData.txtBoxSearch</definition>
+        <argsstring></argsstring>
+        <name>txtBoxSearch</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.txtBoxSearch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="422" column="25" bodyfile="SensingMainWin.Designer.cs" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1d36fc786eb6b9733f063cee927dd6cd" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button Sensing4U_v2._0.Sensing4USensorData.btnSearch</definition>
+        <argsstring></argsstring>
+        <name>btnSearch</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnSearch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="423" column="24" bodyfile="SensingMainWin.Designer.cs" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4334cd9e3faa9c1781375a9d28ee87a8" prot="private" static="no" mutable="no">
+        <type>ComboBox</type>
+        <definition>ComboBox Sensing4U_v2._0.Sensing4USensorData.comboBoxListOfFile</definition>
+        <argsstring></argsstring>
+        <name>comboBoxListOfFile</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.comboBoxListOfFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="424" column="26" bodyfile="SensingMainWin.Designer.cs" bodystart="424" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a0fba0adb595642d29a5e1d0e827dfb01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Sensing4U_v2._0.Sensing4USensorData.Sensing4USensorData</definition>
+        <argsstring>()</argsstring>
+        <name>Sensing4USensorData</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.Sensing4USensorData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="26" column="16" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a26c4ab3ad6914e4c6607302ddef0f0ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.InitializeGridView</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeGridView</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.InitializeGridView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="33" column="21" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="33" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06e29daca75e143857c584702b2c4812" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.AddSensor</definition>
+        <argsstring>()</argsstring>
+        <name>AddSensor</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.AddSensor</qualifiedname>
+        <briefdescription>
+<para>Function to add a new sensor data entry to the DataGridView by opening an input dialog. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="280" column="21" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="280" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a030dc020cbf7916a3b99f9a3f7d78f46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.RemoveSensor</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveSensor</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.RemoveSensor</qualifiedname>
+        <briefdescription>
+<para>Function to remove the selected sensor data entry from the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="295" column="21" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="295" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba9c1e6e6fa4a579938174f5e0f8a7e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.SortSensor</definition>
+        <argsstring>()</argsstring>
+        <name>SortSensor</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.SortSensor</qualifiedname>
+        <briefdescription>
+<para>Function to sort the sensor data in the DataGridView in ascending order based on their values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="311" column="21" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="311" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1c4e2a057d0503a3ad25c0972081dd9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.UpdateSensor</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateSensor</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.UpdateSensor</qualifiedname>
+        <briefdescription>
+<para>Function to update the selected sensor data entry in the DataGridView with a new value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="344" column="21" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="344" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ada85248270c5ec68c7a185595de365ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Sensing4U_v2._0.Sensing4USensorData.AvgSensor</definition>
+        <argsstring>()</argsstring>
+        <name>AvgSensor</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.AvgSensor</qualifiedname>
+        <briefdescription>
+<para>Function to calculate and return the average of all sensor values in the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Average</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="372" column="23" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="372" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70b2bdd1ad976305069903d09da4f66c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.FilterData</definition>
+        <argsstring>()</argsstring>
+        <name>FilterData</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.FilterData</qualifiedname>
+        <briefdescription>
+<para>Function to filter sensor data based on user-defined upper and lower limits,. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="386" column="21" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="386" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae88069407687d8ac374d667fb14afd41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.LoadFile</definition>
+        <argsstring>(string filePath)</argsstring>
+        <name>LoadFile</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.LoadFile</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Function to load sensor data from a specified file into the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path of the file to load data from.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="431" column="21" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="431" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad6b413c159852cf9425ba06fd7979494" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.LoadFileFunction</definition>
+        <argsstring>()</argsstring>
+        <name>LoadFileFunction</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.LoadFileFunction</qualifiedname>
+        <briefdescription>
+<para>Function to open a file dialog for loading sensor data files and load the selected file into the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="463" column="21" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="463" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aa185bc2e65617f32cbc3b2c1c00e34cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.SaveFileFunction</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveFileFunction</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.SaveFileFunction</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>Function to open a save file dialog and save the current sensor data from the DataGridView to a specified file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="494" column="21" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="494" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5cf1f875e8e5430b97c85d8e0de1fb93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.NxtFileFunction</definition>
+        <argsstring>()</argsstring>
+        <name>NxtFileFunction</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.NxtFileFunction</qualifiedname>
+        <briefdescription>
+<para>Function to navigate to the next file in the loaded file list and load it into the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="554" column="21" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="554" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70e57eb31c0f0299d06545484ca1fe4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.PreviousFileFunction</definition>
+        <argsstring>()</argsstring>
+        <name>PreviousFileFunction</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.PreviousFileFunction</qualifiedname>
+        <briefdescription>
+<para>Function to navigate to the previous file in the loaded file list and load it into the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="568" column="21" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="568" bodyend="578"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a6acceb4981241b571d18f6bcc5059e90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Sensing4U_v2._0.Sensing4USensorData.BinarySearch</definition>
+        <argsstring>(double targetValue)</argsstring>
+        <name>BinarySearch</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.BinarySearch</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>targetValue</declname>
+        </param>
+        <briefdescription>
+<para>Function to perform a binary search for a specified value in the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>targetValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to search for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Index of found value or -1 if not found</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="584" column="20" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="584" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a0fba0adb595642d29a5e1d0e827dfb01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Sensing4U_v2._0.Sensing4USensorData.Sensing4USensorData</definition>
+        <argsstring>()</argsstring>
+        <name>Sensing4USensorData</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.Sensing4USensorData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="26" column="16" bodyfile="SensingMainWin.cs" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a26c4ab3ad6914e4c6607302ddef0f0ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.InitializeGridView</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeGridView</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.InitializeGridView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="33" column="21" bodyfile="SensingMainWin.cs" bodystart="33" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06e29daca75e143857c584702b2c4812" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.AddSensor</definition>
+        <argsstring>()</argsstring>
+        <name>AddSensor</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.AddSensor</qualifiedname>
+        <briefdescription>
+<para>Function to add a new sensor data entry to the DataGridView by opening an input dialog. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="280" column="21" bodyfile="SensingMainWin.cs" bodystart="280" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a030dc020cbf7916a3b99f9a3f7d78f46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.RemoveSensor</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveSensor</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.RemoveSensor</qualifiedname>
+        <briefdescription>
+<para>Function to remove the selected sensor data entry from the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="295" column="21" bodyfile="SensingMainWin.cs" bodystart="295" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba9c1e6e6fa4a579938174f5e0f8a7e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.SortSensor</definition>
+        <argsstring>()</argsstring>
+        <name>SortSensor</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.SortSensor</qualifiedname>
+        <briefdescription>
+<para>Function to sort the sensor data in the DataGridView in ascending order based on their values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="311" column="21" bodyfile="SensingMainWin.cs" bodystart="311" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1c4e2a057d0503a3ad25c0972081dd9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.UpdateSensor</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateSensor</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.UpdateSensor</qualifiedname>
+        <briefdescription>
+<para>Function to update the selected sensor data entry in the DataGridView with a new value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="344" column="21" bodyfile="SensingMainWin.cs" bodystart="344" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ada85248270c5ec68c7a185595de365ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Sensing4U_v2._0.Sensing4USensorData.AvgSensor</definition>
+        <argsstring>()</argsstring>
+        <name>AvgSensor</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.AvgSensor</qualifiedname>
+        <briefdescription>
+<para>Function to calculate and return the average of all sensor values in the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Average</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="372" column="23" bodyfile="SensingMainWin.cs" bodystart="372" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70b2bdd1ad976305069903d09da4f66c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.FilterData</definition>
+        <argsstring>()</argsstring>
+        <name>FilterData</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.FilterData</qualifiedname>
+        <briefdescription>
+<para>Function to filter sensor data based on user-defined upper and lower limits,. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="386" column="21" bodyfile="SensingMainWin.cs" bodystart="386" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae88069407687d8ac374d667fb14afd41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.LoadFile</definition>
+        <argsstring>(string filePath)</argsstring>
+        <name>LoadFile</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.LoadFile</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Function to load sensor data from a specified file into the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path of the file to load data from.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="431" column="21" bodyfile="SensingMainWin.cs" bodystart="431" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad6b413c159852cf9425ba06fd7979494" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.LoadFileFunction</definition>
+        <argsstring>()</argsstring>
+        <name>LoadFileFunction</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.LoadFileFunction</qualifiedname>
+        <briefdescription>
+<para>Function to open a file dialog for loading sensor data files and load the selected file into the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="463" column="21" bodyfile="SensingMainWin.cs" bodystart="463" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aa185bc2e65617f32cbc3b2c1c00e34cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.SaveFileFunction</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveFileFunction</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.SaveFileFunction</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>Function to open a save file dialog and save the current sensor data from the DataGridView to a specified file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="494" column="21" bodyfile="SensingMainWin.cs" bodystart="494" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5cf1f875e8e5430b97c85d8e0de1fb93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.NxtFileFunction</definition>
+        <argsstring>()</argsstring>
+        <name>NxtFileFunction</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.NxtFileFunction</qualifiedname>
+        <briefdescription>
+<para>Function to navigate to the next file in the loaded file list and load it into the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="554" column="21" bodyfile="SensingMainWin.cs" bodystart="554" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70e57eb31c0f0299d06545484ca1fe4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.PreviousFileFunction</definition>
+        <argsstring>()</argsstring>
+        <name>PreviousFileFunction</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.PreviousFileFunction</qualifiedname>
+        <briefdescription>
+<para>Function to navigate to the previous file in the loaded file list and load it into the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="568" column="21" bodyfile="SensingMainWin.cs" bodystart="568" bodyend="578"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a6acceb4981241b571d18f6bcc5059e90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Sensing4U_v2._0.Sensing4USensorData.BinarySearch</definition>
+        <argsstring>(double targetValue)</argsstring>
+        <name>BinarySearch</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.BinarySearch</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>targetValue</declname>
+        </param>
+        <briefdescription>
+<para>Function to perform a binary search for a specified value in the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>targetValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to search for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Index of found value or -1 if not found</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="584" column="20" bodyfile="SensingMainWin.cs" bodystart="584" bodyend="637"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae30298b00c6ad1e949a8b6cea08bbd46" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.InitializeShortcuts</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeShortcuts</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.InitializeShortcuts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="43" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="43" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06a3fae153a25507c50e7af63f01a818" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnAdd_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnAdd_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnAdd_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Add Data&quot; button, adding a new row to the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Add Data&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="54" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="54" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a29a31a7acc4037b19437439888655892" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnRemove_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnRemove_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnRemove_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Remove&quot; button, removing the selected row from the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Remove&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="65" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="65" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aaefc23701a72a2611b7647126793307c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnSort_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnSort_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnSort_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Sort&quot; button, sorting the sensor data in ascending order based on their values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Sort Data&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="76" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="76" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a923e42752d6115485473e29f311646b7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnUpdate_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnUpdate_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnUpdate_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Update&quot; button, updating the selected row in the DataGridView with a new value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Update&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="87" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="87" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a9c077160d359e309ff1c1a4e1bf7d121" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnAvg_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnAvg_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnAvg_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Average&quot; button, calculating and displaying the average of sensor values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Average&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="98" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="98" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a24ef3aa618ba3be5d5d9f88a86df2850" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnMaxMin_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnMaxMin_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnMaxMin_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="108" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="108" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a916f0b46f0b573b3524f473d7b8ab66b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.newToolStripMenuItem_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>newToolStripMenuItem_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.newToolStripMenuItem_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Toolstrip menu item click event handler to create a new, empty DataGridView and clear all associated UI elements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;New&quot; menu item.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="120" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4a061f79315ee80014d458ce12da63b7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.loadToolStripMenuItem_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>loadToolStripMenuItem_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.loadToolStripMenuItem_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Toolstrip menu item click event handler to load sensor data from a file into the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Load&quot; menu item.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="131" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="131" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a9ff06b398d237cdc4b7fbfbd45b870f4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.saveToolStripMenuItem_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>saveToolStripMenuItem_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.saveToolStripMenuItem_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Function to load sensor data from a specified file into the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Toolstrip menu item click event handler to save the current sensor data from the DataGridView to a file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Save&quot; menu item.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="146" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="146" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ab110e73b6baaf636785830343acffd88" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnNextFile_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnNextFile_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnNextFile_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Next File&quot; button, advancing to the next file in the loaded file list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Next File&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="165" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="165" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a7c0bf8f8e0e23ca4e31b2de67153c0c5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnPreviousFile_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnPreviousFile_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnPreviousFile_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Previous File&quot; button, navigating to the previous file in the loaded file list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Previous File&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="176" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="176" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba99e40c7afdd868bedb44b198e05fa1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.ClearView</definition>
+        <argsstring>()</argsstring>
+        <name>ClearView</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.ClearView</qualifiedname>
+        <briefdescription>
+<para>Clears the content of all associated UI elements, resetting their text to an empty string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="184" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="184" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1afca4f8185a78e5a3d799828eb4510a81" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnSearch_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnSearch_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnSearch_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Search&quot; button, performing a binary search for a specified value in the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Search&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="199" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="199" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a193584a0948150ac7bf62d1c1c919f54" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.ComboBoxListOfFile_DropDown</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>ComboBoxListOfFile_DropDown</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.ComboBoxListOfFile_DropDown</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the DropDown event of the ComboBox to populate it with the list of loaded files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the ComboBox control.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the DropDown event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="211" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="211" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a8b39c9031f959d4f72c40194155a8106" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.ComboBoxListOfFile_SelectedIndexChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>ComboBoxListOfFile_SelectedIndexChanged</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.ComboBoxListOfFile_SelectedIndexChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the SelectedIndexChanged event of the ComboBox to load the selected file into the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the ComboBox control.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the SelectedIndexChanged event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="230" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="230" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af2658e714a15786ab02adfa493f493dc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.aboutToolStripMenuItem_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>aboutToolStripMenuItem_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.aboutToolStripMenuItem_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Shows an &quot;About&quot; dialog with application information when the &quot;About&quot; menu item is clicked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;About&quot; menu item.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="252" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="252" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1b24db4c1b02ad4a63574b1017451bfd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.tutorialToolStripMenuItem_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>tutorialToolStripMenuItem_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.tutorialToolStripMenuItem_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Shows a tutorial dialog with instructions on how to use the application when the &quot;Tutorial&quot; menu item is clicked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Tutorial&quot; menu item.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="263" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="263" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af84ce7422092d8d0b4c46e69c8665800" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.hasDataOnGrid</definition>
+        <argsstring>()</argsstring>
+        <name>hasDataOnGrid</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.hasDataOnGrid</qualifiedname>
+        <briefdescription>
+<para>Checks if there is any data in the DataGridView and displays a message if it is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="641" column="22" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="641" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae30298b00c6ad1e949a8b6cea08bbd46" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.InitializeShortcuts</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeShortcuts</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.InitializeShortcuts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="43" column="22" bodyfile="SensingMainWin.cs" bodystart="43" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06a3fae153a25507c50e7af63f01a818" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnAdd_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnAdd_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnAdd_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Add Data&quot; button, adding a new row to the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Add Data&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="54" column="22" bodyfile="SensingMainWin.cs" bodystart="54" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a29a31a7acc4037b19437439888655892" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnRemove_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnRemove_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnRemove_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Remove&quot; button, removing the selected row from the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Remove&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="65" column="22" bodyfile="SensingMainWin.cs" bodystart="65" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aaefc23701a72a2611b7647126793307c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnSort_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnSort_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnSort_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Sort&quot; button, sorting the sensor data in ascending order based on their values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Sort Data&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="76" column="22" bodyfile="SensingMainWin.cs" bodystart="76" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a923e42752d6115485473e29f311646b7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnUpdate_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnUpdate_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnUpdate_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Update&quot; button, updating the selected row in the DataGridView with a new value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Update&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="87" column="22" bodyfile="SensingMainWin.cs" bodystart="87" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a9c077160d359e309ff1c1a4e1bf7d121" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnAvg_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnAvg_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnAvg_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Average&quot; button, calculating and displaying the average of sensor values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Average&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="98" column="22" bodyfile="SensingMainWin.cs" bodystart="98" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a24ef3aa618ba3be5d5d9f88a86df2850" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnMaxMin_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnMaxMin_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnMaxMin_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="108" column="22" bodyfile="SensingMainWin.cs" bodystart="108" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a916f0b46f0b573b3524f473d7b8ab66b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.newToolStripMenuItem_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>newToolStripMenuItem_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.newToolStripMenuItem_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Toolstrip menu item click event handler to create a new, empty DataGridView and clear all associated UI elements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;New&quot; menu item.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="120" column="22" bodyfile="SensingMainWin.cs" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4a061f79315ee80014d458ce12da63b7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.loadToolStripMenuItem_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>loadToolStripMenuItem_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.loadToolStripMenuItem_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Toolstrip menu item click event handler to load sensor data from a file into the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Load&quot; menu item.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="131" column="22" bodyfile="SensingMainWin.cs" bodystart="131" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a9ff06b398d237cdc4b7fbfbd45b870f4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.saveToolStripMenuItem_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>saveToolStripMenuItem_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.saveToolStripMenuItem_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Function to load sensor data from a specified file into the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Toolstrip menu item click event handler to save the current sensor data from the DataGridView to a file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Save&quot; menu item.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="146" column="22" bodyfile="SensingMainWin.cs" bodystart="146" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ab110e73b6baaf636785830343acffd88" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnNextFile_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnNextFile_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnNextFile_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Next File&quot; button, advancing to the next file in the loaded file list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Next File&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="165" column="22" bodyfile="SensingMainWin.cs" bodystart="165" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a7c0bf8f8e0e23ca4e31b2de67153c0c5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnPreviousFile_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnPreviousFile_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnPreviousFile_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Previous File&quot; button, navigating to the previous file in the loaded file list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Previous File&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="176" column="22" bodyfile="SensingMainWin.cs" bodystart="176" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba99e40c7afdd868bedb44b198e05fa1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.ClearView</definition>
+        <argsstring>()</argsstring>
+        <name>ClearView</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.ClearView</qualifiedname>
+        <briefdescription>
+<para>Clears the content of all associated UI elements, resetting their text to an empty string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="184" column="22" bodyfile="SensingMainWin.cs" bodystart="184" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1afca4f8185a78e5a3d799828eb4510a81" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.btnSearch_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnSearch_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.btnSearch_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click event for the &quot;Search&quot; button, performing a binary search for a specified value in the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Search&quot; button.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="199" column="22" bodyfile="SensingMainWin.cs" bodystart="199" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a193584a0948150ac7bf62d1c1c919f54" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.ComboBoxListOfFile_DropDown</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>ComboBoxListOfFile_DropDown</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.ComboBoxListOfFile_DropDown</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the DropDown event of the ComboBox to populate it with the list of loaded files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the ComboBox control.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the DropDown event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="211" column="22" bodyfile="SensingMainWin.cs" bodystart="211" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a8b39c9031f959d4f72c40194155a8106" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.ComboBoxListOfFile_SelectedIndexChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>ComboBoxListOfFile_SelectedIndexChanged</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.ComboBoxListOfFile_SelectedIndexChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the SelectedIndexChanged event of the ComboBox to load the selected file into the DataGridView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the ComboBox control.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the SelectedIndexChanged event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="230" column="22" bodyfile="SensingMainWin.cs" bodystart="230" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af2658e714a15786ab02adfa493f493dc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.aboutToolStripMenuItem_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>aboutToolStripMenuItem_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.aboutToolStripMenuItem_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Shows an &quot;About&quot; dialog with application information when the &quot;About&quot; menu item is clicked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;About&quot; menu item.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="252" column="22" bodyfile="SensingMainWin.cs" bodystart="252" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1b24db4c1b02ad4a63574b1017451bfd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.tutorialToolStripMenuItem_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>tutorialToolStripMenuItem_Click</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.tutorialToolStripMenuItem_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Shows a tutorial dialog with instructions on how to use the application when the &quot;Tutorial&quot; menu item is clicked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event, typically the &quot;Tutorial&quot; menu item.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data associated with the click event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="263" column="22" bodyfile="SensingMainWin.cs" bodystart="263" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af84ce7422092d8d0b4c46e69c8665800" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.hasDataOnGrid</definition>
+        <argsstring>()</argsstring>
+        <name>hasDataOnGrid</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.hasDataOnGrid</qualifiedname>
+        <briefdescription>
+<para>Checks if there is any data in the DataGridView and displays a message if it is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.cs" line="641" column="22" bodyfile="SensingMainWin.cs" bodystart="641" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a08cc9e6ea988821e99c7ef030d46d8f0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensing4U_v2._0.Sensing4USensorData.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="34" column="22" bodyfile="SensingMainWin.Designer.cs" bodystart="34" bodyend="392"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ace0aeb1526be96f1a0000918330ac8cb" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Sensing4U_v2._0.Sensing4USensorData.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>Sensing4U_v2._0.Sensing4USensorData.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SensingMainWin.Designer.cs" line="19" column="33" bodyfile="SensingMainWin.Designer.cs" bodystart="19" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>Sensing4U_v2._0.Sensing4USensorData</label>
+        <link refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>Sensing4U_v2._0.Sensing4USensorData</label>
+        <link refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="bin/Debug/net9.0-windows/SensingMainWin.cs" line="19" column="19" bodyfile="bin/Debug/net9.0-windows/SensingMainWin.cs" bodystart="20" bodyend="650"/>
+    <listofallmembers>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a725d988d99f0e744278ef0d8ea852742" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>aboutToolStripMenuItem</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af2658e714a15786ab02adfa493f493dc" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>aboutToolStripMenuItem_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af2658e714a15786ab02adfa493f493dc" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>aboutToolStripMenuItem_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06e29daca75e143857c584702b2c4812" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>AddSensor</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06e29daca75e143857c584702b2c4812" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>AddSensor</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ada85248270c5ec68c7a185595de365ad" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>AvgSensor</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ada85248270c5ec68c7a185595de365ad" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>AvgSensor</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a6acceb4981241b571d18f6bcc5059e90" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>BinarySearch</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a6acceb4981241b571d18f6bcc5059e90" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>BinarySearch</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ab925daddd59b2087c3c18e06cfa69be9" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnAdd</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06a3fae153a25507c50e7af63f01a818" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnAdd_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06a3fae153a25507c50e7af63f01a818" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnAdd_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad0fc3893a43b70225b02802ddbd8846d" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnAvg</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a9c077160d359e309ff1c1a4e1bf7d121" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnAvg_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a9c077160d359e309ff1c1a4e1bf7d121" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnAvg_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a02c2d38eb01a345f7fc0f0cf488e4b6a" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnMaxMin</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a24ef3aa618ba3be5d5d9f88a86df2850" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnMaxMin_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a24ef3aa618ba3be5d5d9f88a86df2850" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnMaxMin_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a78650acbf86405276952caec43902841" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnNextFile</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ab110e73b6baaf636785830343acffd88" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnNextFile_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ab110e73b6baaf636785830343acffd88" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnNextFile_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a2ebb31463e97d865c41ff79ed13d61fa" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnPreviousFile</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a7c0bf8f8e0e23ca4e31b2de67153c0c5" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnPreviousFile_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a7c0bf8f8e0e23ca4e31b2de67153c0c5" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnPreviousFile_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af12f41d7ff9b3730e65c9a53cc3296fd" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnRemove</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a29a31a7acc4037b19437439888655892" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnRemove_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a29a31a7acc4037b19437439888655892" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnRemove_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1d36fc786eb6b9733f063cee927dd6cd" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnSearch</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1afca4f8185a78e5a3d799828eb4510a81" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnSearch_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1afca4f8185a78e5a3d799828eb4510a81" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnSearch_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a20e89d5d80d1322f2854b8572bd26fbd" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnSort</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aaefc23701a72a2611b7647126793307c" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnSort_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aaefc23701a72a2611b7647126793307c" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnSort_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad1332effb98ae81ebec3926cb2ca7c17" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnUpdate</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a923e42752d6115485473e29f311646b7" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnUpdate_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a923e42752d6115485473e29f311646b7" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>btnUpdate_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba99e40c7afdd868bedb44b198e05fa1" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>ClearView</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba99e40c7afdd868bedb44b198e05fa1" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>ClearView</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4334cd9e3faa9c1781375a9d28ee87a8" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>comboBoxListOfFile</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a193584a0948150ac7bf62d1c1c919f54" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>ComboBoxListOfFile_DropDown</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a193584a0948150ac7bf62d1c1c919f54" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>ComboBoxListOfFile_DropDown</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a8b39c9031f959d4f72c40194155a8106" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>ComboBoxListOfFile_SelectedIndexChanged</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a8b39c9031f959d4f72c40194155a8106" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>ComboBoxListOfFile_SelectedIndexChanged</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a830669543527d0b709af664a456ddaac" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>components</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4b3fe701972689b28fa6ea47eacb2b32" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>currentDirectory</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a2a9f73ff0270c382e2734f3a5df0f5d1" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>currentFileIndex</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a840372ee03e1f2905c205cbcee620145" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>dataGridViewSensor</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ace0aeb1526be96f1a0000918330ac8cb" prot="protected" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>Dispose</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a65a383965861550975455f51d6dc5c1c" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>fileList</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a988a81a2ce59e32763b0eb69834dc375" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>fileToolStripMenuItem</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70b2bdd1ad976305069903d09da4f66c" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>FilterData</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70b2bdd1ad976305069903d09da4f66c" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>FilterData</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af84ce7422092d8d0b4c46e69c8665800" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>hasDataOnGrid</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af84ce7422092d8d0b4c46e69c8665800" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>hasDataOnGrid</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ab23c53ee22d86d7b1438ce448193f6db" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>helpToolStripMenuItem</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a08cc9e6ea988821e99c7ef030d46d8f0" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>InitializeComponent</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a26c4ab3ad6914e4c6607302ddef0f0ed" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>InitializeGridView</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a26c4ab3ad6914e4c6607302ddef0f0ed" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>InitializeGridView</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae30298b00c6ad1e949a8b6cea08bbd46" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>InitializeShortcuts</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae30298b00c6ad1e949a8b6cea08bbd46" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>InitializeShortcuts</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4f2dde74e4894dd957a02b866e915cdc" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>labelAvg</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aa9be024d540f937d7135e263619d3fa9" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>labelMin</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5f05be930b1ccf0c84b6ebf699387346" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>labelUp</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5139dbeda68be70d5e49914c2dded75e" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>labelUpdate</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a12f0fe45e4b21ef4a36f2304c017333f" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>lblSearch</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1abdcfe8956c03c751014109526e19bd26" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>lblTitle</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae88069407687d8ac374d667fb14afd41" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>LoadFile</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae88069407687d8ac374d667fb14afd41" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>LoadFile</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad6b413c159852cf9425ba06fd7979494" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>LoadFileFunction</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad6b413c159852cf9425ba06fd7979494" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>LoadFileFunction</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a502d72367c586a3853d0699155fe9a03" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>loadToolStripMenuItem</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4a061f79315ee80014d458ce12da63b7" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>loadToolStripMenuItem_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4a061f79315ee80014d458ce12da63b7" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>loadToolStripMenuItem_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a41dc3972360462bfb0c25827fd09e4c2" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>menuStrip1</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae814463f9ddf5175d5fac0e709a6432f" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>newToolStripMenuItem</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a916f0b46f0b573b3524f473d7b8ab66b" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>newToolStripMenuItem_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a916f0b46f0b573b3524f473d7b8ab66b" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>newToolStripMenuItem_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5cf1f875e8e5430b97c85d8e0de1fb93" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>NxtFileFunction</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5cf1f875e8e5430b97c85d8e0de1fb93" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>NxtFileFunction</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70e57eb31c0f0299d06545484ca1fe4b" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>PreviousFileFunction</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70e57eb31c0f0299d06545484ca1fe4b" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>PreviousFileFunction</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a030dc020cbf7916a3b99f9a3f7d78f46" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>RemoveSensor</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a030dc020cbf7916a3b99f9a3f7d78f46" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>RemoveSensor</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aa185bc2e65617f32cbc3b2c1c00e34cc" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>SaveFileFunction</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aa185bc2e65617f32cbc3b2c1c00e34cc" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>SaveFileFunction</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a18568de1df87ab5f0538be392caa69fd" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>saveToolStripMenuItem</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a9ff06b398d237cdc4b7fbfbd45b870f4" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>saveToolStripMenuItem_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a9ff06b398d237cdc4b7fbfbd45b870f4" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>saveToolStripMenuItem_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a0fba0adb595642d29a5e1d0e827dfb01" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>Sensing4USensorData</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a0fba0adb595642d29a5e1d0e827dfb01" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>Sensing4USensorData</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a971f0cc16f1714a597d7e6ee497121f8" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>sorted</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba9c1e6e6fa4a579938174f5e0f8a7e2" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>SortSensor</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba9c1e6e6fa4a579938174f5e0f8a7e2" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>SortSensor</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a0aaa601055c9dcb5be285ab6b5d84d1b" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>tutorialToolStripMenuItem</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1b24db4c1b02ad4a63574b1017451bfd" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>tutorialToolStripMenuItem_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1b24db4c1b02ad4a63574b1017451bfd" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>tutorialToolStripMenuItem_Click</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5aab0c4caea98d87e5c0ec3caef6b464" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>txtBoxAvg</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a8787c36bfe95397f674860351f9d4fc8" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>txtBoxLower</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1ffe1fd53872fb8691e89daef3c5633b" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>txtBoxSearch</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4e358b118ab0ae3749d08c249315b395" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>txtBoxUpper</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a8e3d65f53868ae889aca9297dbfaf701" prot="private" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>txtUpdate</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1c4e2a057d0503a3ad25c0972081dd9b" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>UpdateSensor</name></member>
+      <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1c4e2a057d0503a3ad25c0972081dd9b" prot="public" virt="non-virtual"><scope>Sensing4U_v2::_0::Sensing4USensorData</scope><name>UpdateSensor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

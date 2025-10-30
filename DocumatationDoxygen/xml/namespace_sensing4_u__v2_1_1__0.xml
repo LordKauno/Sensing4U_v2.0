@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespace_sensing4_u__v2_1_1__0" kind="namespace" language="C#">
+    <compoundname>Sensing4U_v2::_0</compoundname>
+    <innerclass refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form" prot="public">Sensing4U_v2::_0::AddDataForm</innerclass>
+    <innerclass refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data" prot="public">Sensing4U_v2::_0::Sensing4USensorData</innerclass>
+    <innerclass refid="class_sensing4_u__v2_1_1__0_1_1_program" prot="package">Sensing4U_v2::_0::Program</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="AddDataForm.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

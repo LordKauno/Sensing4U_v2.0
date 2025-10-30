@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_6786f78212adbf43b8ef68420161503a" kind="dir">
+    <compoundname>obj/Debug/net9.0-windows</compoundname>
+    <innerfile refid="_8_n_e_t_core_app_00_version_0av9_80_8_assembly_attributes_8cs">.NETCoreApp,Version=v9.0.AssemblyAttributes.cs</innerfile>
+    <innerfile refid="_sensing4_u__v2_80_8_assembly_info_8cs">Sensing4U_v2.0.AssemblyInfo.cs</innerfile>
+    <innerfile refid="_sensing4_u__v2_80_8_global_usings_8g_8cs">Sensing4U_v2.0.GlobalUsings.g.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="obj/Debug/net9.0-windows/"/>
+  </compounddef>
+</doxygen>

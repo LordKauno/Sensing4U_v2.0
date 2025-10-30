@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dirs" xml:lang="en-US">
+<title>Directories</title>
+
+<para>bin </para>
+
+<para>Debug </para>
+
+<para>net9.0-windows </para>
+
+<para>SensingMainWin.cs </para>
+
+<para>Debug </para>
+
+<para>net9.0-windows </para>
+
+<para>SensingMainWin.cs </para>
+
+<para>Debug </para>
+
+<para>net9.0-windows </para>
+
+<para>.NETCoreApp,Version=v9.0.AssemblyAttributes.cs </para>
+
+<para>Sensing4U_v2.0.AssemblyInfo.cs </para>
+
+<para>Sensing4U_v2.0.GlobalUsings.g.cs </para>
+
+<para>net9.0-windows </para>
+
+<para>SensingMainWin.cs </para>
+
+<para>net9.0-windows </para>
+
+<para>.NETCoreApp,Version=v9.0.AssemblyAttributes.cs </para>
+
+<para>Sensing4U_v2.0.AssemblyInfo.cs </para>
+
+<para>Sensing4U_v2.0.GlobalUsings.g.cs </para>
+
+<para>obj </para>
+
+<para>Debug </para>
+
+<para>net9.0-windows </para>
+
+<para>.NETCoreApp,Version=v9.0.AssemblyAttributes.cs </para>
+
+<para>Sensing4U_v2.0.AssemblyInfo.cs </para>
+
+<para>Sensing4U_v2.0.GlobalUsings.g.cs </para>
+</section>

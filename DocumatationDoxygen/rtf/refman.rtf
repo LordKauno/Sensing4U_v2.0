@@ -1,0 +1,3438 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s6\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs12\cgrid \sbasedon0 \snext0 heading 6;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\*\listtable
+{\list\listtemplateid1
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8662 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid1}
+{\list\listtemplateid2
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid2}
+{\list\listtemplateid3
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid3}
+}
+{\listoverridetable
+{\listoverride\listid1\listoverridecount0\ls1}
+{\listoverride\listid2\listoverridecount0\ls2}
+{\listoverride\listid3\listoverridecount0\ls3}
+}
+{\info 
+{\title {\comment My Project  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+2.0 \par
+}}My Project}
+{\comment Generated by doxygen 1.15.0.}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt My Project}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version 2.0\par\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Directory Hierarchy\par \pard\plain 
+{\tc \v Directory Hierarchy}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Directories\par \pard\plain 
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+bin }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABU \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Debug }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABV \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+net9.0-windows }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABX \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+SensingMainWin.cs }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+}\par
+}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Debug }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABV \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+net9.0-windows }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABX \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+SensingMainWin.cs }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Debug }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABW \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+net9.0-windows }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABY \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+.NETCoreApp,Version=v9.0.AssemblyAttributes.cs }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sensing4U_v2.0.AssemblyInfo.cs }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sensing4U_v2.0.GlobalUsings.g.cs }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+net9.0-windows }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABX \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+SensingMainWin.cs }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+net9.0-windows }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABY \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+.NETCoreApp,Version=v9.0.AssemblyAttributes.cs }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sensing4U_v2.0.AssemblyInfo.cs }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sensing4U_v2.0.GlobalUsings.g.cs }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+obj }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABZ \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Debug }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABW \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+net9.0-windows }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABY \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+.NETCoreApp,Version=v9.0.AssemblyAttributes.cs }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sensing4U_v2.0.AssemblyInfo.cs }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sensing4U_v2.0.GlobalUsings.g.cs }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+}\par
+}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Index\par \pard\plain 
+{\tc \v Namespace Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Package List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the packages with brief descriptions (if available):}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Sensing4U_v2} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Sensing4U_v2._0} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Hierarchical Index\par \pard\plain 
+{\tc \v Hierarchical Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class Hierarchy\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This inheritance list is sorted roughly, but not completely, alphabetically:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+Form
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sensing4U_v2._0.AddDataForm }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sensing4U_v2._0.Sensing4USensorData }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sensing4U_v2._0.Sensing4USensorData }\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Index\par \pard\plain 
+{\tc \v Class Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the classes, structs, unions and interfaces with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Sensing4U_v2._0.AddDataForm} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Sensing4U_v2._0.Sensing4USensorData} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all files with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b AddDataForm.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b AddDataForm.Designer.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Program.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b SensingMainWin.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b SensingMainWin.Designer.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b bin/Debug/net9.0-windows/{\b SensingMainWin.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b obj/Debug/net9.0-windows/{\b .NETCoreApp,Version=v9.0.AssemblyAttributes.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b obj/Debug/net9.0-windows/{\b Sensing4U_v2.0.AssemblyInfo.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b obj/Debug/net9.0-windows/{\b Sensing4U_v2.0.GlobalUsings.g.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Directory Documentation{\tc \v Directory Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+bin Directory Reference\par \pard\plain 
+{\tc\tcl2 \v bin Directory Reference}
+{\xe \v bin Directory Reference}
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Directories\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+directory {\b Debug}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+bin/Debug Directory Reference\par \pard\plain 
+{\tc\tcl2 \v bin/Debug Directory Reference}
+{\xe \v bin/Debug Directory Reference}
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Directories\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+directory {\b net9.0-windows}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+obj/Debug Directory Reference\par \pard\plain 
+{\tc\tcl2 \v obj/Debug Directory Reference}
+{\xe \v obj/Debug Directory Reference}
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Directories\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+directory {\b net9.0-windows}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+bin/Debug/net9.0-windows Directory Reference\par \pard\plain 
+{\tc\tcl2 \v bin/Debug/net9.0-windows Directory Reference}
+{\xe \v bin/Debug/net9.0-windows Directory Reference}
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Files\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+file {\b SensingMainWin.cs}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+obj/Debug/net9.0-windows Directory Reference\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net9.0-windows Directory Reference}
+{\xe \v obj/Debug/net9.0-windows Directory Reference}
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Files\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+file {\b .NETCoreApp,Version=v9.0.AssemblyAttributes.cs}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+file {\b Sensing4U_v2.0.AssemblyInfo.cs}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+file {\b Sensing4U_v2.0.GlobalUsings.g.cs}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+obj Directory Reference\par \pard\plain 
+{\tc\tcl2 \v obj Directory Reference}
+{\xe \v obj Directory Reference}
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Directories\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+directory {\b Debug}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Documentation\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Sensing4U_v2 Namespace Reference\par \pard\plain 
+{\tc\tcl2 \v Sensing4U_v2}
+{\xe \v Sensing4U_v2}
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b _0}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Sensing4U_v2._0 Namespace Reference\par \pard\plain 
+{\tc\tcl2 \v Sensing4U_v2._0}
+{\xe \v Sensing4U_v2._0}
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b AddDataForm}\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Sensing4USensorData}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Program}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Documentation{\tc \v Class Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Sensing4U_v2._0.AddDataForm Class Reference\par \pard\plain 
+{\tc\tcl2 \v Sensing4U_v2._0.AddDataForm}
+{\xe \v Sensing4U_v2._0.AddDataForm}
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+Inheritance diagram for Sensing4U_v2._0.AddDataForm:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_sensing4_u__v2_1_1__0_1_1_add_data_form.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b AddDataForm} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+override void {\b Dispose} (bool disposing)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Clean up any resources being used. }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b SensorLabel}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+double {\b SensorValue}{\f2  [get]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 6} of file {\b AddDataForm.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v AddDataForm\:Sensing4U_v2._0.AddDataForm}
+{\xe \v Sensing4U_v2._0.AddDataForm\:AddDataForm}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Sensing4U_v2._0.AddDataForm.AddDataForm ()}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 11} of file {\b AddDataForm.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Dispose\:Sensing4U_v2._0.AddDataForm}
+{\xe \v Sensing4U_v2._0.AddDataForm\:Dispose}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+override void Sensing4U_v2._0.AddDataForm.Dispose (bool disposing){\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Clean up any resources being used. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i disposing} \cell }{true if managed resources should be disposed; otherwise, false.\cell }
+{\row }
+}
+}{
+Definition at line {\b 14} of file {\b AddDataForm.Designer.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Property Documentation\par
+\pard\plain 
+{\xe \v SensorLabel\:Sensing4U_v2._0.AddDataForm}
+{\xe \v Sensing4U_v2._0.AddDataForm\:SensorLabel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string Sensing4U_v2._0.AddDataForm.SensorLabel{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 8} of file {\b AddDataForm.cs}.}\par
+}
+{\xe \v SensorValue\:Sensing4U_v2._0.AddDataForm}
+{\xe \v Sensing4U_v2._0.AddDataForm\:SensorValue}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+double Sensing4U_v2._0.AddDataForm.SensorValue{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 9} of file {\b AddDataForm.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b AddDataForm.cs}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b AddDataForm.Designer.cs}}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Sensing4U_v2._0.Sensing4USensorData Class Reference\par \pard\plain 
+{\tc\tcl2 \v Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData}
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+Inheritance diagram for Sensing4U_v2._0.Sensing4USensorData:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Sensing4USensorData} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b InitializeGridView} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b AddSensor} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to add a new sensor data entry to the DataGridView by opening an input dialog. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b RemoveSensor} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to remove the selected sensor data entry from the DataGridView. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b SortSensor} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to sort the sensor data in the DataGridView in ascending order based on their values. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b UpdateSensor} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to update the selected sensor data entry in the DataGridView with a new value. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+double {\b AvgSensor} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to calculate and return the average of all sensor values in the DataGridView. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b FilterData} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to filter sensor data based on user-defined upper and lower limits,. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b LoadFile} (string filePath)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to load sensor data from a specified file into the DataGridView. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b LoadFileFunction} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to open a file dialog for loading sensor data files and load the selected file into the DataGridView. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b SaveFileFunction} (string fileName)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to open a save file dialog and save the current sensor data from the DataGridView to a specified file. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b NxtFileFunction} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to navigate to the next file in the loaded file list and load it into the DataGridView. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b PreviousFileFunction} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to navigate to the previous file in the loaded file list and load it into the DataGridView. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b BinarySearch} (double targetValue)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to perform a binary search for a specified value in the DataGridView. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Sensing4USensorData} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b InitializeGridView} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b AddSensor} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to add a new sensor data entry to the DataGridView by opening an input dialog. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b RemoveSensor} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to remove the selected sensor data entry from the DataGridView. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b SortSensor} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to sort the sensor data in the DataGridView in ascending order based on their values. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b UpdateSensor} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to update the selected sensor data entry in the DataGridView with a new value. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+double {\b AvgSensor} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to calculate and return the average of all sensor values in the DataGridView. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b FilterData} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to filter sensor data based on user-defined upper and lower limits,. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b LoadFile} (string filePath)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to load sensor data from a specified file into the DataGridView. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b LoadFileFunction} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to open a file dialog for loading sensor data files and load the selected file into the DataGridView. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b SaveFileFunction} (string fileName)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to open a save file dialog and save the current sensor data from the DataGridView to a specified file. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b NxtFileFunction} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to navigate to the next file in the loaded file list and load it into the DataGridView. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b PreviousFileFunction} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to navigate to the previous file in the loaded file list and load it into the DataGridView. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b BinarySearch} (double targetValue)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to perform a binary search for a specified value in the DataGridView. }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+override void {\b Dispose} (bool disposing)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Clean up any resources being used. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 19} of file {\b SensingMainWin.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v Sensing4USensorData\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:Sensing4USensorData}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Sensing4U_v2._0.Sensing4USensorData.Sensing4USensorData ()}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 26} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v Sensing4USensorData\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:Sensing4USensorData}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Sensing4U_v2._0.Sensing4USensorData.Sensing4USensorData ()}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 26} of file {\b SensingMainWin.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v AddSensor\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:AddSensor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.AddSensor ()}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to add a new sensor data entry to the DataGridView by opening an input dialog. }}\par
+{
+Definition at line {\b 280} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v AddSensor\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:AddSensor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.AddSensor ()}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to add a new sensor data entry to the DataGridView by opening an input dialog. }}\par
+{
+Definition at line {\b 280} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v AvgSensor\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:AvgSensor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+double Sensing4U_v2._0.Sensing4USensorData.AvgSensor ()}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to calculate and return the average of all sensor values in the DataGridView. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Average\par
+}}}{
+Definition at line {\b 372} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v AvgSensor\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:AvgSensor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+double Sensing4U_v2._0.Sensing4USensorData.AvgSensor ()}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to calculate and return the average of all sensor values in the DataGridView. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Average\par
+}}}{
+Definition at line {\b 372} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v BinarySearch\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:BinarySearch}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Sensing4U_v2._0.Sensing4USensorData.BinarySearch (double targetValue)}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to perform a binary search for a specified value in the DataGridView. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i targetValue} \cell }{The value to search for.\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Index of found value or -1 if not found\par
+}}}{
+Definition at line {\b 584} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v BinarySearch\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:BinarySearch}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Sensing4U_v2._0.Sensing4USensorData.BinarySearch (double targetValue)}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to perform a binary search for a specified value in the DataGridView. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i targetValue} \cell }{The value to search for.\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Index of found value or -1 if not found\par
+}}}{
+Definition at line {\b 584} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v Dispose\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:Dispose}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+override void Sensing4U_v2._0.Sensing4USensorData.Dispose (bool disposing){\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Clean up any resources being used. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i disposing} \cell }{true if managed resources should be disposed; otherwise, false.\cell }
+{\row }
+}
+}{
+Definition at line {\b 19} of file {\b SensingMainWin.Designer.cs}.}\par
+}
+{\xe \v FilterData\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:FilterData}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.FilterData ()}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to filter sensor data based on user-defined upper and lower limits,. }}\par
+{
+Definition at line {\b 386} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v FilterData\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:FilterData}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.FilterData ()}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to filter sensor data based on user-defined upper and lower limits,. }}\par
+{
+Definition at line {\b 386} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v InitializeGridView\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:InitializeGridView}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.InitializeGridView ()}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 33} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v InitializeGridView\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:InitializeGridView}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.InitializeGridView ()}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 33} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v LoadFile\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:LoadFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.LoadFile (string filePath)}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to load sensor data from a specified file into the DataGridView. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i filePath} \cell }{The path of the file to load data from.\cell }
+{\row }
+}
+}{
+Definition at line {\b 431} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v LoadFile\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:LoadFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.LoadFile (string filePath)}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to load sensor data from a specified file into the DataGridView. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i filePath} \cell }{The path of the file to load data from.\cell }
+{\row }
+}
+}{
+Definition at line {\b 431} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v LoadFileFunction\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:LoadFileFunction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.LoadFileFunction ()}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to open a file dialog for loading sensor data files and load the selected file into the DataGridView. }}\par
+{
+Definition at line {\b 463} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v LoadFileFunction\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:LoadFileFunction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.LoadFileFunction ()}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to open a file dialog for loading sensor data files and load the selected file into the DataGridView. }}\par
+{
+Definition at line {\b 463} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v NxtFileFunction\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:NxtFileFunction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.NxtFileFunction ()}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to navigate to the next file in the loaded file list and load it into the DataGridView. }}\par
+{
+Definition at line {\b 554} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v NxtFileFunction\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:NxtFileFunction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.NxtFileFunction ()}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to navigate to the next file in the loaded file list and load it into the DataGridView. }}\par
+{
+Definition at line {\b 554} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v PreviousFileFunction\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:PreviousFileFunction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.PreviousFileFunction ()}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to navigate to the previous file in the loaded file list and load it into the DataGridView. }}\par
+{
+Definition at line {\b 568} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v PreviousFileFunction\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:PreviousFileFunction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.PreviousFileFunction ()}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to navigate to the previous file in the loaded file list and load it into the DataGridView. }}\par
+{
+Definition at line {\b 568} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v RemoveSensor\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:RemoveSensor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.RemoveSensor ()}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to remove the selected sensor data entry from the DataGridView. }}\par
+{
+Definition at line {\b 295} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v RemoveSensor\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:RemoveSensor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.RemoveSensor ()}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to remove the selected sensor data entry from the DataGridView. }}\par
+{
+Definition at line {\b 295} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v SaveFileFunction\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:SaveFileFunction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.SaveFileFunction (string fileName)}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to open a save file dialog and save the current sensor data from the DataGridView to a specified file. }}\par
+{
+Definition at line {\b 494} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v SaveFileFunction\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:SaveFileFunction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.SaveFileFunction (string fileName)}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to open a save file dialog and save the current sensor data from the DataGridView to a specified file. }}\par
+{
+Definition at line {\b 494} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v SortSensor\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:SortSensor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.SortSensor ()}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to sort the sensor data in the DataGridView in ascending order based on their values. }}\par
+{
+Definition at line {\b 311} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v SortSensor\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:SortSensor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.SortSensor ()}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to sort the sensor data in the DataGridView in ascending order based on their values. }}\par
+{
+Definition at line {\b 311} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v UpdateSensor\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:UpdateSensor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.UpdateSensor ()}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to update the selected sensor data entry in the DataGridView with a new value. }}\par
+{
+Definition at line {\b 344} of file {\b SensingMainWin.cs}.}\par
+}
+{\xe \v UpdateSensor\:Sensing4U_v2._0.Sensing4USensorData}
+{\xe \v Sensing4U_v2._0.Sensing4USensorData\:UpdateSensor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sensing4U_v2._0.Sensing4USensorData.UpdateSensor ()}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to update the selected sensor data entry in the DataGridView with a new value. }}\par
+{
+Definition at line {\b 344} of file {\b SensingMainWin.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bin/Debug/net9.0-windows/{\b SensingMainWin.cs}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b SensingMainWin.cs}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b SensingMainWin.Designer.cs}}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+AddDataForm.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v AddDataForm.cs}
+{\xe \v AddDataForm.cs}
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Sensing4U_v2._0.AddDataForm}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Sensing4U_v2}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Sensing4U_v2._0}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+AddDataForm.cs\par \pard\plain 
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System;\par
+00002 {\cf17 using }System.Windows.Forms;\par
+00003 \par
+00004 {\cf17 namespace }Sensing4U_v2._0\par
+00005 \{\par
+00006     {\cf17 public} {\cf17 partial class }AddDataForm : Form\par
+00007     \{\par
+00008         {\cf17 public} {\cf18 string} SensorLabel \{ {\cf17 get}; {\cf17 private} {\cf17 set}; \}\par
+00009         {\cf17 public} {\cf18 double} SensorValue \{ {\cf17 get}; {\cf17 private} {\cf17 set}; \}\par
+00010 \par
+00011         {\cf17 public} AddDataForm()\par
+00012         \{\par
+00013             InitializeComponent();\par
+00014         \}\par
+00015 \par
+00016         {\cf17 private} {\cf18 void} btnOK_Click({\cf18 object} sender, EventArgs e)\par
+00017         \{\par
+00018             {\cf20 // Validate the user input}\par
+00019             {\cf19 if} ({\cf18 string}.IsNullOrWhiteSpace(txtLabel.Text) ||\par
+00020                 !{\cf18 double}.TryParse(txtValue.Text, out {\cf18 double} value))\par
+00021             \{\par
+00022                 MessageBox.Show({\cf22 "Please enter a valid label and numeric value."},\par
+00023                                 {\cf22 "Input Error"}, MessageBoxButtons.OK, MessageBoxIcon.Warning);\par
+00024                 {\cf19 return};\par
+00025             \}\par
+00026             SensorLabel = txtLabel.Text.Trim();\par
+00027             SensorValue = value;\par
+00028             DialogResult = DialogResult.OK;\par
+00029         \}\par
+00030 \par
+00031         {\cf17 private} {\cf18 void} btnCancel_Click({\cf18 object} sender, EventArgs e)\par
+00032         \{\par
+00033             DialogResult = DialogResult.Cancel;\par
+00034         \}\par
+00035     \}\par
+00036 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+AddDataForm.Designer.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v AddDataForm.Designer.cs}
+{\xe \v AddDataForm.Designer.cs}
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Sensing4U_v2._0.AddDataForm}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Sensing4U_v2}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Sensing4U_v2._0}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+AddDataForm.Designer.cs\par \pard\plain 
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 namespace }Sensing4U_v2._0\par
+00002 \{\par
+00003     {\cf17 partial class }AddDataForm\par
+00004     \{\par
+00008         {\cf17 private} System.ComponentModel.IContainer components = {\cf17 null};\par
+00009 \par
+00014         {\cf17 protected} {\cf17 override} {\cf18 void} Dispose({\cf18 bool} disposing)\par
+00015         \{\par
+00016             {\cf19 if} (disposing && (components != {\cf17 null}))\par
+00017             \{\par
+00018                 components.Dispose();\par
+00019             \}\par
+00020             base.Dispose(disposing);\par
+00021         \}\par
+00022 \par
+00023 {\cf21         #region Windows Form Designer generated code}\par
+00024 \par
+00029         {\cf17 private} {\cf18 void} InitializeComponent()\par
+00030         \{\par
+00031             lblSensor = {\cf17 new} Label();\par
+00032             lblValue = {\cf17 new} Label();\par
+00033             txtLabel = {\cf17 new} TextBox();\par
+00034             txtValue = {\cf17 new} TextBox();\par
+00035             btnOK = {\cf17 new} Button();\par
+00036             btnCancel = {\cf17 new} Button();\par
+00037             SuspendLayout();\par
+00038             {\cf20 // }\par
+00039             {\cf20 // lblSensor}\par
+00040             {\cf20 // }\par
+00041             lblSensor.AutoSize = {\cf17 true};\par
+00042             lblSensor.Location = {\cf17 new} Point(173, 77);\par
+00043             lblSensor.Name = {\cf22 "lblSensor"};\par
+00044             lblSensor.Size = {\cf17 new} Size(120, 25);\par
+00045             lblSensor.TabIndex = 0;\par
+00046             lblSensor.Text = {\cf22 "Sensor name "};\par
+00047             {\cf20 // }\par
+00048             {\cf20 // lblValue}\par
+00049             {\cf20 // }\par
+00050             lblValue.AutoSize = {\cf17 true};\par
+00051             lblValue.Location = {\cf17 new} Point(173, 169);\par
+00052             lblValue.Name = {\cf22 "lblValue"};\par
+00053             lblValue.Size = {\cf17 new} Size(132, 25);\par
+00054             lblValue.TabIndex = 1;\par
+00055             lblValue.Text = {\cf22 "Insert the value"};\par
+00056             {\cf20 // }\par
+00057             {\cf20 // txtLabel}\par
+00058             {\cf20 // }\par
+00059             txtLabel.Location = {\cf17 new} Point(173, 105);\par
+00060             txtLabel.Name = {\cf22 "txtLabel"};\par
+00061             txtLabel.Size = {\cf17 new} Size(230, 31);\par
+00062             txtLabel.TabIndex = 2;\par
+00063             {\cf20 // }\par
+00064             {\cf20 // txtValue}\par
+00065             {\cf20 // }\par
+00066             txtValue.Location = {\cf17 new} Point(173, 197);\par
+00067             txtValue.Name = {\cf22 "txtValue"};\par
+00068             txtValue.Size = {\cf17 new} Size(230, 31);\par
+00069             txtValue.TabIndex = 3;\par
+00070             {\cf20 // }\par
+00071             {\cf20 // btnOK}\par
+00072             {\cf20 // }\par
+00073             btnOK.Location = {\cf17 new} Point(173, 253);\par
+00074             btnOK.Name = {\cf22 "btnOK"};\par
+00075             btnOK.Size = {\cf17 new} Size(112, 34);\par
+00076             btnOK.TabIndex = 4;\par
+00077             btnOK.Text = {\cf22 "Add"};\par
+00078             btnOK.UseVisualStyleBackColor = {\cf17 true};\par
+00079             btnOK.Click += btnOK_Click;\par
+00080             {\cf20 // }\par
+00081             {\cf20 // btnCancel}\par
+00082             {\cf20 // }\par
+00083             btnCancel.Location = {\cf17 new} Point(291, 253);\par
+00084             btnCancel.Name = {\cf22 "btnCancel"};\par
+00085             btnCancel.Size = {\cf17 new} Size(112, 34);\par
+00086             btnCancel.TabIndex = 5;\par
+00087             btnCancel.Text = {\cf22 "Cancel"};\par
+00088             btnCancel.UseVisualStyleBackColor = {\cf17 true};\par
+00089             btnCancel.Click += btnCancel_Click;\par
+00090 \par
+00091 \par
+00092             {\cf20 // }\par
+00093             {\cf20 // AddDataForm}\par
+00094             {\cf20 // }\par
+00095             AutoScaleDimensions = {\cf17 new} SizeF(10F, 25F);\par
+00096             AutoScaleMode = AutoScaleMode.Font;\par
+00097             ClientSize = {\cf17 new} Size(581, 450);\par
+00098             Controls.Add(btnCancel);\par
+00099             Controls.Add(btnOK);\par
+00100             Controls.Add(txtValue);\par
+00101             Controls.Add(txtLabel);\par
+00102             Controls.Add(lblValue);\par
+00103             Controls.Add(lblSensor);\par
+00104             Name = {\cf22 "AddDataForm"};\par
+00105             Text = {\cf22 "AddDataForm"};\par
+00106             ResumeLayout({\cf17 false});\par
+00107             PerformLayout();\par
+00108         \}\par
+00109 \par
+00110 {\cf21         #endregion}\par
+00111 \par
+00112         {\cf17 private} Label lblSensor;\par
+00113         {\cf17 private} Label lblValue;\par
+00114         {\cf17 private} TextBox txtLabel;\par
+00115         {\cf17 private} TextBox txtValue;\par
+00116         {\cf17 private} Button btnOK;\par
+00117         {\cf17 private} Button btnCancel;\par
+00118     \}\par
+00119 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+bin/Debug/net9.0-windows/SensingMainWin.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v bin/Debug/net9.0-windows/SensingMainWin.cs}
+{\xe \v bin/Debug/net9.0-windows/SensingMainWin.cs}
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Sensing4U_v2._0.Sensing4USensorData}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Sensing4U_v2}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Sensing4U_v2._0}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+SensingMainWin.cs\par \pard\plain 
+{\tc\tcl2 \v bin/Debug/net9.0-windows/SensingMainWin.cs}
+{\xe \v bin/Debug/net9.0-windows/SensingMainWin.cs}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }Sensing4U_v2._0;\par
+00002 {\cf17 using }System;\par
+00003 {\cf17 using }System.Collections;\par
+00004 {\cf17 using }System.Collections.Generic;\par
+00005 {\cf17 using }System.Diagnostics.Eventing.Reader;\par
+00006 {\cf17 using }System.Drawing;\par
+00007 {\cf17 using }System.Globalization;\par
+00008 {\cf17 using }System.IO;\par
+00009 {\cf17 using }System.Linq;\par
+00010 {\cf17 using }System.Windows.Forms;\par
+00011 {\cf20 /* }\par
+00012 {\cf20  * Author: Caio Guilherme Ferreira da Silva}\par
+00013 {\cf20  * Date: October 22, 2025}\par
+00014 {\cf20  * Description: This code defines a Windows Forms application for managing sensor data.}\par
+00015 {\cf20  * Version: 2.0}\par
+00016 {\cf20  */}\par
+00017 {\cf17 namespace }Sensing4U_v2._0\par
+00018 \{\par
+00019     {\cf17 public} {\cf17 partial class }Sensing4USensorData : Form\par
+00020     \{\par
+00021         {\cf17 private} {\cf18 string}[] fileList;\par
+00022         {\cf17 private} {\cf18 int} currentFileIndex = -1;\par
+00023         {\cf17 private} {\cf18 string} currentDirectory = {\cf22 "C:\\\\Sensing4U\\\\DataStorage\\\\"};\par
+00024         {\cf17 private} {\cf18 bool} sorted = {\cf17 false};\par
+00025 \par
+00026         {\cf17 public} Sensing4USensorData()\par
+00027         \{\par
+00028             InitializeComponent();\par
+00029             InitializeGridView();\par
+00030             InitializeShortcuts();\par
+00031         \}\par
+00032 \par
+00033         {\cf17 public} {\cf18 void} InitializeGridView()\par
+00034         \{\par
+00035             dataGridViewSensor.SelectionMode = DataGridViewSelectionMode.FullRowSelect;\par
+00036             dataGridViewSensor.MultiSelect = {\cf17 true};\par
+00037             dataGridViewSensor.AllowUserToAddRows = {\cf17 false};\par
+00038             dataGridViewSensor.ReadOnly = {\cf17 true};\par
+00039             dataGridViewSensor.Columns.Add({\cf22 "SensorLabel"}, {\cf22 "Sensor Label"});\par
+00040             dataGridViewSensor.Columns.Add({\cf22 "SensorValue"}, {\cf22 "Sensor Value"});\par
+00041         \}\par
+00042 \par
+00043         {\cf17 private} {\cf18 void} InitializeShortcuts()\par
+00044         \{\par
+00045             newToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.N;\par
+00046             loadToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.O;\par
+00047             saveToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.S;\par
+00048         \}\par
+00054         {\cf17 private} {\cf18 void} btnAdd_Click({\cf18 object} sender, EventArgs e)\par
+00055         \{\par
+00056             AddSensor();\par
+00057             sorted = {\cf17 false};\par
+00058             ClearView();\par
+00059         \}\par
+00065         {\cf17 private} {\cf18 void} btnRemove_Click({\cf18 object} sender, EventArgs e)\par
+00066         \{\par
+00067             RemoveSensor();\par
+00068             sorted = {\cf17 false};\par
+00069             ClearView();\par
+00070         \}\par
+00076         {\cf17 private} {\cf18 void} btnSort_Click({\cf18 object} sender, EventArgs e)\par
+00077         \{\par
+00078             hasDataOnGrid();\par
+00079             SortSensor();\par
+00080             ClearView();\par
+00081         \}\par
+00087         {\cf17 private} {\cf18 void} btnUpdate_Click({\cf18 object} sender, EventArgs e)\par
+00088         \{\par
+00089             UpdateSensor();\par
+00090             sorted = {\cf17 false};\par
+00091             ClearView();\par
+00092         \}\par
+00098         {\cf17 private} {\cf18 void} btnAvg_Click({\cf18 object} sender, EventArgs e)\par
+00099         \{\par
+00100             hasDataOnGrid();\par
+00101             {\cf18 double} average = 0;\par
+00102             AvgSensor();\par
+00103             ClearView();\par
+00104             txtBoxAvg.Text = ${\cf22 "\{average:F2\}"};\par
+00105 \par
+00106         \}\par
+00107 \par
+00108         {\cf17 private} {\cf18 void} btnMaxMin_Click({\cf18 object} sender, EventArgs e)\par
+00109         \{\par
+00110             hasDataOnGrid();\par
+00111             FilterData();\par
+00112             ClearView();\par
+00113             MessageBox.Show({\cf22 "Data filtered successfully."});\par
+00114         \}\par
+00120         {\cf17 private} {\cf18 void} newToolStripMenuItem_Click({\cf18 object} sender, EventArgs e)\par
+00121         \{\par
+00122             dataGridViewSensor.Rows.Clear();\par
+00123             ClearView();\par
+00124         \}\par
+00130 \par
+00131         {\cf17 private} {\cf18 void} loadToolStripMenuItem_Click({\cf18 object} sender, EventArgs e)\par
+00132         \{\par
+00133             LoadFileFunction();\par
+00134             ClearView();\par
+00135         \}\par
+00140 \par
+00146         {\cf17 private} {\cf18 void} saveToolStripMenuItem_Click({\cf18 object} sender, EventArgs e)\par
+00147         \{\par
+00148             {\cf18 string} fileName;\par
+00149             {\cf19 if} (currentFileIndex != -1 && fileList != {\cf17 null} && currentFileIndex < fileList.Length)\par
+00150             \{\par
+00151                 fileName = fileList[currentFileIndex];\par
+00152             \}\par
+00153             {\cf19 else}\par
+00154             \{\par
+00155                 fileName = {\cf18 string}.Empty;\par
+00156             \}\par
+00157             SaveFileFunction(fileName);\par
+00158             ClearView();\par
+00159         \}\par
+00165         {\cf17 private} {\cf18 void} btnNextFile_Click({\cf18 object} sender, EventArgs e)\par
+00166         \{\par
+00167             NxtFileFunction();\par
+00168             ClearView();\par
+00169         \}\par
+00176         {\cf17 private} {\cf18 void} btnPreviousFile_Click({\cf18 object} sender, EventArgs e)\par
+00177         \{\par
+00178             PreviousFileFunction();\par
+00179             ClearView();\par
+00180         \}\par
+00184         {\cf17 private} {\cf18 void} ClearView()\par
+00185         \{\par
+00186             txtBoxAvg.Clear();\par
+00187             txtBoxLower.Clear();\par
+00188             txtBoxUpper.Clear();\par
+00189             txtUpdate.Clear();\par
+00190             txtBoxSearch.Clear();\par
+00191             txtBoxAvg.Clear();\par
+00192         \}\par
+00199         {\cf17 private} {\cf18 void} btnSearch_Click({\cf18 object} sender, EventArgs e)\par
+00200         \{\par
+00201             hasDataOnGrid();\par
+00202             var searchData = txtBoxSearch.Text;\par
+00203             BinarySearch(Convert.ToDouble(searchData));\par
+00204             ClearView();\par
+00205         \}\par
+00211         {\cf17 private} {\cf18 void} ComboBoxListOfFile_DropDown({\cf18 object} sender, EventArgs e)\par
+00212         \{\par
+00213             {\cf19 if} (fileList == {\cf17 null} || fileList.Length == 0)\par
+00214             \{\par
+00215                 MessageBox.Show({\cf22 "No files loaded. Please load a file first."}, {\cf22 "No Files"},\par
+00216                                 MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00217                 {\cf19 return};\par
+00218             \}\par
+00219             comboBoxListOfFile.Items.Clear();\par
+00220             {\cf19 foreach} (var file {\cf19 in} fileList)\par
+00221             \{\par
+00222                 comboBoxListOfFile.Items.Add(Path.GetFileName(file));\par
+00223             \}\par
+00224         \}\par
+00230         {\cf17 private} {\cf18 void} ComboBoxListOfFile_SelectedIndexChanged({\cf18 object} sender, EventArgs e)\par
+00231         \{\par
+00232             {\cf19 if} (fileList == {\cf17 null} || fileList.Length == 0)\par
+00233             \{\par
+00234                 MessageBox.Show({\cf22 "No files loaded. Please load a file first."}, {\cf22 "No Files"},\par
+00235                                 MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00236                 {\cf19 return};\par
+00237             \}\par
+00238             {\cf18 string} selectedFile = comboBoxListOfFile.SelectedItem.ToString();\par
+00239             {\cf18 int} selectedIndex = Array.IndexOf(fileList, Path.Combine(currentDirectory, selectedFile));\par
+00240             {\cf19 if} (selectedIndex != -1)\par
+00241             \{\par
+00242                 currentFileIndex = selectedIndex;\par
+00243                 LoadFile(fileList[currentFileIndex]);\par
+00244                 ClearView();\par
+00245             \}\par
+00246         \}\par
+00252         {\cf17 private} {\cf18 void} aboutToolStripMenuItem_Click({\cf18 object} sender, EventArgs e)\par
+00253         \{\par
+00254             MessageBox.Show({\cf22 "Sensing4U Application\\nVersion 1.0\\nDeveloped by Caio Guilherme Ferreira da Silva"}, {\cf22 "About Sensing4U"},\par
+00255                             MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00256         \}\par
+00263         {\cf17 private} {\cf18 void} tutorialToolStripMenuItem_Click({\cf18 object} sender, EventArgs e)\par
+00264         \{\par
+00265             MessageBox.Show({\cf22 "Sensing4U Application Tutorial:\\n\\n"} +\par
+00266                             {\cf22 "1. Use 'Add Data' to input new sensor readings.\\n"} +\par
+00267                             {\cf22 "2. Select a row and use 'Remove' to delete it.\\n"} +\par
+00268                             {\cf22 "3. Use 'Sort Data' to sort readings by value.\\n"} +\par
+00269                             {\cf22 "4. Select a row and enter a new value to update it.\\n"} +\par
+00270                             {\cf22 "5. Calculate average using 'Average'.\\n"} +\par
+00271                             {\cf22 "6. Set upper and lower limits for color coding. Red means the value is above and blue means value is below of paramenters\\n"} +\par
+00272                             {\cf22 "7. Load and save data using the File menu.\\n"} +\par
+00273                             {\cf22 "8. Navigate files with 'Next' and 'Previous' buttons.\\n"} +\par
+00274                             {\cf22 "9. Search for specific values using the search feature."}, {\cf22 "Sensing4U Tutorial"},\par
+00275                             MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00276         \}\par
+00280         {\cf17 public} {\cf18 void} AddSensor()\par
+00281         \{\par
+00282             {\cf17 using} (var addForm = {\cf17 new} AddDataForm())\par
+00283             \{\par
+00284                 {\cf19 if} (addForm.ShowDialog() == DialogResult.OK)\par
+00285                 \{\par
+00286                     {\cf18 string} label = addForm.SensorLabel;\par
+00287                     {\cf18 double} value = addForm.SensorValue;\par
+00288                     dataGridViewSensor.Rows.Add(label, value);\par
+00289                 \}\par
+00290             \}\par
+00291         \}\par
+00295         {\cf17 public} {\cf18 void} RemoveSensor()\par
+00296         \{\par
+00297             {\cf19 if} (dataGridViewSensor.SelectedRows.Count > 0)\par
+00298             \{\par
+00299                 dataGridViewSensor.Rows.RemoveAt(dataGridViewSensor.SelectedRows[0].Index);\par
+00300                 MessageBox.Show({\cf22 "Selected row removed successfully."}, {\cf22 "Remove Data"});\par
+00301             \}\par
+00302             {\cf19 else}\par
+00303             \{\par
+00304                 MessageBox.Show({\cf22 "Please select a row to remove."}, {\cf22 "No Selection"},\par
+00305                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);\par
+00306             \}\par
+00307         \}\par
+00311         {\cf17 public} {\cf18 void} SortSensor()\par
+00312         \{\par
+00313             var sensorData = {\cf17 new} List<(string Label, double Value)>();\par
+00314             {\cf19 foreach} (DataGridViewRow row {\cf19 in} dataGridViewSensor.Rows)\par
+00315             \{\par
+00316                 {\cf19 if} (row.Cells[{\cf22 "SensorValue"}].Value != {\cf17 null})\par
+00317                 \{\par
+00318                     sensorData.Add((row.Cells[{\cf22 "SensorLabel"}].Value.ToString(), Convert.ToDouble(row.Cells[{\cf22 "SensorValue"}].Value)));\par
+00319                 \}\par
+00320             \}\par
+00321             {\cf19 for} ({\cf18 int} i = 0; i < sensorData.Count - 1; i++)\par
+00322             \{\par
+00323                 {\cf19 for} ({\cf18 int} j = 0; j < sensorData.Count - i - 1; j++)\par
+00324                 \{\par
+00325                     {\cf19 if} (sensorData[j].Value > sensorData[j + 1].Value)\par
+00326                     \{\par
+00327                         var temp = sensorData[j];\par
+00328                         sensorData[j] = sensorData[j + 1];\par
+00329                         sensorData[j + 1] = temp;\par
+00330                     \}\par
+00331                 \}\par
+00332             \}\par
+00333             dataGridViewSensor.Rows.Clear();\par
+00334             {\cf19 foreach} (var data {\cf19 in} sensorData)\par
+00335             \{\par
+00336                 dataGridViewSensor.Rows.Add(data.Label, data.Value);\par
+00337             \}\par
+00338             sorted = {\cf17 true};\par
+00339             MessageBox.Show({\cf22 "Data sorted in ascending order."}, {\cf22 "Sort Data"});\par
+00340         \}\par
+00344         {\cf17 public} {\cf18 void} UpdateSensor()\par
+00345         \{\par
+00346             {\cf19 if} (dataGridViewSensor.SelectedRows.Count > 0)\par
+00347             \{\par
+00348                 var selectedRow = dataGridViewSensor.SelectedRows[0];\par
+00349                 var rowUpdate = txtUpdate.Text.ToString();\par
+00350                 {\cf19 if} ({\cf18 string}.IsNullOrWhiteSpace(rowUpdate) || !{\cf18 double}.TryParse(rowUpdate, out _))\par
+00351                 \{\par
+00352                     MessageBox.Show({\cf22 "Please enter a value to update."}, {\cf22 "No Input"},\par
+00353                                     MessageBoxButtons.OK, MessageBoxIcon.Warning);\par
+00354                 \}\par
+00355                 {\cf19 else}\par
+00356                 \{\par
+00357                     selectedRow.Cells[{\cf22 "SensorValue"}].Value = txtUpdate.Text;\par
+00358                     MessageBox.Show({\cf22 "Data has updated"}, {\cf22 "Update data"});\par
+00359                 \}\par
+00360             \}\par
+00361             {\cf19 else}\par
+00362             \{\par
+00363                 MessageBox.Show({\cf22 "Please select a row to update."}, {\cf22 "No Selection"},\par
+00364                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);\par
+00365             \}\par
+00366 \par
+00367         \}\par
+00372         {\cf17 public} {\cf18 double} AvgSensor()\par
+00373         \{\par
+00374             {\cf18 double} sum = 0;\par
+00375             {\cf18 int} count = dataGridViewSensor.Rows.Count;\par
+00376             {\cf19 foreach} (DataGridViewRow row {\cf19 in} dataGridViewSensor.Rows)\par
+00377             \{\par
+00378                 sum += Convert.ToDouble(row.Cells[{\cf22 "SensorValue"}].Value);\par
+00379             \}\par
+00380             {\cf18 double} average = sum / count;\par
+00381             {\cf19 return} average;\par
+00382         \}\par
+00386         {\cf17 public} {\cf18 void} FilterData()\par
+00387         \{\par
+00388             {\cf18 double} max, min;\par
+00389             {\cf19 if} (!{\cf18 double}.TryParse(txtBoxUpper.Text, out max) ||\par
+00390                 !{\cf18 double}.TryParse(txtBoxLower.Text, out min))\par
+00391             \{\par
+00392                 MessageBox.Show({\cf22 "Please enter valid numeric values for max and min."}, {\cf22 "Input Error"},\par
+00393                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);\par
+00394                 {\cf19 return};\par
+00395             \}\par
+00396             {\cf19 if} (min >= max)\par
+00397             \{\par
+00398                 MessageBox.Show({\cf22 "Minimum value must be less than maximum value."}, {\cf22 "Input Error"},\par
+00399                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);\par
+00400                 {\cf19 return};\par
+00401             \}\par
+00402             {\cf19 else} {\cf19 if} (min < 0 || max < 0)\par
+00403             \{\par
+00404                 MessageBox.Show({\cf22 "Values must be non-negative."}, {\cf22 "Input Error"},\par
+00405                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);\par
+00406                 {\cf19 return};\par
+00407             \}\par
+00408             {\cf19 foreach} (DataGridViewRow row {\cf19 in} dataGridViewSensor.Rows)\par
+00409             \{\par
+00410                 {\cf18 double} value = Convert.ToDouble(row.Cells[{\cf22 "SensorValue"}].Value);\par
+00411                 {\cf19 if} (value >= max)\par
+00412                 \{\par
+00413                     row.DefaultCellStyle.BackColor = Color.Red;\par
+00414                 \}\par
+00415                 {\cf19 else} {\cf19 if} (value <= min)\par
+00416                 \{\par
+00417                     row.DefaultCellStyle.BackColor = Color.LightBlue;\par
+00418                 \}\par
+00419                 {\cf19 else}\par
+00420                 \{\par
+00421                     row.DefaultCellStyle.BackColor = Color.Green;\par
+00422                 \}\par
+00423             \}\par
+00424             txtBoxUpper.Text = max.ToString();\par
+00425             txtBoxLower.Text = min.ToString();\par
+00426         \}\par
+00431         {\cf17 public} {\cf18 void} LoadFile({\cf18 string} filePath)\par
+00432         \{\par
+00433             dataGridViewSensor.Rows.Clear();\par
+00434             {\cf18 string} extension = Path.GetExtension(filePath).ToLower();\par
+00435             {\cf19 if} (extension == {\cf22 ".bin"})\par
+00436             \{\par
+00437                 {\cf17 using} (var reader = {\cf17 new} BinaryReader(File.Open(filePath, FileMode.Open)))\par
+00438                 \{\par
+00439                     {\cf19 while} (reader.BaseStream.Position != reader.BaseStream.Length)\par
+00440                     \{\par
+00441                         {\cf18 string} label = reader.ReadString();\par
+00442                         {\cf18 double} value = reader.ReadDouble();\par
+00443                         dataGridViewSensor.Rows.Add(label, value);\par
+00444                     \}\par
+00445                 \}\par
+00446             \}\par
+00447             {\cf19 else} {\cf19 if} (extension == {\cf22 ".csv"})\par
+00448             \{\par
+00449                 var lines = File.ReadAllLines(filePath);\par
+00450                 {\cf19 foreach} (var line {\cf19 in} lines)\par
+00451                 \{\par
+00452                     var parts = line.Split({\cf23 ','});\par
+00453                     {\cf19 if} (parts.Length == 2 && {\cf18 double}.TryParse(parts[1], out {\cf18 double} value))\par
+00454                         dataGridViewSensor.Rows.Add(parts[0], value);\par
+00455                 \}\par
+00456             \}\par
+00457             comboBoxListOfFile.Text = Path.GetFileName(filePath);\par
+00458             sorted = {\cf17 false};\par
+00459         \}\par
+00463         {\cf17 public} {\cf18 void} LoadFileFunction()\par
+00464         \{\par
+00465             OpenFileDialog openFileDialog = {\cf17 new} OpenFileDialog\par
+00466             \{\par
+00467                 InitialDirectory = currentDirectory,\par
+00468                 Filter = {\cf22 "Binary files (*.bin)|*.bin|CSV files (*.csv)|*.csv|All files (*.*)|*.*"},\par
+00469                 Title = {\cf22 "Select a sensor data file"}\par
+00470             \};\par
+00471             {\cf19 if} (openFileDialog.ShowDialog() == DialogResult.OK)\par
+00472             \{\par
+00473                 {\cf19 try}\par
+00474                 \{\par
+00475                     currentDirectory = Path.GetDirectoryName(openFileDialog.FileName);\par
+00476                     fileList = Directory.GetFiles(currentDirectory, {\cf22 "*.*"})\par
+00477                                         .Where(f => f.EndsWith({\cf22 ".csv"}) || f.EndsWith({\cf22 ".bin"}))\par
+00478                                         .ToArray();\par
+00479                     currentFileIndex = Array.IndexOf(fileList, openFileDialog.FileName);\par
+00480                     LoadFile(openFileDialog.FileName);\par
+00481                     MessageBox.Show(${\cf22 "\{openFileDialog.FileName\} loaded successfully."});\par
+00482                 \}\par
+00483                 {\cf19 catch} (Exception ex)\par
+00484                 \{\par
+00485                     MessageBox.Show(${\cf22 "Error loading file: \{ex.Message\}"}, {\cf22 "Load Error"},\par
+00486                                     MessageBoxButtons.OK, MessageBoxIcon.Error);\par
+00487                 \}\par
+00488             \}\par
+00489 \par
+00490         \}\par
+00494         {\cf17 public} {\cf18 void} SaveFileFunction({\cf18 string} fileName)\par
+00495         \{\par
+00496             {\cf18 bool} isEmpty = dataGridViewSensor.Rows.Count == 0;\par
+00497             {\cf19 if} (isEmpty)\par
+00498             \{\par
+00499                 MessageBox.Show({\cf22 "No data available to save."}, {\cf22 "No Data"},\par
+00500                                 MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00501                 {\cf19 return};\par
+00502             \}\par
+00503             {\cf17 using} (SaveFileDialog saveFileDialog = {\cf17 new} SaveFileDialog())\par
+00504             \{\par
+00505                 saveFileDialog.Filter = {\cf22 "Binary files (*.bin)|*.bin|CSV files (*.csv)|*.csv|All files (*.*)|*.*"};\par
+00506                 {\cf19 if} ({\cf18 string}.IsNullOrEmpty(currentDirectory) || !Directory.Exists(currentDirectory))\par
+00507                 \{\par
+00508                     currentDirectory = {\cf22 "C:\\\\Sensing4U\\\\DataStorage\\\\"};\par
+00509                 \}\par
+00510                 saveFileDialog.InitialDirectory = currentDirectory;\par
+00511                 {\cf19 if} (!{\cf18 string}.IsNullOrEmpty(fileName))\par
+00512                 \{\par
+00513                     saveFileDialog.FileName = Path.GetFileName(fileName);\par
+00514                 \}\par
+00515                 {\cf19 if} (saveFileDialog.ShowDialog() == DialogResult.OK)\par
+00516                 \{\par
+00517                     {\cf19 try}\par
+00518                     \{\par
+00519                         {\cf18 string} extension = Path.GetExtension(saveFileDialog.FileName).ToLower();\par
+00520                         {\cf19 if} (extension == {\cf22 ".bin"})\par
+00521                         \{\par
+00522                             {\cf17 using} (var writer = {\cf17 new} BinaryWriter(File.Open(saveFileDialog.FileName, FileMode.Create)))\par
+00523                             \{\par
+00524                                 {\cf19 foreach} (DataGridViewRow row {\cf19 in} dataGridViewSensor.Rows)\par
+00525                                 \{\par
+00526                                     writer.Write(row.Cells[{\cf22 "SensorLabel"}].Value.ToString());\par
+00527                                     writer.Write(Convert.ToDouble(row.Cells[{\cf22 "SensorValue"}].Value));\par
+00528                                 \}\par
+00529                             \}\par
+00530                         \}\par
+00531                         {\cf19 else} {\cf19 if} (extension == {\cf22 ".csv"})\par
+00532                         \{\par
+00533                             {\cf17 using} (var writer = {\cf17 new} StreamWriter(saveFileDialog.FileName))\par
+00534                             \{\par
+00535                                 {\cf19 foreach} (DataGridViewRow row {\cf19 in} dataGridViewSensor.Rows)\par
+00536                                 \{\par
+00537                                     writer.WriteLine(${\cf22 "\{row.Cells["}SensorLabel{\cf22 "].Value\},\{row.Cells["}SensorValue{\cf22 "].Value\}"});\par
+00538                                 \}\par
+00539                             \}\par
+00540                         \}\par
+00541                         MessageBox.Show({\cf22 "File saved successfully."}, {\cf22 "Save File"});\par
+00542                     \}\par
+00543                     {\cf19 catch} (Exception ex)\par
+00544                     \{\par
+00545                         MessageBox.Show(${\cf22 "Error saving file: \{ex.Message\}"}, {\cf22 "Save Error"},\par
+00546                                         MessageBoxButtons.OK, MessageBoxIcon.Error);\par
+00547                     \}\par
+00548                 \}\par
+00549             \}\par
+00550         \}\par
+00554         {\cf17 public} {\cf18 void} NxtFileFunction()\par
+00555         \{\par
+00556             {\cf19 if} (fileList == {\cf17 null} || fileList.Length == 0)\par
+00557             \{\par
+00558                 MessageBox.Show({\cf22 "No files loaded. Please load a file first."}, {\cf22 "No Files"},\par
+00559                                 MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00560                 {\cf19 return};\par
+00561             \}\par
+00562             currentFileIndex = (currentFileIndex + 1) % fileList.Length;\par
+00563             LoadFile(fileList[currentFileIndex]);\par
+00564         \}\par
+00568         {\cf17 public} {\cf18 void} PreviousFileFunction()\par
+00569         \{\par
+00570             {\cf19 if} (fileList == {\cf17 null} || fileList.Length == 0)\par
+00571             \{\par
+00572                 MessageBox.Show({\cf22 "No files loaded. Please load a file first."}, {\cf22 "No Files"},\par
+00573                                 MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00574                 {\cf19 return};\par
+00575             \}\par
+00576             currentFileIndex = (currentFileIndex - 1 + fileList.Length) % fileList.Length;\par
+00577             LoadFile(fileList[currentFileIndex]);\par
+00578         \}\par
+00584         {\cf17 public} {\cf18 int} BinarySearch({\cf18 double} targetValue)\par
+00585         \{\par
+00586             var sensorData = {\cf17 new} List<(string Label, double Value)>();\par
+00587 \par
+00588             {\cf20 // Sort data if not sorted}\par
+00589             {\cf19 if} (!sorted)\par
+00590                 SortSensor();\par
+00591             {\cf18 double} searchValue = targetValue;\par
+00592             {\cf20 // Extract grid data}\par
+00593             {\cf19 foreach} (DataGridViewRow row {\cf19 in} dataGridViewSensor.Rows)\par
+00594             \{\par
+00595                 {\cf19 if} (row.Cells[{\cf22 "SensorValue"}].Value != {\cf17 null})\par
+00596                 \{\par
+00597                     sensorData.Add((row.Cells[{\cf22 "SensorLabel"}].Value.ToString(),\par
+00598                                     Convert.ToDouble(row.Cells[{\cf22 "SensorValue"}].Value)));\par
+00599                 \}\par
+00600             \}\par
+00601             {\cf18 int} left = 0;\par
+00602             {\cf18 int} right = sensorData.Count - 1;\par
+00603             {\cf18 int} foundIndex = -1;\par
+00604             {\cf20 // Binary Search}\par
+00605             {\cf19 while} (left <= right)\par
+00606             \{\par
+00607                 {\cf18 int} mid = left + (right - left) / 2;\par
+00608                 {\cf19 if} (sensorData[mid].Value == searchValue)\par
+00609                 \{\par
+00610                     foundIndex = mid;\par
+00611                     {\cf19 break};\par
+00612                 \}\par
+00613 \par
+00614                 {\cf19 if} (sensorData[mid].Value < searchValue)\par
+00615                     left = mid + 1;\par
+00616                 {\cf19 else}\par
+00617                     right = mid - 1;\par
+00618             \}\par
+00619 \par
+00620             {\cf20 // No match found}\par
+00621             {\cf19 if} (foundIndex == -1)\par
+00622             \{\par
+00623                 MessageBox.Show({\cf22 "Value not found in the data."}, {\cf22 "Search Result"});\par
+00624                 {\cf19 return} -1;\par
+00625             \}\par
+00626 \par
+00627             {\cf20 // Highlight ALL rows with this value}\par
+00628             {\cf19 foreach} (DataGridViewRow row {\cf19 in} dataGridViewSensor.Rows)\par
+00629             \{\par
+00630                 {\cf18 double} value = Convert.ToDouble(row.Cells[{\cf22 "SensorValue"}].Value);\par
+00631                 {\cf19 if} (value == searchValue)\par
+00632                     row.Cells[{\cf22 "SensorValue"}].Style.BackColor = Color.Yellow;\par
+00633             \}\par
+00634 \par
+00635             MessageBox.Show(${\cf22 "Value \{searchValue\} found (highlighted in yellow)."}, {\cf22 "Search Result"});\par
+00636             {\cf19 return} foundIndex;\par
+00637         \}\par
+00641         {\cf17 private} {\cf18 void} hasDataOnGrid()\par
+00642         \{\par
+00643             {\cf19 if} (dataGridViewSensor.Rows.Count == 0)\par
+00644             \{\par
+00645                 MessageBox.Show({\cf22 "No data available to operate this fuction."}, {\cf22 "No Data"},\par
+00646                                 MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00647                 {\cf19 return};\par
+00648             \}\par
+00649         \}\par
+00650     \}\par
+00651 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+SensingMainWin.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v SensingMainWin.cs}
+{\xe \v SensingMainWin.cs}
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Sensing4U_v2._0.Sensing4USensorData}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Sensing4U_v2}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Sensing4U_v2._0}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+SensingMainWin.cs\par \pard\plain 
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }Sensing4U_v2._0;\par
+00002 {\cf17 using }System;\par
+00003 {\cf17 using }System.Collections;\par
+00004 {\cf17 using }System.Collections.Generic;\par
+00005 {\cf17 using }System.Diagnostics.Eventing.Reader;\par
+00006 {\cf17 using }System.Drawing;\par
+00007 {\cf17 using }System.Globalization;\par
+00008 {\cf17 using }System.IO;\par
+00009 {\cf17 using }System.Linq;\par
+00010 {\cf17 using }System.Windows.Forms;\par
+00011 {\cf20 /* }\par
+00012 {\cf20  * Author: Caio Guilherme Ferreira da Silva}\par
+00013 {\cf20  * Date: October 22, 2025}\par
+00014 {\cf20  * Description: This code defines a Windows Forms application for managing sensor data.}\par
+00015 {\cf20  * Version: 2.0}\par
+00016 {\cf20  */}\par
+00017 {\cf17 namespace }Sensing4U_v2._0\par
+00018 \{\par
+00019     {\cf17 public} {\cf17 partial class }Sensing4USensorData : Form\par
+00020     \{\par
+00021         {\cf17 private} {\cf18 string}[] fileList;\par
+00022         {\cf17 private} {\cf18 int} currentFileIndex = -1;\par
+00023         {\cf17 private} {\cf18 string} currentDirectory = {\cf22 "C:\\\\Sensing4U\\\\DataStorage\\\\"};\par
+00024         {\cf17 private} {\cf18 bool} sorted = {\cf17 false};\par
+00025 \par
+00026         {\cf17 public} Sensing4USensorData()\par
+00027         \{\par
+00028             InitializeComponent();\par
+00029             InitializeGridView();\par
+00030             InitializeShortcuts();\par
+00031         \}\par
+00032 \par
+00033         {\cf17 public} {\cf18 void} InitializeGridView()\par
+00034         \{\par
+00035             dataGridViewSensor.SelectionMode = DataGridViewSelectionMode.FullRowSelect;\par
+00036             dataGridViewSensor.MultiSelect = {\cf17 true};\par
+00037             dataGridViewSensor.AllowUserToAddRows = {\cf17 false};\par
+00038             dataGridViewSensor.ReadOnly = {\cf17 true};\par
+00039             dataGridViewSensor.Columns.Add({\cf22 "SensorLabel"}, {\cf22 "Sensor Label"});\par
+00040             dataGridViewSensor.Columns.Add({\cf22 "SensorValue"}, {\cf22 "Sensor Value"});\par
+00041         \}\par
+00042 \par
+00043         {\cf17 private} {\cf18 void} InitializeShortcuts()\par
+00044         \{\par
+00045             newToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.N;\par
+00046             loadToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.O;\par
+00047             saveToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.S;\par
+00048         \}\par
+00054         {\cf17 private} {\cf18 void} btnAdd_Click({\cf18 object} sender, EventArgs e)\par
+00055         \{\par
+00056             AddSensor();\par
+00057             sorted = {\cf17 false};\par
+00058             ClearView();\par
+00059         \}\par
+00065         {\cf17 private} {\cf18 void} btnRemove_Click({\cf18 object} sender, EventArgs e)\par
+00066         \{\par
+00067             RemoveSensor();\par
+00068             sorted = {\cf17 false};\par
+00069             ClearView();\par
+00070         \}\par
+00076         {\cf17 private} {\cf18 void} btnSort_Click({\cf18 object} sender, EventArgs e)\par
+00077         \{\par
+00078             hasDataOnGrid();\par
+00079             SortSensor();\par
+00080             ClearView();\par
+00081         \}\par
+00087         {\cf17 private} {\cf18 void} btnUpdate_Click({\cf18 object} sender, EventArgs e)\par
+00088         \{\par
+00089             UpdateSensor();\par
+00090             sorted = {\cf17 false};\par
+00091             ClearView();\par
+00092         \}\par
+00098         {\cf17 private} {\cf18 void} btnAvg_Click({\cf18 object} sender, EventArgs e)\par
+00099         \{\par
+00100             hasDataOnGrid();\par
+00101             {\cf18 double} average = 0;\par
+00102             AvgSensor();\par
+00103             ClearView();\par
+00104             txtBoxAvg.Text = ${\cf22 "\{average:F2\}"};\par
+00105 \par
+00106         \}\par
+00107 \par
+00108         {\cf17 private} {\cf18 void} btnMaxMin_Click({\cf18 object} sender, EventArgs e)\par
+00109         \{\par
+00110             hasDataOnGrid();\par
+00111             FilterData();\par
+00112             ClearView();\par
+00113             MessageBox.Show({\cf22 "Data filtered successfully."});\par
+00114         \}\par
+00120         {\cf17 private} {\cf18 void} newToolStripMenuItem_Click({\cf18 object} sender, EventArgs e)\par
+00121         \{\par
+00122             dataGridViewSensor.Rows.Clear();\par
+00123             ClearView();\par
+00124         \}\par
+00130 \par
+00131         {\cf17 private} {\cf18 void} loadToolStripMenuItem_Click({\cf18 object} sender, EventArgs e)\par
+00132         \{\par
+00133             LoadFileFunction();\par
+00134             ClearView();\par
+00135         \}\par
+00140 \par
+00146         {\cf17 private} {\cf18 void} saveToolStripMenuItem_Click({\cf18 object} sender, EventArgs e)\par
+00147         \{\par
+00148             {\cf18 string} fileName;\par
+00149             {\cf19 if} (currentFileIndex != -1 && fileList != {\cf17 null} && currentFileIndex < fileList.Length)\par
+00150             \{\par
+00151                 fileName = fileList[currentFileIndex];\par
+00152             \}\par
+00153             {\cf19 else}\par
+00154             \{\par
+00155                 fileName = {\cf18 string}.Empty;\par
+00156             \}\par
+00157             SaveFileFunction(fileName);\par
+00158             ClearView();\par
+00159         \}\par
+00165         {\cf17 private} {\cf18 void} btnNextFile_Click({\cf18 object} sender, EventArgs e)\par
+00166         \{\par
+00167             NxtFileFunction();\par
+00168             ClearView();\par
+00169         \}\par
+00176         {\cf17 private} {\cf18 void} btnPreviousFile_Click({\cf18 object} sender, EventArgs e)\par
+00177         \{\par
+00178             PreviousFileFunction();\par
+00179             ClearView();\par
+00180         \}\par
+00184         {\cf17 private} {\cf18 void} ClearView()\par
+00185         \{\par
+00186             txtBoxAvg.Clear();\par
+00187             txtBoxLower.Clear();\par
+00188             txtBoxUpper.Clear();\par
+00189             txtUpdate.Clear();\par
+00190             txtBoxSearch.Clear();\par
+00191             txtBoxAvg.Clear();\par
+00192         \}\par
+00199         {\cf17 private} {\cf18 void} btnSearch_Click({\cf18 object} sender, EventArgs e)\par
+00200         \{\par
+00201             hasDataOnGrid();\par
+00202             var searchData = txtBoxSearch.Text;\par
+00203             BinarySearch(Convert.ToDouble(searchData));\par
+00204             ClearView();\par
+00205         \}\par
+00211         {\cf17 private} {\cf18 void} ComboBoxListOfFile_DropDown({\cf18 object} sender, EventArgs e)\par
+00212         \{\par
+00213             {\cf19 if} (fileList == {\cf17 null} || fileList.Length == 0)\par
+00214             \{\par
+00215                 MessageBox.Show({\cf22 "No files loaded. Please load a file first."}, {\cf22 "No Files"},\par
+00216                                 MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00217                 {\cf19 return};\par
+00218             \}\par
+00219             comboBoxListOfFile.Items.Clear();\par
+00220             {\cf19 foreach} (var file {\cf19 in} fileList)\par
+00221             \{\par
+00222                 comboBoxListOfFile.Items.Add(Path.GetFileName(file));\par
+00223             \}\par
+00224         \}\par
+00230         {\cf17 private} {\cf18 void} ComboBoxListOfFile_SelectedIndexChanged({\cf18 object} sender, EventArgs e)\par
+00231         \{\par
+00232             {\cf19 if} (fileList == {\cf17 null} || fileList.Length == 0)\par
+00233             \{\par
+00234                 MessageBox.Show({\cf22 "No files loaded. Please load a file first."}, {\cf22 "No Files"},\par
+00235                                 MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00236                 {\cf19 return};\par
+00237             \}\par
+00238             {\cf18 string} selectedFile = comboBoxListOfFile.SelectedItem.ToString();\par
+00239             {\cf18 int} selectedIndex = Array.IndexOf(fileList, Path.Combine(currentDirectory, selectedFile));\par
+00240             {\cf19 if} (selectedIndex != -1)\par
+00241             \{\par
+00242                 currentFileIndex = selectedIndex;\par
+00243                 LoadFile(fileList[currentFileIndex]);\par
+00244                 ClearView();\par
+00245             \}\par
+00246         \}\par
+00252         {\cf17 private} {\cf18 void} aboutToolStripMenuItem_Click({\cf18 object} sender, EventArgs e)\par
+00253         \{\par
+00254             MessageBox.Show({\cf22 "Sensing4U Application\\nVersion 1.0\\nDeveloped by Caio Guilherme Ferreira da Silva"}, {\cf22 "About Sensing4U"},\par
+00255                             MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00256         \}\par
+00263         {\cf17 private} {\cf18 void} tutorialToolStripMenuItem_Click({\cf18 object} sender, EventArgs e)\par
+00264         \{\par
+00265             MessageBox.Show({\cf22 "Sensing4U Application Tutorial:\\n\\n"} +\par
+00266                             {\cf22 "1. Use 'Add Data' to input new sensor readings.\\n"} +\par
+00267                             {\cf22 "2. Select a row and use 'Remove' to delete it.\\n"} +\par
+00268                             {\cf22 "3. Use 'Sort Data' to sort readings by value.\\n"} +\par
+00269                             {\cf22 "4. Select a row and enter a new value to update it.\\n"} +\par
+00270                             {\cf22 "5. Calculate average using 'Average'.\\n"} +\par
+00271                             {\cf22 "6. Set upper and lower limits for color coding. Red means the value is above and blue means value is below of paramenters\\n"} +\par
+00272                             {\cf22 "7. Load and save data using the File menu.\\n"} +\par
+00273                             {\cf22 "8. Navigate files with 'Next' and 'Previous' buttons.\\n"} +\par
+00274                             {\cf22 "9. Search for specific values using the search feature."}, {\cf22 "Sensing4U Tutorial"},\par
+00275                             MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00276         \}\par
+00280         {\cf17 public} {\cf18 void} AddSensor()\par
+00281         \{\par
+00282             {\cf17 using} (var addForm = {\cf17 new} AddDataForm())\par
+00283             \{\par
+00284                 {\cf19 if} (addForm.ShowDialog() == DialogResult.OK)\par
+00285                 \{\par
+00286                     {\cf18 string} label = addForm.SensorLabel;\par
+00287                     {\cf18 double} value = addForm.SensorValue;\par
+00288                     dataGridViewSensor.Rows.Add(label, value);\par
+00289                 \}\par
+00290             \}\par
+00291         \}\par
+00295         {\cf17 public} {\cf18 void} RemoveSensor()\par
+00296         \{\par
+00297             {\cf19 if} (dataGridViewSensor.SelectedRows.Count > 0)\par
+00298             \{\par
+00299                 dataGridViewSensor.Rows.RemoveAt(dataGridViewSensor.SelectedRows[0].Index);\par
+00300                 MessageBox.Show({\cf22 "Selected row removed successfully."}, {\cf22 "Remove Data"});\par
+00301             \}\par
+00302             {\cf19 else}\par
+00303             \{\par
+00304                 MessageBox.Show({\cf22 "Please select a row to remove."}, {\cf22 "No Selection"},\par
+00305                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);\par
+00306             \}\par
+00307         \}\par
+00311         {\cf17 public} {\cf18 void} SortSensor()\par
+00312         \{\par
+00313             var sensorData = {\cf17 new} List<(string Label, double Value)>();\par
+00314             {\cf19 foreach} (DataGridViewRow row {\cf19 in} dataGridViewSensor.Rows)\par
+00315             \{\par
+00316                 {\cf19 if} (row.Cells[{\cf22 "SensorValue"}].Value != {\cf17 null})\par
+00317                 \{\par
+00318                     sensorData.Add((row.Cells[{\cf22 "SensorLabel"}].Value.ToString(), Convert.ToDouble(row.Cells[{\cf22 "SensorValue"}].Value)));\par
+00319                 \}\par
+00320             \}\par
+00321             {\cf19 for} ({\cf18 int} i = 0; i < sensorData.Count - 1; i++)\par
+00322             \{\par
+00323                 {\cf19 for} ({\cf18 int} j = 0; j < sensorData.Count - i - 1; j++)\par
+00324                 \{\par
+00325                     {\cf19 if} (sensorData[j].Value > sensorData[j + 1].Value)\par
+00326                     \{\par
+00327                         var temp = sensorData[j];\par
+00328                         sensorData[j] = sensorData[j + 1];\par
+00329                         sensorData[j + 1] = temp;\par
+00330                     \}\par
+00331                 \}\par
+00332             \}\par
+00333             dataGridViewSensor.Rows.Clear();\par
+00334             {\cf19 foreach} (var data {\cf19 in} sensorData)\par
+00335             \{\par
+00336                 dataGridViewSensor.Rows.Add(data.Label, data.Value);\par
+00337             \}\par
+00338             sorted = {\cf17 true};\par
+00339             MessageBox.Show({\cf22 "Data sorted in ascending order."}, {\cf22 "Sort Data"});\par
+00340         \}\par
+00344         {\cf17 public} {\cf18 void} UpdateSensor()\par
+00345         \{\par
+00346             {\cf19 if} (dataGridViewSensor.SelectedRows.Count > 0)\par
+00347             \{\par
+00348                 var selectedRow = dataGridViewSensor.SelectedRows[0];\par
+00349                 var rowUpdate = txtUpdate.Text.ToString();\par
+00350                 {\cf19 if} ({\cf18 string}.IsNullOrWhiteSpace(rowUpdate) || !{\cf18 double}.TryParse(rowUpdate, out _))\par
+00351                 \{\par
+00352                     MessageBox.Show({\cf22 "Please enter a value to update."}, {\cf22 "No Input"},\par
+00353                                     MessageBoxButtons.OK, MessageBoxIcon.Warning);\par
+00354                 \}\par
+00355                 {\cf19 else}\par
+00356                 \{\par
+00357                     selectedRow.Cells[{\cf22 "SensorValue"}].Value = txtUpdate.Text;\par
+00358                     MessageBox.Show({\cf22 "Data has updated"}, {\cf22 "Update data"});\par
+00359                 \}\par
+00360             \}\par
+00361             {\cf19 else}\par
+00362             \{\par
+00363                 MessageBox.Show({\cf22 "Please select a row to update."}, {\cf22 "No Selection"},\par
+00364                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);\par
+00365             \}\par
+00366 \par
+00367         \}\par
+00372         {\cf17 public} {\cf18 double} AvgSensor()\par
+00373         \{\par
+00374             {\cf18 double} sum = 0;\par
+00375             {\cf18 int} count = dataGridViewSensor.Rows.Count;\par
+00376             {\cf19 foreach} (DataGridViewRow row {\cf19 in} dataGridViewSensor.Rows)\par
+00377             \{\par
+00378                 sum += Convert.ToDouble(row.Cells[{\cf22 "SensorValue"}].Value);\par
+00379             \}\par
+00380             {\cf18 double} average = sum / count;\par
+00381             {\cf19 return} average;\par
+00382         \}\par
+00386         {\cf17 public} {\cf18 void} FilterData()\par
+00387         \{\par
+00388             {\cf18 double} max, min;\par
+00389             {\cf19 if} (!{\cf18 double}.TryParse(txtBoxUpper.Text, out max) ||\par
+00390                 !{\cf18 double}.TryParse(txtBoxLower.Text, out min))\par
+00391             \{\par
+00392                 MessageBox.Show({\cf22 "Please enter valid numeric values for max and min."}, {\cf22 "Input Error"},\par
+00393                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);\par
+00394                 {\cf19 return};\par
+00395             \}\par
+00396             {\cf19 if} (min >= max)\par
+00397             \{\par
+00398                 MessageBox.Show({\cf22 "Minimum value must be less than maximum value."}, {\cf22 "Input Error"},\par
+00399                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);\par
+00400                 {\cf19 return};\par
+00401             \}\par
+00402             {\cf19 else} {\cf19 if} (min < 0 || max < 0)\par
+00403             \{\par
+00404                 MessageBox.Show({\cf22 "Values must be non-negative."}, {\cf22 "Input Error"},\par
+00405                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);\par
+00406                 {\cf19 return};\par
+00407             \}\par
+00408             {\cf19 foreach} (DataGridViewRow row {\cf19 in} dataGridViewSensor.Rows)\par
+00409             \{\par
+00410                 {\cf18 double} value = Convert.ToDouble(row.Cells[{\cf22 "SensorValue"}].Value);\par
+00411                 {\cf19 if} (value >= max)\par
+00412                 \{\par
+00413                     row.DefaultCellStyle.BackColor = Color.Red;\par
+00414                 \}\par
+00415                 {\cf19 else} {\cf19 if} (value <= min)\par
+00416                 \{\par
+00417                     row.DefaultCellStyle.BackColor = Color.LightBlue;\par
+00418                 \}\par
+00419                 {\cf19 else}\par
+00420                 \{\par
+00421                     row.DefaultCellStyle.BackColor = Color.Green;\par
+00422                 \}\par
+00423             \}\par
+00424             txtBoxUpper.Text = max.ToString();\par
+00425             txtBoxLower.Text = min.ToString();\par
+00426         \}\par
+00431         {\cf17 public} {\cf18 void} LoadFile({\cf18 string} filePath)\par
+00432         \{\par
+00433             dataGridViewSensor.Rows.Clear();\par
+00434             {\cf18 string} extension = Path.GetExtension(filePath).ToLower();\par
+00435             {\cf19 if} (extension == {\cf22 ".bin"})\par
+00436             \{\par
+00437                 {\cf17 using} (var reader = {\cf17 new} BinaryReader(File.Open(filePath, FileMode.Open)))\par
+00438                 \{\par
+00439                     {\cf19 while} (reader.BaseStream.Position != reader.BaseStream.Length)\par
+00440                     \{\par
+00441                         {\cf18 string} label = reader.ReadString();\par
+00442                         {\cf18 double} value = reader.ReadDouble();\par
+00443                         dataGridViewSensor.Rows.Add(label, value);\par
+00444                     \}\par
+00445                 \}\par
+00446             \}\par
+00447             {\cf19 else} {\cf19 if} (extension == {\cf22 ".csv"})\par
+00448             \{\par
+00449                 var lines = File.ReadAllLines(filePath);\par
+00450                 {\cf19 foreach} (var line {\cf19 in} lines)\par
+00451                 \{\par
+00452                     var parts = line.Split({\cf23 ','});\par
+00453                     {\cf19 if} (parts.Length == 2 && {\cf18 double}.TryParse(parts[1], out {\cf18 double} value))\par
+00454                         dataGridViewSensor.Rows.Add(parts[0], value);\par
+00455                 \}\par
+00456             \}\par
+00457             comboBoxListOfFile.Text = Path.GetFileName(filePath);\par
+00458             sorted = {\cf17 false};\par
+00459         \}\par
+00463         {\cf17 public} {\cf18 void} LoadFileFunction()\par
+00464         \{\par
+00465             OpenFileDialog openFileDialog = {\cf17 new} OpenFileDialog\par
+00466             \{\par
+00467                 InitialDirectory = currentDirectory,\par
+00468                 Filter = {\cf22 "Binary files (*.bin)|*.bin|CSV files (*.csv)|*.csv|All files (*.*)|*.*"},\par
+00469                 Title = {\cf22 "Select a sensor data file"}\par
+00470             \};\par
+00471             {\cf19 if} (openFileDialog.ShowDialog() == DialogResult.OK)\par
+00472             \{\par
+00473                 {\cf19 try}\par
+00474                 \{\par
+00475                     currentDirectory = Path.GetDirectoryName(openFileDialog.FileName);\par
+00476                     fileList = Directory.GetFiles(currentDirectory, {\cf22 "*.*"})\par
+00477                                         .Where(f => f.EndsWith({\cf22 ".csv"}) || f.EndsWith({\cf22 ".bin"}))\par
+00478                                         .ToArray();\par
+00479                     currentFileIndex = Array.IndexOf(fileList, openFileDialog.FileName);\par
+00480                     LoadFile(openFileDialog.FileName);\par
+00481                     MessageBox.Show(${\cf22 "\{openFileDialog.FileName\} loaded successfully."});\par
+00482                 \}\par
+00483                 {\cf19 catch} (Exception ex)\par
+00484                 \{\par
+00485                     MessageBox.Show(${\cf22 "Error loading file: \{ex.Message\}"}, {\cf22 "Load Error"},\par
+00486                                     MessageBoxButtons.OK, MessageBoxIcon.Error);\par
+00487                 \}\par
+00488             \}\par
+00489 \par
+00490         \}\par
+00494         {\cf17 public} {\cf18 void} SaveFileFunction({\cf18 string} fileName)\par
+00495         \{\par
+00496             {\cf18 bool} isEmpty = dataGridViewSensor.Rows.Count == 0;\par
+00497             {\cf19 if} (isEmpty)\par
+00498             \{\par
+00499                 MessageBox.Show({\cf22 "No data available to save."}, {\cf22 "No Data"},\par
+00500                                 MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00501                 {\cf19 return};\par
+00502             \}\par
+00503             {\cf17 using} (SaveFileDialog saveFileDialog = {\cf17 new} SaveFileDialog())\par
+00504             \{\par
+00505                 saveFileDialog.Filter = {\cf22 "Binary files (*.bin)|*.bin|CSV files (*.csv)|*.csv|All files (*.*)|*.*"};\par
+00506                 {\cf19 if} ({\cf18 string}.IsNullOrEmpty(currentDirectory) || !Directory.Exists(currentDirectory))\par
+00507                 \{\par
+00508                     currentDirectory = {\cf22 "C:\\\\Sensing4U\\\\DataStorage\\\\"};\par
+00509                 \}\par
+00510                 saveFileDialog.InitialDirectory = currentDirectory;\par
+00511                 {\cf19 if} (!{\cf18 string}.IsNullOrEmpty(fileName))\par
+00512                 \{\par
+00513                     saveFileDialog.FileName = Path.GetFileName(fileName);\par
+00514                 \}\par
+00515                 {\cf19 if} (saveFileDialog.ShowDialog() == DialogResult.OK)\par
+00516                 \{\par
+00517                     {\cf19 try}\par
+00518                     \{\par
+00519                         {\cf18 string} extension = Path.GetExtension(saveFileDialog.FileName).ToLower();\par
+00520                         {\cf19 if} (extension == {\cf22 ".bin"})\par
+00521                         \{\par
+00522                             {\cf17 using} (var writer = {\cf17 new} BinaryWriter(File.Open(saveFileDialog.FileName, FileMode.Create)))\par
+00523                             \{\par
+00524                                 {\cf19 foreach} (DataGridViewRow row {\cf19 in} dataGridViewSensor.Rows)\par
+00525                                 \{\par
+00526                                     writer.Write(row.Cells[{\cf22 "SensorLabel"}].Value.ToString());\par
+00527                                     writer.Write(Convert.ToDouble(row.Cells[{\cf22 "SensorValue"}].Value));\par
+00528                                 \}\par
+00529                             \}\par
+00530                         \}\par
+00531                         {\cf19 else} {\cf19 if} (extension == {\cf22 ".csv"})\par
+00532                         \{\par
+00533                             {\cf17 using} (var writer = {\cf17 new} StreamWriter(saveFileDialog.FileName))\par
+00534                             \{\par
+00535                                 {\cf19 foreach} (DataGridViewRow row {\cf19 in} dataGridViewSensor.Rows)\par
+00536                                 \{\par
+00537                                     writer.WriteLine(${\cf22 "\{row.Cells["}SensorLabel{\cf22 "].Value\},\{row.Cells["}SensorValue{\cf22 "].Value\}"});\par
+00538                                 \}\par
+00539                             \}\par
+00540                         \}\par
+00541                         MessageBox.Show({\cf22 "File saved successfully."}, {\cf22 "Save File"});\par
+00542                     \}\par
+00543                     {\cf19 catch} (Exception ex)\par
+00544                     \{\par
+00545                         MessageBox.Show(${\cf22 "Error saving file: \{ex.Message\}"}, {\cf22 "Save Error"},\par
+00546                                         MessageBoxButtons.OK, MessageBoxIcon.Error);\par
+00547                     \}\par
+00548                 \}\par
+00549             \}\par
+00550         \}\par
+00554         {\cf17 public} {\cf18 void} NxtFileFunction()\par
+00555         \{\par
+00556             {\cf19 if} (fileList == {\cf17 null} || fileList.Length == 0)\par
+00557             \{\par
+00558                 MessageBox.Show({\cf22 "No files loaded. Please load a file first."}, {\cf22 "No Files"},\par
+00559                                 MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00560                 {\cf19 return};\par
+00561             \}\par
+00562             currentFileIndex = (currentFileIndex + 1) % fileList.Length;\par
+00563             LoadFile(fileList[currentFileIndex]);\par
+00564         \}\par
+00568         {\cf17 public} {\cf18 void} PreviousFileFunction()\par
+00569         \{\par
+00570             {\cf19 if} (fileList == {\cf17 null} || fileList.Length == 0)\par
+00571             \{\par
+00572                 MessageBox.Show({\cf22 "No files loaded. Please load a file first."}, {\cf22 "No Files"},\par
+00573                                 MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00574                 {\cf19 return};\par
+00575             \}\par
+00576             currentFileIndex = (currentFileIndex - 1 + fileList.Length) % fileList.Length;\par
+00577             LoadFile(fileList[currentFileIndex]);\par
+00578         \}\par
+00584         {\cf17 public} {\cf18 int} BinarySearch({\cf18 double} targetValue)\par
+00585         \{\par
+00586             var sensorData = {\cf17 new} List<(string Label, double Value)>();\par
+00587 \par
+00588             {\cf20 // Sort data if not sorted}\par
+00589             {\cf19 if} (!sorted)\par
+00590                 SortSensor();\par
+00591             {\cf18 double} searchValue = targetValue;\par
+00592             {\cf20 // Extract grid data}\par
+00593             {\cf19 foreach} (DataGridViewRow row {\cf19 in} dataGridViewSensor.Rows)\par
+00594             \{\par
+00595                 {\cf19 if} (row.Cells[{\cf22 "SensorValue"}].Value != {\cf17 null})\par
+00596                 \{\par
+00597                     sensorData.Add((row.Cells[{\cf22 "SensorLabel"}].Value.ToString(),\par
+00598                                     Convert.ToDouble(row.Cells[{\cf22 "SensorValue"}].Value)));\par
+00599                 \}\par
+00600             \}\par
+00601             {\cf18 int} left = 0;\par
+00602             {\cf18 int} right = sensorData.Count - 1;\par
+00603             {\cf18 int} foundIndex = -1;\par
+00604             {\cf20 // Binary Search}\par
+00605             {\cf19 while} (left <= right)\par
+00606             \{\par
+00607                 {\cf18 int} mid = left + (right - left) / 2;\par
+00608                 {\cf19 if} (sensorData[mid].Value == searchValue)\par
+00609                 \{\par
+00610                     foundIndex = mid;\par
+00611                     {\cf19 break};\par
+00612                 \}\par
+00613 \par
+00614                 {\cf19 if} (sensorData[mid].Value < searchValue)\par
+00615                     left = mid + 1;\par
+00616                 {\cf19 else}\par
+00617                     right = mid - 1;\par
+00618             \}\par
+00619 \par
+00620             {\cf20 // No match found}\par
+00621             {\cf19 if} (foundIndex == -1)\par
+00622             \{\par
+00623                 MessageBox.Show({\cf22 "Value not found in the data."}, {\cf22 "Search Result"});\par
+00624                 {\cf19 return} -1;\par
+00625             \}\par
+00626 \par
+00627             {\cf20 // Highlight ALL rows with this value}\par
+00628             {\cf19 foreach} (DataGridViewRow row {\cf19 in} dataGridViewSensor.Rows)\par
+00629             \{\par
+00630                 {\cf18 double} value = Convert.ToDouble(row.Cells[{\cf22 "SensorValue"}].Value);\par
+00631                 {\cf19 if} (value == searchValue)\par
+00632                     row.Cells[{\cf22 "SensorValue"}].Style.BackColor = Color.Yellow;\par
+00633             \}\par
+00634 \par
+00635             MessageBox.Show(${\cf22 "Value \{searchValue\} found (highlighted in yellow)."}, {\cf22 "Search Result"});\par
+00636             {\cf19 return} foundIndex;\par
+00637         \}\par
+00641         {\cf17 private} {\cf18 void} hasDataOnGrid()\par
+00642         \{\par
+00643             {\cf19 if} (dataGridViewSensor.Rows.Count == 0)\par
+00644             \{\par
+00645                 MessageBox.Show({\cf22 "No data available to operate this fuction."}, {\cf22 "No Data"},\par
+00646                                 MessageBoxButtons.OK, MessageBoxIcon.Information);\par
+00647                 {\cf19 return};\par
+00648             \}\par
+00649         \}\par
+00650     \}\par
+00651 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+obj/Debug/net9.0-windows/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net9.0-windows/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs}
+{\xe \v obj/Debug/net9.0-windows/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs}
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+.NETCoreApp,Version=v9.0.AssemblyAttributes.cs\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net9.0-windows/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs}
+{\xe \v obj/Debug/net9.0-windows/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 // <autogenerated />}\par
+00002 {\cf17 using }System;\par
+00003 {\cf17 using }System.Reflection;\par
+00004 [assembly: global::System.Runtime.Versioning.TargetFrameworkAttribute({\cf22 ".NETCoreApp,Version=v9.0"}, FrameworkDisplayName = {\cf22 ".NET 9.0"})]\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+obj/Debug/net9.0-windows/Sensing4U_v2.0.AssemblyInfo.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net9.0-windows/Sensing4U_v2.0.AssemblyInfo.cs}
+{\xe \v obj/Debug/net9.0-windows/Sensing4U_v2.0.AssemblyInfo.cs}
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Sensing4U_v2.0.AssemblyInfo.cs\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net9.0-windows/Sensing4U_v2.0.AssemblyInfo.cs}
+{\xe \v obj/Debug/net9.0-windows/Sensing4U_v2.0.AssemblyInfo.cs}
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 //------------------------------------------------------------------------------}\par
+00002 {\cf20 // <auto-generated>}\par
+00003 {\cf20 //     This code was generated by a tool.}\par
+00004 {\cf20 //     Runtime Version:4.0.30319.42000}\par
+00005 {\cf20 //}\par
+00006 {\cf20 //     Changes to this file may cause incorrect behavior and will be lost if}\par
+00007 {\cf20 //     the code is regenerated.}\par
+00008 {\cf20 // </auto-generated>}\par
+00009 {\cf20 //------------------------------------------------------------------------------}\par
+00010 \par
+00011 {\cf17 using }System;\par
+00012 {\cf17 using }System.Reflection;\par
+00013 \par
+00014 [assembly: System.Reflection.AssemblyCompanyAttribute({\cf22 "Sensing4U_v2.0"})]\par
+00015 [assembly: System.Reflection.AssemblyConfigurationAttribute({\cf22 "Debug"})]\par
+00016 [assembly: System.Reflection.AssemblyFileVersionAttribute({\cf22 "1.0.0.0"})]\par
+00017 [assembly: System.Reflection.AssemblyInformationalVersionAttribute({\cf22 "1.0.0"})]\par
+00018 [assembly: System.Reflection.AssemblyProductAttribute({\cf22 "Sensing4U_v2.0"})]\par
+00019 [assembly: System.Reflection.AssemblyTitleAttribute({\cf22 "Sensing4U_v2.0"})]\par
+00020 [assembly: System.Reflection.AssemblyVersionAttribute({\cf22 "1.0.0.0"})]\par
+00021 [assembly: System.Runtime.Versioning.TargetPlatformAttribute({\cf22 "Windows7.0"})]\par
+00022 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute({\cf22 "Windows7.0"})]\par
+00023 \par
+00024 {\cf20 // Generated by the MSBuild WriteCodeFragment class.}\par
+00025 \par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+obj/Debug/net9.0-windows/Sensing4U_v2.0.GlobalUsings.g.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net9.0-windows/Sensing4U_v2.0.GlobalUsings.g.cs}
+{\xe \v obj/Debug/net9.0-windows/Sensing4U_v2.0.GlobalUsings.g.cs}
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Sensing4U_v2.0.GlobalUsings.g.cs\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net9.0-windows/Sensing4U_v2.0.GlobalUsings.g.cs}
+{\xe \v obj/Debug/net9.0-windows/Sensing4U_v2.0.GlobalUsings.g.cs}
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 // <auto-generated/>}\par
+00002 global {\cf17 using }global::Microsoft.VisualStudio.TestTools.UnitTesting;\par
+00003 global {\cf17 using }global::System;\par
+00004 global {\cf17 using }global::System.Collections.Generic;\par
+00005 global {\cf17 using }global::System.Drawing;\par
+00006 global {\cf17 using }global::System.IO;\par
+00007 global {\cf17 using }global::System.Linq;\par
+00008 global {\cf17 using }global::System.Net.Http;\par
+00009 global {\cf17 using }global::System.Threading;\par
+00010 global {\cf17 using }global::System.Threading.Tasks;\par
+00011 global {\cf17 using }global::System.Windows.Forms;\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Program.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v Program.cs}
+{\xe \v Program.cs}
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Sensing4U_v2._0.Program}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Sensing4U_v2}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Sensing4U_v2._0}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Program.cs\par \pard\plain 
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 namespace }Sensing4U_v2._0\par
+00002 \{\par
+00003     {\cf17 internal} {\cf17 static} {\cf17 class }Program\par
+00004     \{\par
+00008         [STAThread]\par
+00009         {\cf17 static} {\cf18 void} Main()\par
+00010         \{\par
+00011             {\cf20 // To customize application configuration such as set high DPI settings or default font,}\par
+00012             {\cf20 // see https://aka.ms/applicationconfiguration.}\par
+00013             ApplicationConfiguration.Initialize();\par
+00014             Application.Run({\cf17 new} Sensing4USensorData());\par
+00015         \}\par
+00016     \}\par
+00017 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+SensingMainWin.Designer.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v SensingMainWin.Designer.cs}
+{\xe \v SensingMainWin.Designer.cs}
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Sensing4U_v2._0.Sensing4USensorData}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Sensing4U_v2}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Sensing4U_v2._0}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+SensingMainWin.Designer.cs\par \pard\plain 
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System;\par
+00002 {\cf17 using }System.Windows.Forms;\par
+00003 {\cf17 using }System.Drawing;\par
+00004 {\cf17 using }System.ComponentModel;\par
+00005 {\cf17 using }System.Data;\par
+00006 {\cf17 namespace }Sensing4U_v2._0\par
+00007 \{\par
+00008     {\cf17 partial class }Sensing4USensorData\par
+00009     \{\par
+00013         {\cf17 private} System.ComponentModel.IContainer components = {\cf17 null};\par
+00014 \par
+00019         {\cf17 protected} {\cf17 override} {\cf18 void} Dispose({\cf18 bool} disposing)\par
+00020         \{\par
+00021             {\cf19 if} (disposing && (components != {\cf17 null}))\par
+00022             \{\par
+00023                 components.Dispose();\par
+00024             \}\par
+00025             base.Dispose(disposing);\par
+00026         \}\par
+00027 \par
+00028 {\cf21         #region Windows Form Designer generated code}\par
+00029 \par
+00034         {\cf17 private} {\cf18 void} InitializeComponent()\par
+00035         \{\par
+00036             txtBoxUpper = {\cf17 new} TextBox();\par
+00037             txtBoxLower = {\cf17 new} TextBox();\par
+00038             txtBoxAvg = {\cf17 new} TextBox();\par
+00039             labelUp = {\cf17 new} Label();\par
+00040             labelMin = {\cf17 new} Label();\par
+00041             labelAvg = {\cf17 new} Label();\par
+00042             labelUpdate = {\cf17 new} Label();\par
+00043             txtUpdate = {\cf17 new} TextBox();\par
+00044             btnAvg = {\cf17 new} Button();\par
+00045             btnUpdate = {\cf17 new} Button();\par
+00046             btnMaxMin = {\cf17 new} Button();\par
+00047             btnSort = {\cf17 new} Button();\par
+00048             dataGridViewSensor = {\cf17 new} DataGridView();\par
+00049             menuStrip1 = {\cf17 new} MenuStrip();\par
+00050             fileToolStripMenuItem = {\cf17 new} ToolStripMenuItem();\par
+00051             newToolStripMenuItem = {\cf17 new} ToolStripMenuItem();\par
+00052             loadToolStripMenuItem = {\cf17 new} ToolStripMenuItem();\par
+00053             saveToolStripMenuItem = {\cf17 new} ToolStripMenuItem();\par
+00054             helpToolStripMenuItem = {\cf17 new} ToolStripMenuItem();\par
+00055             aboutToolStripMenuItem = {\cf17 new} ToolStripMenuItem();\par
+00056             tutorialToolStripMenuItem = {\cf17 new} ToolStripMenuItem();\par
+00057             lblTitle = {\cf17 new} Label();\par
+00058             btnRemove = {\cf17 new} Button();\par
+00059             btnAdd = {\cf17 new} Button();\par
+00060             btnPreviousFile = {\cf17 new} Button();\par
+00061             btnNextFile = {\cf17 new} Button();\par
+00062             lblSearch = {\cf17 new} Label();\par
+00063             txtBoxSearch = {\cf17 new} TextBox();\par
+00064             btnSearch = {\cf17 new} Button();\par
+00065             comboBoxListOfFile = {\cf17 new} ComboBox();\par
+00066             ((System.ComponentModel.ISupportInitialize)dataGridViewSensor).BeginInit();\par
+00067             menuStrip1.SuspendLayout();\par
+00068             SuspendLayout();\par
+00069             {\cf20 // }\par
+00070             {\cf20 // txtBoxUpper}\par
+00071             {\cf20 // }\par
+00072             txtBoxUpper.Anchor = AnchorStyles.None;\par
+00073             txtBoxUpper.Location = {\cf17 new} Point(1143, 180);\par
+00074             txtBoxUpper.Name = {\cf22 "txtBoxUpper"};\par
+00075             txtBoxUpper.Size = {\cf17 new} Size(179, 31);\par
+00076             txtBoxUpper.TabIndex = 1;\par
+00077             {\cf20 // }\par
+00078             {\cf20 // txtBoxLower}\par
+00079             {\cf20 // }\par
+00080             txtBoxLower.Anchor = AnchorStyles.None;\par
+00081             txtBoxLower.Location = {\cf17 new} Point(926, 180);\par
+00082             txtBoxLower.Name = {\cf22 "txtBoxLower"};\par
+00083             txtBoxLower.Size = {\cf17 new} Size(179, 31);\par
+00084             txtBoxLower.TabIndex = 2;\par
+00085             {\cf20 // }\par
+00086             {\cf20 // txtBoxAvg}\par
+00087             {\cf20 // }\par
+00088             txtBoxAvg.Anchor = AnchorStyles.None;\par
+00089             txtBoxAvg.Location = {\cf17 new} Point(926, 287);\par
+00090             txtBoxAvg.Name = {\cf22 "txtBoxAvg"};\par
+00091             txtBoxAvg.Size = {\cf17 new} Size(179, 31);\par
+00092             txtBoxAvg.TabIndex = 3;\par
+00093             {\cf20 // }\par
+00094             {\cf20 // labelUp}\par
+00095             {\cf20 // }\par
+00096             labelUp.Anchor = AnchorStyles.None;\par
+00097             labelUp.AutoSize = {\cf17 true};\par
+00098             labelUp.Location = {\cf17 new} Point(1143, 138);\par
+00099             labelUp.Name = {\cf22 "labelUp"};\par
+00100             labelUp.Size = {\cf17 new} Size(92, 25);\par
+00101             labelUp.TabIndex = 4;\par
+00102             labelUp.Text = {\cf22 "Limit max."};\par
+00103             {\cf20 // }\par
+00104             {\cf20 // labelMin}\par
+00105             {\cf20 // }\par
+00106             labelMin.Anchor = AnchorStyles.None;\par
+00107             labelMin.AutoSize = {\cf17 true};\par
+00108             labelMin.Location = {\cf17 new} Point(929, 138);\par
+00109             labelMin.Name = {\cf22 "labelMin"};\par
+00110             labelMin.Size = {\cf17 new} Size(89, 25);\par
+00111             labelMin.TabIndex = 5;\par
+00112             labelMin.Text = {\cf22 "Limit min."};\par
+00113             {\cf20 // }\par
+00114             {\cf20 // labelAvg}\par
+00115             {\cf20 // }\par
+00116             labelAvg.Anchor = AnchorStyles.None;\par
+00117             labelAvg.AutoSize = {\cf17 true};\par
+00118             labelAvg.Location = {\cf17 new} Point(929, 245);\par
+00119             labelAvg.Name = {\cf22 "labelAvg"};\par
+00120             labelAvg.Size = {\cf17 new} Size(179, 25);\par
+00121             labelAvg.TabIndex = 6;\par
+00122             labelAvg.Text = {\cf22 "Calculate the average"};\par
+00123             {\cf20 // }\par
+00124             {\cf20 // labelUpdate}\par
+00125             {\cf20 // }\par
+00126             labelUpdate.Anchor = AnchorStyles.None;\par
+00127             labelUpdate.AutoSize = {\cf17 true};\par
+00128             labelUpdate.Location = {\cf17 new} Point(929, 348);\par
+00129             labelUpdate.Name = {\cf22 "labelUpdate"};\par
+00130             labelUpdate.Size = {\cf17 new} Size(144, 25);\par
+00131             labelUpdate.TabIndex = 7;\par
+00132             labelUpdate.Text = {\cf22 "Update the data:"};\par
+00133             {\cf20 // }\par
+00134             {\cf20 // txtUpdate}\par
+00135             {\cf20 // }\par
+00136             txtUpdate.Anchor = AnchorStyles.None;\par
+00137             txtUpdate.Location = {\cf17 new} Point(926, 390);\par
+00138             txtUpdate.Name = {\cf22 "txtUpdate"};\par
+00139             txtUpdate.Size = {\cf17 new} Size(179, 31);\par
+00140             txtUpdate.TabIndex = 8;\par
+00141             {\cf20 // }\par
+00142             {\cf20 // btnAvg}\par
+00143             {\cf20 // }\par
+00144             btnAvg.Anchor = AnchorStyles.None;\par
+00145             btnAvg.Location = {\cf17 new} Point(1143, 285);\par
+00146             btnAvg.Name = {\cf22 "btnAvg"};\par
+00147             btnAvg.Size = {\cf17 new} Size(112, 34);\par
+00148             btnAvg.TabIndex = 9;\par
+00149             btnAvg.Text = {\cf22 "Calculate"};\par
+00150             btnAvg.UseVisualStyleBackColor = {\cf17 true};\par
+00151             btnAvg.Click += btnAvg_Click;\par
+00152             {\cf20 // }\par
+00153             {\cf20 // btnUpdate}\par
+00154             {\cf20 // }\par
+00155             btnUpdate.Anchor = AnchorStyles.None;\par
+00156             btnUpdate.Location = {\cf17 new} Point(1143, 388);\par
+00157             btnUpdate.Name = {\cf22 "btnUpdate"};\par
+00158             btnUpdate.Size = {\cf17 new} Size(112, 34);\par
+00159             btnUpdate.TabIndex = 10;\par
+00160             btnUpdate.Text = {\cf22 "Update"};\par
+00161             btnUpdate.UseVisualStyleBackColor = {\cf17 true};\par
+00162             btnUpdate.Click += btnUpdate_Click;\par
+00163             {\cf20 // }\par
+00164             {\cf20 // btnMaxMin}\par
+00165             {\cf20 // }\par
+00166             btnMaxMin.Anchor = AnchorStyles.None;\par
+00167             btnMaxMin.BackColor = SystemColors.ControlLight;\par
+00168             btnMaxMin.Location = {\cf17 new} Point(1143, 217);\par
+00169             btnMaxMin.Name = {\cf22 "btnMaxMin"};\par
+00170             btnMaxMin.Size = {\cf17 new} Size(112, 34);\par
+00171             btnMaxMin.TabIndex = 11;\par
+00172             btnMaxMin.Text = {\cf22 "Filter Data"};\par
+00173             btnMaxMin.UseVisualStyleBackColor = {\cf17 false};\par
+00174             btnMaxMin.Click += btnMaxMin_Click;\par
+00175             {\cf20 // }\par
+00176             {\cf20 // btnSort}\par
+00177             {\cf20 // }\par
+00178             btnSort.Anchor = AnchorStyles.None;\par
+00179             btnSort.Location = {\cf17 new} Point(929, 638);\par
+00180             btnSort.Name = {\cf22 "btnSort"};\par
+00181             btnSort.Size = {\cf17 new} Size(112, 34);\par
+00182             btnSort.TabIndex = 12;\par
+00183             btnSort.Text = {\cf22 "Sort Data"};\par
+00184             btnSort.UseVisualStyleBackColor = {\cf17 true};\par
+00185             btnSort.Click += btnSort_Click;\par
+00186             {\cf20 // }\par
+00187             {\cf20 // dataGridViewSensor}\par
+00188             {\cf20 // }\par
+00189             dataGridViewSensor.AllowUserToOrderColumns = {\cf17 true};\par
+00190             dataGridViewSensor.Anchor = AnchorStyles.None;\par
+00191             dataGridViewSensor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;\par
+00192             dataGridViewSensor.Location = {\cf17 new} Point(184, 138);\par
+00193             dataGridViewSensor.Name = {\cf22 "dataGridViewSensor"};\par
+00194             dataGridViewSensor.RowHeadersWidth = 62;\par
+00195             dataGridViewSensor.Size = {\cf17 new} Size(736, 567);\par
+00196             dataGridViewSensor.TabIndex = 13;\par
+00197             {\cf20 // }\par
+00198             {\cf20 // menuStrip1}\par
+00199             {\cf20 // }\par
+00200             menuStrip1.ImageScalingSize = {\cf17 new} Size(24, 24);\par
+00201             menuStrip1.Items.AddRange({\cf17 new} ToolStripItem[] \{ fileToolStripMenuItem, helpToolStripMenuItem \});\par
+00202             menuStrip1.Location = {\cf17 new} Point(0, 0);\par
+00203             menuStrip1.Name = {\cf22 "menuStrip1"};\par
+00204             menuStrip1.Size = {\cf17 new} Size(1454, 33);\par
+00205             menuStrip1.TabIndex = 14;\par
+00206             menuStrip1.Text = {\cf22 "menuStrip1"};\par
+00207             {\cf20 // }\par
+00208             {\cf20 // fileToolStripMenuItem}\par
+00209             {\cf20 // }\par
+00210             fileToolStripMenuItem.DropDownItems.AddRange({\cf17 new} ToolStripItem[] \{ newToolStripMenuItem, loadToolStripMenuItem, saveToolStripMenuItem \});\par
+00211             fileToolStripMenuItem.Name = {\cf22 "fileToolStripMenuItem"};\par
+00212             fileToolStripMenuItem.Size = {\cf17 new} Size(54, 29);\par
+00213             fileToolStripMenuItem.Text = {\cf22 "File"};\par
+00214             {\cf20 // }\par
+00215             {\cf20 // newToolStripMenuItem}\par
+00216             {\cf20 // }\par
+00217             newToolStripMenuItem.Name = {\cf22 "newToolStripMenuItem"};\par
+00218             newToolStripMenuItem.Size = {\cf17 new} Size(153, 34);\par
+00219             newToolStripMenuItem.Text = {\cf22 "New"};\par
+00220             newToolStripMenuItem.Click += newToolStripMenuItem_Click;\par
+00221             {\cf20 // }\par
+00222             {\cf20 // loadToolStripMenuItem}\par
+00223             {\cf20 // }\par
+00224             loadToolStripMenuItem.Name = {\cf22 "loadToolStripMenuItem"};\par
+00225             loadToolStripMenuItem.Size = {\cf17 new} Size(153, 34);\par
+00226             loadToolStripMenuItem.Text = {\cf22 "Load"};\par
+00227             loadToolStripMenuItem.Click += loadToolStripMenuItem_Click;\par
+00228             {\cf20 // }\par
+00229             {\cf20 // saveToolStripMenuItem}\par
+00230             {\cf20 // }\par
+00231             saveToolStripMenuItem.Name = {\cf22 "saveToolStripMenuItem"};\par
+00232             saveToolStripMenuItem.Size = {\cf17 new} Size(153, 34);\par
+00233             saveToolStripMenuItem.Text = {\cf22 "Save"};\par
+00234             saveToolStripMenuItem.Click += saveToolStripMenuItem_Click;\par
+00235             {\cf20 // }\par
+00236             {\cf20 // helpToolStripMenuItem}\par
+00237             {\cf20 // }\par
+00238             helpToolStripMenuItem.DropDownItems.AddRange({\cf17 new} ToolStripItem[] \{ aboutToolStripMenuItem, tutorialToolStripMenuItem \});\par
+00239             helpToolStripMenuItem.Name = {\cf22 "helpToolStripMenuItem"};\par
+00240             helpToolStripMenuItem.Size = {\cf17 new} Size(65, 29);\par
+00241             helpToolStripMenuItem.Text = {\cf22 "Help"};\par
+00242             {\cf20 // }\par
+00243             {\cf20 // aboutToolStripMenuItem}\par
+00244             {\cf20 // }\par
+00245             aboutToolStripMenuItem.Name = {\cf22 "aboutToolStripMenuItem"};\par
+00246             aboutToolStripMenuItem.Size = {\cf17 new} Size(270, 34);\par
+00247             aboutToolStripMenuItem.Text = {\cf22 "About"};\par
+00248             aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;\par
+00249             {\cf20 // }\par
+00250             {\cf20 // tutorialToolStripMenuItem}\par
+00251             {\cf20 // }\par
+00252             tutorialToolStripMenuItem.Name = {\cf22 "tutorialToolStripMenuItem"};\par
+00253             tutorialToolStripMenuItem.Size = {\cf17 new} Size(270, 34);\par
+00254             tutorialToolStripMenuItem.Text = {\cf22 "Tutorial"};\par
+00255             tutorialToolStripMenuItem.Click += tutorialToolStripMenuItem_Click;\par
+00256             {\cf20 // }\par
+00257             {\cf20 // lblTitle}\par
+00258             {\cf20 // }\par
+00259             lblTitle.Anchor = AnchorStyles.None;\par
+00260             lblTitle.AutoSize = {\cf17 true};\par
+00261             lblTitle.Font = {\cf17 new} Font({\cf22 "Segoe UI"}, 24F, FontStyle.Regular, GraphicsUnit.Point, 0);\par
+00262             lblTitle.Location = {\cf17 new} Point(12, 33);\par
+00263             lblTitle.Name = {\cf22 "lblTitle"};\par
+00264             lblTitle.RightToLeft = RightToLeft.Yes;\par
+00265             lblTitle.Size = {\cf17 new} Size(252, 65);\par
+00266             lblTitle.TabIndex = 15;\par
+00267             lblTitle.Text = {\cf22 "Sensing4U"};\par
+00268             {\cf20 // }\par
+00269             {\cf20 // btnRemove}\par
+00270             {\cf20 // }\par
+00271             btnRemove.Anchor = AnchorStyles.None;\par
+00272             btnRemove.Location = {\cf17 new} Point(1047, 598);\par
+00273             btnRemove.Name = {\cf22 "btnRemove"};\par
+00274             btnRemove.Size = {\cf17 new} Size(112, 34);\par
+00275             btnRemove.TabIndex = 16;\par
+00276             btnRemove.Text = {\cf22 "Remove"};\par
+00277             btnRemove.UseVisualStyleBackColor = {\cf17 true};\par
+00278             btnRemove.Click += btnRemove_Click;\par
+00279             {\cf20 // }\par
+00280             {\cf20 // btnAdd}\par
+00281             {\cf20 // }\par
+00282             btnAdd.Anchor = AnchorStyles.None;\par
+00283             btnAdd.Location = {\cf17 new} Point(929, 598);\par
+00284             btnAdd.Name = {\cf22 "btnAdd"};\par
+00285             btnAdd.Size = {\cf17 new} Size(112, 34);\par
+00286             btnAdd.TabIndex = 17;\par
+00287             btnAdd.Text = {\cf22 "Add Data"};\par
+00288             btnAdd.UseVisualStyleBackColor = {\cf17 true};\par
+00289             btnAdd.Click += btnAdd_Click;\par
+00290             {\cf20 // }\par
+00291             {\cf20 // btnPreviousFile}\par
+00292             {\cf20 // }\par
+00293             btnPreviousFile.Anchor = AnchorStyles.None;\par
+00294             btnPreviousFile.Location = {\cf17 new} Point(187, 711);\par
+00295             btnPreviousFile.Name = {\cf22 "btnPreviousFile"};\par
+00296             btnPreviousFile.Size = {\cf17 new} Size(112, 34);\par
+00297             btnPreviousFile.TabIndex = 18;\par
+00298             btnPreviousFile.Text = {\cf22 "Previous"};\par
+00299             btnPreviousFile.UseVisualStyleBackColor = {\cf17 true};\par
+00300             btnPreviousFile.Click += btnPreviousFile_Click;\par
+00301             {\cf20 // }\par
+00302             {\cf20 // btnNextFile}\par
+00303             {\cf20 // }\par
+00304             btnNextFile.Anchor = AnchorStyles.None;\par
+00305             btnNextFile.Location = {\cf17 new} Point(811, 711);\par
+00306             btnNextFile.Name = {\cf22 "btnNextFile"};\par
+00307             btnNextFile.Size = {\cf17 new} Size(112, 34);\par
+00308             btnNextFile.TabIndex = 19;\par
+00309             btnNextFile.Text = {\cf22 "Next File"};\par
+00310             btnNextFile.UseVisualStyleBackColor = {\cf17 true};\par
+00311             btnNextFile.Click += btnNextFile_Click;\par
+00312             {\cf20 // }\par
+00313             {\cf20 // lblSearch}\par
+00314             {\cf20 // }\par
+00315             lblSearch.Anchor = AnchorStyles.None;\par
+00316             lblSearch.AutoSize = {\cf17 true};\par
+00317             lblSearch.Location = {\cf17 new} Point(929, 443);\par
+00318             lblSearch.Name = {\cf22 "lblSearch"};\par
+00319             lblSearch.Size = {\cf17 new} Size(104, 25);\par
+00320             lblSearch.TabIndex = 20;\par
+00321             lblSearch.Text = {\cf22 "Search data"};\par
+00322             {\cf20 // }\par
+00323             {\cf20 // txtBoxSearch}\par
+00324             {\cf20 // }\par
+00325             txtBoxSearch.Anchor = AnchorStyles.None;\par
+00326             txtBoxSearch.Location = {\cf17 new} Point(926, 484);\par
+00327             txtBoxSearch.Name = {\cf22 "txtBoxSearch"};\par
+00328             txtBoxSearch.Size = {\cf17 new} Size(179, 31);\par
+00329             txtBoxSearch.TabIndex = 21;\par
+00330             {\cf20 // }\par
+00331             {\cf20 // btnSearch}\par
+00332             {\cf20 // }\par
+00333             btnSearch.Anchor = AnchorStyles.None;\par
+00334             btnSearch.Location = {\cf17 new} Point(1143, 481);\par
+00335             btnSearch.Name = {\cf22 "btnSearch"};\par
+00336             btnSearch.Size = {\cf17 new} Size(112, 34);\par
+00337             btnSearch.TabIndex = 22;\par
+00338             btnSearch.Text = {\cf22 "Search"};\par
+00339             btnSearch.UseVisualStyleBackColor = {\cf17 true};\par
+00340             btnSearch.Click += btnSearch_Click;\par
+00341             {\cf20 // }\par
+00342             {\cf20 // comboBoxListOfFile}\par
+00343             {\cf20 // }\par
+00344             comboBoxListOfFile.Anchor = AnchorStyles.None;\par
+00345             comboBoxListOfFile.FormattingEnabled = {\cf17 true};\par
+00346             comboBoxListOfFile.Location = {\cf17 new} Point(184, 99);\par
+00347             comboBoxListOfFile.Name = {\cf22 "comboBoxListOfFile"};\par
+00348             comboBoxListOfFile.Size = {\cf17 new} Size(201, 33);\par
+00349             comboBoxListOfFile.TabIndex = 23;\par
+00350             comboBoxListOfFile.DropDown += ComboBoxListOfFile_DropDown;\par
+00351             comboBoxListOfFile.SelectedIndexChanged += ComboBoxListOfFile_SelectedIndexChanged;\par
+00352             {\cf20 // }\par
+00353             {\cf20 // Sensing4USensorData}\par
+00354             {\cf20 // }\par
+00355             AutoScaleDimensions = {\cf17 new} SizeF(10F, 25F);\par
+00356             AutoScaleMode = AutoScaleMode.Font;\par
+00357             AutoSize = {\cf17 true};\par
+00358             BackColor = SystemColors.ControlLight;\par
+00359             ClientSize = {\cf17 new} Size(1454, 862);\par
+00360             Controls.Add(comboBoxListOfFile);\par
+00361             Controls.Add(btnSearch);\par
+00362             Controls.Add(txtBoxSearch);\par
+00363             Controls.Add(lblSearch);\par
+00364             Controls.Add(btnNextFile);\par
+00365             Controls.Add(btnPreviousFile);\par
+00366             Controls.Add(btnAdd);\par
+00367             Controls.Add(btnRemove);\par
+00368             Controls.Add(lblTitle);\par
+00369             Controls.Add(dataGridViewSensor);\par
+00370             Controls.Add(btnSort);\par
+00371             Controls.Add(btnMaxMin);\par
+00372             Controls.Add(btnUpdate);\par
+00373             Controls.Add(btnAvg);\par
+00374             Controls.Add(txtUpdate);\par
+00375             Controls.Add(labelUpdate);\par
+00376             Controls.Add(labelAvg);\par
+00377             Controls.Add(labelMin);\par
+00378             Controls.Add(labelUp);\par
+00379             Controls.Add(txtBoxAvg);\par
+00380             Controls.Add(txtBoxLower);\par
+00381             Controls.Add(txtBoxUpper);\par
+00382             Controls.Add(menuStrip1);\par
+00383             MainMenuStrip = menuStrip1;\par
+00384             MinimizeBox = {\cf17 false};\par
+00385             Name = {\cf22 "Sensing4USensorData"};\par
+00386             Text = {\cf22 "Sensing4U Sensor Manager"};\par
+00387             ((System.ComponentModel.ISupportInitialize)dataGridViewSensor).EndInit();\par
+00388             menuStrip1.ResumeLayout({\cf17 false});\par
+00389             menuStrip1.PerformLayout();\par
+00390             ResumeLayout({\cf17 false});\par
+00391             PerformLayout();\par
+00392         \}\par
+00393 \par
+00394 {\cf21         #endregion}\par
+00395         {\cf17 private} TextBox txtBoxUpper;\par
+00396         {\cf17 private} TextBox txtBoxLower;\par
+00397         {\cf17 private} TextBox txtBoxAvg;\par
+00398         {\cf17 private} Label labelUp;\par
+00399         {\cf17 private} Label labelMin;\par
+00400         {\cf17 private} Label labelAvg;\par
+00401         {\cf17 private} Label labelUpdate;\par
+00402         {\cf17 private} TextBox txtUpdate;\par
+00403         {\cf17 private} Button btnAvg;\par
+00404         {\cf17 private} Button btnUpdate;\par
+00405         {\cf17 private} Button btnMaxMin;\par
+00406         {\cf17 private} Button btnSort;\par
+00407         {\cf17 private} DataGridView dataGridViewSensor;\par
+00408         {\cf17 private} MenuStrip menuStrip1;\par
+00409         {\cf17 private} ToolStripMenuItem fileToolStripMenuItem;\par
+00410         {\cf17 private} ToolStripMenuItem newToolStripMenuItem;\par
+00411         {\cf17 private} ToolStripMenuItem helpToolStripMenuItem;\par
+00412         {\cf17 private} ToolStripMenuItem loadToolStripMenuItem;\par
+00413         {\cf17 private} ToolStripMenuItem saveToolStripMenuItem;\par
+00414         {\cf17 private} Label lblTitle;\par
+00415         {\cf17 private} Button btnRemove;\par
+00416         {\cf17 private} Button btnAdd;\par
+00417         {\cf17 private} ToolStripMenuItem aboutToolStripMenuItem;\par
+00418         {\cf17 private} ToolStripMenuItem tutorialToolStripMenuItem;\par
+00419         {\cf17 private} Button btnPreviousFile;\par
+00420         {\cf17 private} Button btnNextFile;\par
+00421         {\cf17 private} Label lblSearch;\par
+00422         {\cf17 private} TextBox txtBoxSearch;\par
+00423         {\cf17 private} Button btnSearch;\par
+00424         {\cf17 private} ComboBox comboBoxListOfFile;\par
+00425     \}\par
+00426 \}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

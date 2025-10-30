@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_sensing4_u__v2_1_1__0" xml:lang="en-US">
+<title>Sensing4U_v2._0 Namespace Reference</title>
+<indexterm><primary>Sensing4U_v2._0</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form">AddDataForm</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data">Sensing4USensorData</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">Program</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

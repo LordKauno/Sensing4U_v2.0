@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
+  <compound refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form" kind="class"><name>Sensing4U_v2::_0::AddDataForm</name>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a0416351194cbd1a5fb1c40c79e561479" kind="property"><name>SensorLabel</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1aad850021ccfd09370cbd66d9b606fb8d" kind="property"><name>SensorValue</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1abff7dec786a1dd5108cce04278b6ae69" kind="variable"><name>components</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a1acda83f7995f0d9a0a08b0514099a4a" kind="variable"><name>lblSensor</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a71599dff5f48bc362c4684b8f3b12b88" kind="variable"><name>lblValue</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1af3a5a7a98ef22d6148c766bb44d7bb57" kind="variable"><name>txtLabel</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1aeaa059a0c350b5a92d40d05955b94a96" kind="variable"><name>txtValue</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1afcb880f5f258a8293bce9328cf3b1fbb" kind="variable"><name>btnOK</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a7b46eb4b7be8bb76718bf86b9eab8545" kind="variable"><name>btnCancel</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a8c255c104f6f716c8b7e7aa5f3c1fb04" kind="function"><name>AddDataForm</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a27c1d9160a2413ee34677e7d766c3063" kind="function"><name>btnOK_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1aa51a3d74d0ddd5e47fdcd6826f55e5e9" kind="function"><name>btnCancel_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a31d58e0f59223d1fa1a82d0dd365b888" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_add_data_form_1ad545753af6b4634de759a6bc49778b9d" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="class_sensing4_u__v2_1_1__0_1_1_program" kind="class"><name>Sensing4U_v2::_0::Program</name>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_program_1a58e9b5dccd236c061366e9348578bed1" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data" kind="class"><name>Sensing4U_v2::_0::Sensing4USensorData</name>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a65a383965861550975455f51d6dc5c1c" kind="variable"><name>fileList</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a2a9f73ff0270c382e2734f3a5df0f5d1" kind="variable"><name>currentFileIndex</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4b3fe701972689b28fa6ea47eacb2b32" kind="variable"><name>currentDirectory</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a971f0cc16f1714a597d7e6ee497121f8" kind="variable"><name>sorted</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a830669543527d0b709af664a456ddaac" kind="variable"><name>components</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4e358b118ab0ae3749d08c249315b395" kind="variable"><name>txtBoxUpper</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a8787c36bfe95397f674860351f9d4fc8" kind="variable"><name>txtBoxLower</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5aab0c4caea98d87e5c0ec3caef6b464" kind="variable"><name>txtBoxAvg</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5f05be930b1ccf0c84b6ebf699387346" kind="variable"><name>labelUp</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aa9be024d540f937d7135e263619d3fa9" kind="variable"><name>labelMin</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4f2dde74e4894dd957a02b866e915cdc" kind="variable"><name>labelAvg</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5139dbeda68be70d5e49914c2dded75e" kind="variable"><name>labelUpdate</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a8e3d65f53868ae889aca9297dbfaf701" kind="variable"><name>txtUpdate</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad0fc3893a43b70225b02802ddbd8846d" kind="variable"><name>btnAvg</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad1332effb98ae81ebec3926cb2ca7c17" kind="variable"><name>btnUpdate</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a02c2d38eb01a345f7fc0f0cf488e4b6a" kind="variable"><name>btnMaxMin</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a20e89d5d80d1322f2854b8572bd26fbd" kind="variable"><name>btnSort</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a840372ee03e1f2905c205cbcee620145" kind="variable"><name>dataGridViewSensor</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a41dc3972360462bfb0c25827fd09e4c2" kind="variable"><name>menuStrip1</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a988a81a2ce59e32763b0eb69834dc375" kind="variable"><name>fileToolStripMenuItem</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae814463f9ddf5175d5fac0e709a6432f" kind="variable"><name>newToolStripMenuItem</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ab23c53ee22d86d7b1438ce448193f6db" kind="variable"><name>helpToolStripMenuItem</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a502d72367c586a3853d0699155fe9a03" kind="variable"><name>loadToolStripMenuItem</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a18568de1df87ab5f0538be392caa69fd" kind="variable"><name>saveToolStripMenuItem</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1abdcfe8956c03c751014109526e19bd26" kind="variable"><name>lblTitle</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af12f41d7ff9b3730e65c9a53cc3296fd" kind="variable"><name>btnRemove</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ab925daddd59b2087c3c18e06cfa69be9" kind="variable"><name>btnAdd</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a725d988d99f0e744278ef0d8ea852742" kind="variable"><name>aboutToolStripMenuItem</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a0aaa601055c9dcb5be285ab6b5d84d1b" kind="variable"><name>tutorialToolStripMenuItem</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a2ebb31463e97d865c41ff79ed13d61fa" kind="variable"><name>btnPreviousFile</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a78650acbf86405276952caec43902841" kind="variable"><name>btnNextFile</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a12f0fe45e4b21ef4a36f2304c017333f" kind="variable"><name>lblSearch</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1ffe1fd53872fb8691e89daef3c5633b" kind="variable"><name>txtBoxSearch</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1d36fc786eb6b9733f063cee927dd6cd" kind="variable"><name>btnSearch</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4334cd9e3faa9c1781375a9d28ee87a8" kind="variable"><name>comboBoxListOfFile</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a0fba0adb595642d29a5e1d0e827dfb01" kind="function"><name>Sensing4USensorData</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a26c4ab3ad6914e4c6607302ddef0f0ed" kind="function"><name>InitializeGridView</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06e29daca75e143857c584702b2c4812" kind="function"><name>AddSensor</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a030dc020cbf7916a3b99f9a3f7d78f46" kind="function"><name>RemoveSensor</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba9c1e6e6fa4a579938174f5e0f8a7e2" kind="function"><name>SortSensor</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1c4e2a057d0503a3ad25c0972081dd9b" kind="function"><name>UpdateSensor</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ada85248270c5ec68c7a185595de365ad" kind="function"><name>AvgSensor</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70b2bdd1ad976305069903d09da4f66c" kind="function"><name>FilterData</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae88069407687d8ac374d667fb14afd41" kind="function"><name>LoadFile</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad6b413c159852cf9425ba06fd7979494" kind="function"><name>LoadFileFunction</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aa185bc2e65617f32cbc3b2c1c00e34cc" kind="function"><name>SaveFileFunction</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5cf1f875e8e5430b97c85d8e0de1fb93" kind="function"><name>NxtFileFunction</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70e57eb31c0f0299d06545484ca1fe4b" kind="function"><name>PreviousFileFunction</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a6acceb4981241b571d18f6bcc5059e90" kind="function"><name>BinarySearch</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a0fba0adb595642d29a5e1d0e827dfb01" kind="function"><name>Sensing4USensorData</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a26c4ab3ad6914e4c6607302ddef0f0ed" kind="function"><name>InitializeGridView</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06e29daca75e143857c584702b2c4812" kind="function"><name>AddSensor</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a030dc020cbf7916a3b99f9a3f7d78f46" kind="function"><name>RemoveSensor</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba9c1e6e6fa4a579938174f5e0f8a7e2" kind="function"><name>SortSensor</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1c4e2a057d0503a3ad25c0972081dd9b" kind="function"><name>UpdateSensor</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ada85248270c5ec68c7a185595de365ad" kind="function"><name>AvgSensor</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70b2bdd1ad976305069903d09da4f66c" kind="function"><name>FilterData</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae88069407687d8ac374d667fb14afd41" kind="function"><name>LoadFile</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ad6b413c159852cf9425ba06fd7979494" kind="function"><name>LoadFileFunction</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aa185bc2e65617f32cbc3b2c1c00e34cc" kind="function"><name>SaveFileFunction</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a5cf1f875e8e5430b97c85d8e0de1fb93" kind="function"><name>NxtFileFunction</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a70e57eb31c0f0299d06545484ca1fe4b" kind="function"><name>PreviousFileFunction</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a6acceb4981241b571d18f6bcc5059e90" kind="function"><name>BinarySearch</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae30298b00c6ad1e949a8b6cea08bbd46" kind="function"><name>InitializeShortcuts</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06a3fae153a25507c50e7af63f01a818" kind="function"><name>btnAdd_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a29a31a7acc4037b19437439888655892" kind="function"><name>btnRemove_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aaefc23701a72a2611b7647126793307c" kind="function"><name>btnSort_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a923e42752d6115485473e29f311646b7" kind="function"><name>btnUpdate_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a9c077160d359e309ff1c1a4e1bf7d121" kind="function"><name>btnAvg_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a24ef3aa618ba3be5d5d9f88a86df2850" kind="function"><name>btnMaxMin_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a916f0b46f0b573b3524f473d7b8ab66b" kind="function"><name>newToolStripMenuItem_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4a061f79315ee80014d458ce12da63b7" kind="function"><name>loadToolStripMenuItem_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a9ff06b398d237cdc4b7fbfbd45b870f4" kind="function"><name>saveToolStripMenuItem_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ab110e73b6baaf636785830343acffd88" kind="function"><name>btnNextFile_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a7c0bf8f8e0e23ca4e31b2de67153c0c5" kind="function"><name>btnPreviousFile_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba99e40c7afdd868bedb44b198e05fa1" kind="function"><name>ClearView</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1afca4f8185a78e5a3d799828eb4510a81" kind="function"><name>btnSearch_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a193584a0948150ac7bf62d1c1c919f54" kind="function"><name>ComboBoxListOfFile_DropDown</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a8b39c9031f959d4f72c40194155a8106" kind="function"><name>ComboBoxListOfFile_SelectedIndexChanged</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af2658e714a15786ab02adfa493f493dc" kind="function"><name>aboutToolStripMenuItem_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1b24db4c1b02ad4a63574b1017451bfd" kind="function"><name>tutorialToolStripMenuItem_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af84ce7422092d8d0b4c46e69c8665800" kind="function"><name>hasDataOnGrid</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ae30298b00c6ad1e949a8b6cea08bbd46" kind="function"><name>InitializeShortcuts</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a06a3fae153a25507c50e7af63f01a818" kind="function"><name>btnAdd_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a29a31a7acc4037b19437439888655892" kind="function"><name>btnRemove_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aaefc23701a72a2611b7647126793307c" kind="function"><name>btnSort_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a923e42752d6115485473e29f311646b7" kind="function"><name>btnUpdate_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a9c077160d359e309ff1c1a4e1bf7d121" kind="function"><name>btnAvg_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a24ef3aa618ba3be5d5d9f88a86df2850" kind="function"><name>btnMaxMin_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a916f0b46f0b573b3524f473d7b8ab66b" kind="function"><name>newToolStripMenuItem_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a4a061f79315ee80014d458ce12da63b7" kind="function"><name>loadToolStripMenuItem_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a9ff06b398d237cdc4b7fbfbd45b870f4" kind="function"><name>saveToolStripMenuItem_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ab110e73b6baaf636785830343acffd88" kind="function"><name>btnNextFile_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a7c0bf8f8e0e23ca4e31b2de67153c0c5" kind="function"><name>btnPreviousFile_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1aba99e40c7afdd868bedb44b198e05fa1" kind="function"><name>ClearView</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1afca4f8185a78e5a3d799828eb4510a81" kind="function"><name>btnSearch_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a193584a0948150ac7bf62d1c1c919f54" kind="function"><name>ComboBoxListOfFile_DropDown</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a8b39c9031f959d4f72c40194155a8106" kind="function"><name>ComboBoxListOfFile_SelectedIndexChanged</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af2658e714a15786ab02adfa493f493dc" kind="function"><name>aboutToolStripMenuItem_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a1b24db4c1b02ad4a63574b1017451bfd" kind="function"><name>tutorialToolStripMenuItem_Click</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1af84ce7422092d8d0b4c46e69c8665800" kind="function"><name>hasDataOnGrid</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1a08cc9e6ea988821e99c7ef030d46d8f0" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data_1ace0aeb1526be96f1a0000918330ac8cb" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_visual_studio_1_1_test_tools_1_1_unit_testing" kind="namespace"><name>global::Microsoft::VisualStudio::TestTools::UnitTesting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_drawing" kind="namespace"><name>global::System::Drawing</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_windows_1_1_forms" kind="namespace"><name>global::System::Windows::Forms</name>
+  </compound>
+  <compound refid="namespace_sensing4_u__v2" kind="namespace"><name>Sensing4U_v2</name>
+  </compound>
+  <compound refid="namespace_sensing4_u__v2_1_1__0" kind="namespace"><name>Sensing4U_v2::_0</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics_1_1_eventing_1_1_reader" kind="namespace"><name>System::Diagnostics::Eventing::Reader</name>
+  </compound>
+  <compound refid="namespace_system_1_1_drawing" kind="namespace"><name>System::Drawing</name>
+  </compound>
+  <compound refid="namespace_system_1_1_globalization" kind="namespace"><name>System::Globalization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_forms" kind="namespace"><name>System::Windows::Forms</name>
+  </compound>
+  <compound refid="_add_data_form_8cs" kind="file"><name>AddDataForm.cs</name>
+  </compound>
+  <compound refid="_add_data_form_8_designer_8cs" kind="file"><name>AddDataForm.Designer.cs</name>
+  </compound>
+  <compound refid="bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs" kind="file"><name>SensingMainWin.cs</name>
+  </compound>
+  <compound refid="_sensing_main_win_8cs" kind="file"><name>SensingMainWin.cs</name>
+  </compound>
+  <compound refid="_8_n_e_t_core_app_00_version_0av9_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v9.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_sensing4_u__v2_80_8_assembly_info_8cs" kind="file"><name>Sensing4U_v2.0.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_sensing4_u__v2_80_8_global_usings_8g_8cs" kind="file"><name>Sensing4U_v2.0.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_sensing_main_win_8_designer_8cs" kind="file"><name>SensingMainWin.Designer.cs</name>
+  </compound>
+  <compound refid="dir_2ea30aa2956a8db99dd22aa5e597f384" kind="dir"><name>bin</name>
+  </compound>
+  <compound refid="dir_68323fab176bfe54037497825ea333b7" kind="dir"><name>bin/Debug</name>
+  </compound>
+  <compound refid="dir_a71c3b2ad23b9ff58220dd012d201987" kind="dir"><name>obj/Debug</name>
+  </compound>
+  <compound refid="dir_1c2440296542ffff51fb5197285af4c7" kind="dir"><name>bin/Debug/net9.0-windows</name>
+  </compound>
+  <compound refid="dir_6786f78212adbf43b8ef68420161503a" kind="dir"><name>obj/Debug/net9.0-windows</name>
+  </compound>
+  <compound refid="dir_43724e81dd40e09f32417973865cdd64" kind="dir"><name>obj</name>
+  </compound>
+</doxygenindex>

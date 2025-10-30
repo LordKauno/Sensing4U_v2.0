@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__sensing_main_win_8cs" xml:lang="en-US">
+<title>SensingMainWin.cs File Reference</title>
+<indexterm><primary>SensingMainWin.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data">Sensing4U_v2._0.Sensing4USensorData</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_sensing4_u__v2">Sensing4U_v2</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_sensing4_u__v2_1_1__0">Sensing4U_v2._0</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

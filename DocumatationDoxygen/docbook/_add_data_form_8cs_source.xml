@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__add_data_form_8cs_source" xml:lang="en-US">
+<title>AddDataForm.cs</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__add_data_form_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>System;
+<anchor xml:id="__add_data_form_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>System.Windows.Forms;
+<anchor xml:id="__add_data_form_8cs_source_1l00003"/>00003 
+<anchor xml:id="__add_data_form_8cs_source_1l00004"/><link linkend="_namespace_sensing4_u__v2">00004</link> <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_sensing4_u__v2_1_1__0">Sensing4U_v2._0</link>
+<anchor xml:id="__add_data_form_8cs_source_1l00005"/>00005 {
+<anchor xml:id="__add_data_form_8cs_source_1l00006"/><link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form">00006</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">partial&#32;class&#32;</emphasis><link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a8c255c104f6f716c8b7e7aa5f3c1fb04">AddDataForm</link>&#32;:&#32;Form
+<anchor xml:id="__add_data_form_8cs_source_1l00007"/>00007 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__add_data_form_8cs_source_1l00008"/><link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a0416351194cbd1a5fb1c40c79e561479">00008</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a0416351194cbd1a5fb1c40c79e561479">SensorLabel</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__add_data_form_8cs_source_1l00009"/><link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1aad850021ccfd09370cbd66d9b606fb8d">00009</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>&#32;<link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1aad850021ccfd09370cbd66d9b606fb8d">SensorValue</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__add_data_form_8cs_source_1l00010"/>00010 
+<anchor xml:id="__add_data_form_8cs_source_1l00011"/><link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a8c255c104f6f716c8b7e7aa5f3c1fb04">00011</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a8c255c104f6f716c8b7e7aa5f3c1fb04">AddDataForm</link>()
+<anchor xml:id="__add_data_form_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__add_data_form_8cs_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;InitializeComponent();
+<anchor xml:id="__add_data_form_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__add_data_form_8cs_source_1l00015"/>00015 
+<anchor xml:id="__add_data_form_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;btnOK_Click(<emphasis role="keywordtype">object</emphasis>&#32;sender,&#32;EventArgs&#32;e)
+<anchor xml:id="__add_data_form_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__add_data_form_8cs_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Validate&#32;the&#32;user&#32;input</emphasis>
+<anchor xml:id="__add_data_form_8cs_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<emphasis role="keywordtype">string</emphasis>.IsNullOrWhiteSpace(txtLabel.Text)&#32;||
+<anchor xml:id="__add_data_form_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;!<emphasis role="keywordtype">double</emphasis>.TryParse(txtValue.Text,&#32;out&#32;<emphasis role="keywordtype">double</emphasis>&#32;value))
+<anchor xml:id="__add_data_form_8cs_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__add_data_form_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;MessageBox.Show(<emphasis role="stringliteral">&quot;Please&#32;enter&#32;a&#32;valid&#32;label&#32;and&#32;numeric&#32;value.&quot;</emphasis>,
+<anchor xml:id="__add_data_form_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Input&#32;Error&quot;</emphasis>,&#32;MessageBoxButtons.OK,&#32;MessageBoxIcon.Warning);
+<anchor xml:id="__add_data_form_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>;
+<anchor xml:id="__add_data_form_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__add_data_form_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a0416351194cbd1a5fb1c40c79e561479">SensorLabel</link>&#32;=&#32;txtLabel.Text.Trim();
+<anchor xml:id="__add_data_form_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1aad850021ccfd09370cbd66d9b606fb8d">SensorValue</link>&#32;=&#32;value;
+<anchor xml:id="__add_data_form_8cs_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DialogResult&#32;=&#32;DialogResult.OK;
+<anchor xml:id="__add_data_form_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__add_data_form_8cs_source_1l00030"/>00030 
+<anchor xml:id="__add_data_form_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;btnCancel_Click(<emphasis role="keywordtype">object</emphasis>&#32;sender,&#32;EventArgs&#32;e)
+<anchor xml:id="__add_data_form_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__add_data_form_8cs_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DialogResult&#32;=&#32;DialogResult.Cancel;
+<anchor xml:id="__add_data_form_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__add_data_form_8cs_source_1l00035"/>00035 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__add_data_form_8cs_source_1l00036"/>00036 }
+</programlisting></section>

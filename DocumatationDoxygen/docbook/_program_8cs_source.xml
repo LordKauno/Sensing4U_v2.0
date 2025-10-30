@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__program_8cs_source" xml:lang="en-US">
+<title>Program.cs</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__program_8cs_source_1l00001"/>00001 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_sensing4_u__v2_1_1__0">Sensing4U_v2._0</link>
+<anchor xml:id="__program_8cs_source_1l00002"/>00002 {
+<anchor xml:id="__program_8cs_source_1l00003"/>00003 &#32;&#32;&#32;&#32;<emphasis role="keyword">internal</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis>Program
+<anchor xml:id="__program_8cs_source_1l00004"/>00004 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__program_8cs_source_1l00008"/>00008 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[STAThread]
+<anchor xml:id="__program_8cs_source_1l00009"/>00009 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;Main()
+<anchor xml:id="__program_8cs_source_1l00010"/>00010 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__program_8cs_source_1l00011"/>00011 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;To&#32;customize&#32;application&#32;configuration&#32;such&#32;as&#32;set&#32;high&#32;DPI&#32;settings&#32;or&#32;default&#32;font,</emphasis>
+<anchor xml:id="__program_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;see&#32;https://aka.ms/applicationconfiguration.</emphasis>
+<anchor xml:id="__program_8cs_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ApplicationConfiguration.Initialize();
+<anchor xml:id="__program_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Application.Run(<emphasis role="keyword">new</emphasis>&#32;Sensing4USensorData());
+<anchor xml:id="__program_8cs_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__program_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__program_8cs_source_1l00017"/>00017 }
+</programlisting></section>

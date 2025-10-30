@@ -1,0 +1,4 @@
+var bin_2_debug_2net9_80_windows_2_sensing_main_win_8cs =
+[
+    [ "Sensing4U_v2._0.Sensing4USensorData", "class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data.html", "class_sensing4_u__v2_1_1__0_1_1_sensing4_u_sensor_data" ]
+];

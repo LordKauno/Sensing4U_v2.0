@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_1c2440296542ffff51fb5197285af4c7" kind="dir">
+    <compoundname>bin/Debug/net9.0-windows</compoundname>
+    <innerfile refid="bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs">SensingMainWin.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="bin/Debug/net9.0-windows/"/>
+  </compounddef>
+</doxygen>

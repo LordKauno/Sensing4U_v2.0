@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "NQqiZTSe1no=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\arceu\\Desktop\\Sensing4U_v2.0\\Sensing4U_v2.0.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\arceu\\.nuget\\packages\\mstest.analyzers\\4.0.1\\mstest.analyzers.4.0.1.nupkg.sha512",
+    "C:\\Users\\arceu\\.nuget\\packages\\mstest.testframework\\4.0.1\\mstest.testframework.4.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

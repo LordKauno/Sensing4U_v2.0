@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_1c2440296542ffff51fb5197285af4c7" xml:lang="en-US">
+<title>bin/Debug/net9.0-windows Directory Reference</title>
+<indexterm><primary>bin/Debug/net9.0-windows Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_bin_2_debug_2net9_80-windows_2_sensing_main_win_8cs">SensingMainWin.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

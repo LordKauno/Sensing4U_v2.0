@@ -1,0 +1,113 @@
+\doxysection{Add\+Data\+Form.\+Designer.\+cs}
+\label{_add_data_form_8_designer_8cs_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{namespace\ }Sensing4U\_v2.\_0}
+\DoxyCodeLine{00002\ \{}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{keyword}{partial\ class\ }AddDataForm}
+\DoxyCodeLine{00004\ \ \ \ \ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ System.ComponentModel.IContainer\ components\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ Dispose(\textcolor{keywordtype}{bool}\ disposing)}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (disposing\ \&\&\ (components\ !=\ \textcolor{keyword}{null}))}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ components.Dispose();}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ base.Dispose(disposing);}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Windows\ Form\ Designer\ generated\ code}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ InitializeComponent()}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ lblSensor\ =\ \textcolor{keyword}{new}\ Label();}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ lblValue\ =\ \textcolor{keyword}{new}\ Label();}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ txtLabel\ =\ \textcolor{keyword}{new}\ TextBox();}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ txtValue\ =\ \textcolor{keyword}{new}\ TextBox();}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ btnOK\ =\ \textcolor{keyword}{new}\ Button();}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ btnCancel\ =\ \textcolor{keyword}{new}\ Button();}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ SuspendLayout();}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ lblSensor}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ lblSensor.AutoSize\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ lblSensor.Location\ =\ \textcolor{keyword}{new}\ Point(173,\ 77);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ lblSensor.Name\ =\ \textcolor{stringliteral}{"{}lblSensor"{}};}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ lblSensor.Size\ =\ \textcolor{keyword}{new}\ Size(120,\ 25);}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ lblSensor.TabIndex\ =\ 0;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ lblSensor.Text\ =\ \textcolor{stringliteral}{"{}Sensor\ name\ "{}};}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ lblValue}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ lblValue.AutoSize\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ lblValue.Location\ =\ \textcolor{keyword}{new}\ Point(173,\ 169);}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ lblValue.Name\ =\ \textcolor{stringliteral}{"{}lblValue"{}};}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ lblValue.Size\ =\ \textcolor{keyword}{new}\ Size(132,\ 25);}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ lblValue.TabIndex\ =\ 1;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ lblValue.Text\ =\ \textcolor{stringliteral}{"{}Insert\ the\ value"{}};}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ txtLabel}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ txtLabel.Location\ =\ \textcolor{keyword}{new}\ Point(173,\ 105);}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ txtLabel.Name\ =\ \textcolor{stringliteral}{"{}txtLabel"{}};}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ txtLabel.Size\ =\ \textcolor{keyword}{new}\ Size(230,\ 31);}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ txtLabel.TabIndex\ =\ 2;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ txtValue}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ txtValue.Location\ =\ \textcolor{keyword}{new}\ Point(173,\ 197);}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ txtValue.Name\ =\ \textcolor{stringliteral}{"{}txtValue"{}};}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ txtValue.Size\ =\ \textcolor{keyword}{new}\ Size(230,\ 31);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ txtValue.TabIndex\ =\ 3;}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ btnOK}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ btnOK.Location\ =\ \textcolor{keyword}{new}\ Point(173,\ 253);}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ btnOK.Name\ =\ \textcolor{stringliteral}{"{}btnOK"{}};}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ btnOK.Size\ =\ \textcolor{keyword}{new}\ Size(112,\ 34);}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ btnOK.TabIndex\ =\ 4;}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ btnOK.Text\ =\ \textcolor{stringliteral}{"{}Add"{}};}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ btnOK.UseVisualStyleBackColor\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ btnOK.Click\ +=\ btnOK\_Click;}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ btnCancel}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ btnCancel.Location\ =\ \textcolor{keyword}{new}\ Point(291,\ 253);}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ btnCancel.Name\ =\ \textcolor{stringliteral}{"{}btnCancel"{}};}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ btnCancel.Size\ =\ \textcolor{keyword}{new}\ Size(112,\ 34);}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ btnCancel.TabIndex\ =\ 5;}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ btnCancel.Text\ =\ \textcolor{stringliteral}{"{}Cancel"{}};}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ btnCancel.UseVisualStyleBackColor\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ btnCancel.Click\ +=\ btnCancel\_Click;}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ AddDataForm}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ AutoScaleDimensions\ =\ \textcolor{keyword}{new}\ SizeF(10F,\ 25F);}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ AutoScaleMode\ =\ AutoScaleMode.Font;}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ ClientSize\ =\ \textcolor{keyword}{new}\ Size(581,\ 450);}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(btnCancel);}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(btnOK);}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(txtValue);}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(txtLabel);}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(lblValue);}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ Controls.Add(lblSensor);}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ Name\ =\ \textcolor{stringliteral}{"{}AddDataForm"{}};}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ Text\ =\ \textcolor{stringliteral}{"{}AddDataForm"{}};}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ ResumeLayout(\textcolor{keyword}{false});}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ PerformLayout();}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Label\ lblSensor;}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Label\ lblValue;}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ TextBox\ txtLabel;}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ TextBox\ txtValue;}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Button\ btnOK;}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Button\ btnCancel;}
+\DoxyCodeLine{00118\ \ \ \ \ \}}
+\DoxyCodeLine{00119\ \}}
+
+\end{DoxyCode}

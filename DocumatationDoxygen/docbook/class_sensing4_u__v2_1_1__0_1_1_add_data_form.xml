@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_sensing4_u__v2_1_1__0_1_1_add_data_form" xml:lang="en-US">
+<title>Sensing4U_v2._0.AddDataForm Class Reference</title>
+<indexterm><primary>Sensing4U_v2._0.AddDataForm</primary></indexterm>
+<para>Inheritance diagram for Sensing4U_v2._0.AddDataForm:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_sensing4_u__v2_1_1__0_1_1_add_data_form.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a8c255c104f6f716c8b7e7aa5f3c1fb04">AddDataForm</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1ad545753af6b4634de759a6bc49778b9d">Dispose</link> (bool disposing)</para>
+
+<para>Clean up any resources being used. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a0416351194cbd1a5fb1c40c79e561479">SensorLabel</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>double <link linkend="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1aad850021ccfd09370cbd66d9b606fb8d">SensorValue</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__add_data_form_8cs_source_1l00006">6</link> of file <link linkend="__add_data_form_8cs_source">AddDataForm.cs</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a8c255c104f6f716c8b7e7aa5f3c1fb04"/><section>
+    <title>AddDataForm()</title>
+<indexterm><primary>AddDataForm</primary><secondary>Sensing4U_v2._0.AddDataForm</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.AddDataForm</primary><secondary>AddDataForm</secondary></indexterm>
+<para><computeroutput>Sensing4U_v2._0.AddDataForm.AddDataForm ( )</computeroutput></para><para>
+Definition at line <link linkend="__add_data_form_8cs_source_1l00011">11</link> of file <link linkend="__add_data_form_8cs_source">AddDataForm.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1ad545753af6b4634de759a6bc49778b9d"/><section>
+    <title>Dispose()</title>
+<indexterm><primary>Dispose</primary><secondary>Sensing4U_v2._0.AddDataForm</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.AddDataForm</primary><secondary>Dispose</secondary></indexterm>
+<para><computeroutput>override void Sensing4U_v2._0.AddDataForm.Dispose (bool disposing)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+
+<para>Clean up any resources being used. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>disposing</entry><entry>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__add_data_form_8_designer_8cs_source_1l00014">14</link> of file <link linkend="__add_data_form_8_designer_8cs_source">AddDataForm.Designer.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1a0416351194cbd1a5fb1c40c79e561479"/><section>
+    <title>SensorLabel</title>
+<indexterm><primary>SensorLabel</primary><secondary>Sensing4U_v2._0.AddDataForm</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.AddDataForm</primary><secondary>SensorLabel</secondary></indexterm>
+<para><computeroutput>string Sensing4U_v2._0.AddDataForm.SensorLabel<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__add_data_form_8cs_source_1l00008">8</link> of file <link linkend="__add_data_form_8cs_source">AddDataForm.cs</link>.</para>
+</section>
+<anchor xml:id="_class_sensing4_u__v2_1_1__0_1_1_add_data_form_1aad850021ccfd09370cbd66d9b606fb8d"/><section>
+    <title>SensorValue</title>
+<indexterm><primary>SensorValue</primary><secondary>Sensing4U_v2._0.AddDataForm</secondary></indexterm>
+<indexterm><primary>Sensing4U_v2._0.AddDataForm</primary><secondary>SensorValue</secondary></indexterm>
+<para><computeroutput>double Sensing4U_v2._0.AddDataForm.SensorValue<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__add_data_form_8cs_source_1l00009">9</link> of file <link linkend="__add_data_form_8cs_source">AddDataForm.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+<link linkend="__add_data_form_8cs">AddDataForm.cs</link><link linkend="__add_data_form_8_designer_8cs">AddDataForm.Designer.cs</link></section>
+</section>
